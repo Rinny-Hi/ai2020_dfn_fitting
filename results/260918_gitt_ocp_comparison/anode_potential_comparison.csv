@@ -1,0 +1,7 @@
+﻿Case,C_rate,direction,minimum_anode_potential_V,minimum_time_min,minimum_SOC,negative_surface_stoichiometry_at_minimum,anode_potential_below_0V,below_0V_time_fraction,simulation_success,failure_message
+Legacy,0.5,Charge,0.018405386349060575,111.98958673181862,0.9102012193315494,0.8418788555348855,False,0.0,True,
+Legacy,1.0,Charge,-0.02199149227809343,50.612162503729266,0.822705992017256,0.8439143869391323,True,0.16851343132725266,True,
+Legacy,2.0,Charge,-0.08052699934058553,20.026248881317244,0.651057537842787,0.8457987539719953,True,0.6795871905570463,True,
+New GITT,0.5,Charge,,,,,False,,False,SolverError: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+New GITT,1.0,Charge,,,,,False,,False,SolverError: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+New GITT,2.0,Charge,,,,,False,,False,SolverError: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)

@@ -1,0 +1,13 @@
+﻿Case,C_rate,direction,x_surf_min,x_surf_max,measured_OCP_min,measured_OCP_max,inside_measured_OCP_coverage,measured_upper_limit_excess,measured_lower_limit_shortfall,out_of_range_time_fraction,simulation_success,failure_message
+Legacy,0.5,Charge,0.001416572075538218,0.8418788555348855,0.0,0.8405421410338643,False,0.0013367145010212411,0.0,0.01702170223246012,True,
+Legacy,0.5,Discharge,0.002789100273660546,0.7736353606763227,0.0,0.8405421410338643,True,0.0,0.0,0.0,True,
+Legacy,1.0,Charge,0.001416572075538218,0.8439143869391323,0.0,0.8405421410338643,False,0.0033722459052680787,0.0,0.06313691569347869,True,
+Legacy,1.0,Discharge,0.004035019868101753,0.7736353606763227,0.0,0.8405421410338643,True,0.0,0.0,0.0,True,
+Legacy,2.0,Charge,0.001416572075538218,0.8457987539719953,0.0,0.8405421410338643,False,0.005256612938131067,0.0,0.12198567801995802,True,
+Legacy,2.0,Discharge,0.006589344557933806,0.7736353606763227,0.0,0.8405421410338643,True,0.0,0.0,0.0,True,
+New GITT,0.5,Charge,,,0.0,1.0,False,,,,False,SolverError: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+New GITT,0.5,Discharge,0.005948433773116519,0.7722197886007844,0.0,1.0,True,0.0,0.0,0.0,True,
+New GITT,1.0,Charge,,,0.0,1.0,False,,,,False,SolverError: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+New GITT,1.0,Discharge,0.008536383992868775,0.7722197886007844,0.0,1.0,True,0.0,0.0,0.0,True,
+New GITT,2.0,Charge,,,0.0,1.0,False,,,,False,SolverError: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+New GITT,2.0,Discharge,0.011661421803992784,0.7722197886007844,0.0,1.0,True,0.0,0.0,0.0,True,
