@@ -1,0 +1,17 @@
+{
+  "python_version": "3.12.14",
+  "raw_files": {
+    "v2": "260918 Anode GITT v2 1-6.xlsx",
+    "v3": "260918 Anode GITT v3 1-7.xlsx"
+  },
+  "anode_ocp_case_default": "legacy",
+  "new_candidate_axis": "Q_NORM_NEW; normalized position only",
+  "new_candidate_stage1_status": {
+    "case": "new_2h_candidate",
+    "status": "NOT_READY",
+    "reason": "Q_NORM_NEW is not absolute stoichiometry; Stage 1 injection blocked"
+  },
+  "absolute_stoichiometry_anchoring_performed": false,
+  "final_ocp_selection_performed": false,
+  "stage2_to_stage4_fitting_performed": false
+}

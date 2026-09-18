@@ -1,0 +1,2 @@
+﻿component,status,planned_pipeline,final_ocp_used
+cathode_2h_gitt,WAITING_FOR_FINAL_RAW_DATA,pulse/rest parser; 1h-vs-2h; last-10-min dV/dt; replicate QC; normalized OCP; legacy comparison,False
