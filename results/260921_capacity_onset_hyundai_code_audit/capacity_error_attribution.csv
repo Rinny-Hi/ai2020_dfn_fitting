@@ -1,0 +1,11 @@
+Test,current_or_changed_value,comparison_value,charge_center_RMSE_mV,charge_mean_abs_capacity_error_mAh,discharge_center_RMSE_mV,discharge_mean_abs_capacity_error_mAh,interpretation
+Current baseline,"kn=7.40e-7; kp=3.12e-7; Dsn=2.1e-14; Dsp=4.4e-14; fitted csmax",same,15.5003,92.8483,11.4271,22.3983,reference
+Nominal kn only,kn=9.6485e-7,kn=7.40e-7,16.1800,59.7118,7.2651,22.2509,"capacity improves with almost no charge-shape penalty"
+Nominal kp only,kp=9.6485e-7,kp=3.12e-7,36.0822,32.3662,31.9801,21.0726,"largest kinetic capacity correction but voltage shape becomes much worse"
+Nominal Dsn only,Dsn=3.9e-14,Dsn=2.1e-14,14.1666,86.1127,10.4734,33.6949,"small charge effect; discharge worsens"
+Nominal Dsp only,Dsp=5.387e-15,Dsp=4.4e-14,17.5716,141.0706,25.5968,23.8390,"current Dsp helps rather than causes the charge shortfall"
+Exact measured current,branch-specific measured A,nominal C-rate current,14.3326,83.0273,8.3703,20.4892,"minor correction only"
+No positive hysteresis,mean cathode OCP,positive hysteresis enabled,18.4297,66.6604,9.0604,22.7550,"capacity improves but charge-shape fit worsens"
+Ai2020 nominal csn only,csnmax=28700,csnmax=24325.5,19.2680,15.2198,14.7262,101.3366,"breaks discharge and OCP coverage; not admissible as a direct replacement"
+Ai2020 nominal csp only,cspmax=49943,cspmax=47467.3,16.5013,23.2446,8.1510,23.2646,"strong signal that positive capacity/window needs re-identification; direct replacement breaks fitted Qp relation"
+Ai2020 nominal csn+csp,28700 and 49943,24325.5 and 47467.3,25.5175,78.5269,21.4473,101.3366,"not a valid improvement"

@@ -280,7 +280,12 @@ def main():
         "restored_bruggeman": {"negative": 2.914, "positive": 1.83, "separator": 1.5},
         "fixed_solid_diffusivities": {"Dsn_m2_s": rs.DSN, "Dsp_m2_s": rs.DSP},
         "best_radius": best.to_dict(),
-        "de_note": "The legacy code multiplies Ai2020 electrolyte diffusivity by 1e-4, i.e. makes De 10,000 times smaller, not larger.",
+        "de_note": (
+            "PyBaMM 26.8 Ai2020 returns about 3.22e-6 at 1000 mol/m3 and "
+            "298.15 K despite the parameter label m2/s. The 1e-4 multiplier "
+            "converts the source correlation from cm2/s to about 3.22e-10 m2/s; "
+            "using a factor of 1 would be physically inconsistent."
+        ),
         "de_summary": de_summary.to_dict(orient="records"),
         "csmax_summary": cs_summary.to_dict(orient="records"),
         "hybrid_branch_difference_due_to_stage0_csn": branch_differences,

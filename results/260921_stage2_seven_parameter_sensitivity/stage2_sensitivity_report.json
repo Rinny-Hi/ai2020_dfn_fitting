@@ -1,0 +1,500 @@
+{
+  "baseline": {
+    "kn": 7.4e-07,
+    "kp": 3.12e-07,
+    "Dsn_m2_s": 2.1e-14,
+    "Dsp_m2_s": 4.4e-14,
+    "brugg_n": 2.914,
+    "brugg_p": 1.83,
+    "brugg_s": 1.5,
+    "Ln_um": 72.5,
+    "Lp_um": 61.5,
+    "Rn_um": 5.0,
+    "Rp_um": 3.0,
+    "qOCV_MAE_mV": 4.6402528317129175
+  },
+  "method": {
+    "effect_fraction": 0.05,
+    "log_effect_step": 0.048790164169432,
+    "positive_parameters": "central derivative with respect to log(parameter)",
+    "Bruggeman_coefficients": "central derivatives with respect to log(eps_i**b_i / eps_i**b_i0), i=n,p,s",
+    "C_rate_voltage_window": "common pre-cutoff portion of experimental 10-70% SOC window; upper bound=min(experimental 70% SOC time, 90% nominal-model cutoff time); 100 points per condition",
+    "HPPC_points": 50,
+    "sensitivity_floor": 0.1,
+    "cosine_threshold": 0.95
+  },
+  "selected_subsets": {
+    "C-rate combined": [
+      "brugg_n",
+      "kn",
+      "brugg_p"
+    ],
+    "C-rate charge": [
+      "kn",
+      "brugg_n",
+      "Dsn"
+    ],
+    "C-rate discharge": [
+      "brugg_n",
+      "kp"
+    ],
+    "HPPC": [
+      "kn",
+      "brugg_n",
+      "Dsn",
+      "brugg_p"
+    ]
+  },
+  "rankings": [
+    {
+      "Dataset": "C-rate combined",
+      "Parameter": "brugg_n",
+      "RMS_mV_per_log_effect": 71.12463958779408,
+      "Relative_sensitivity": 1.0,
+      "Selected": true
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Parameter": "kn",
+      "RMS_mV_per_log_effect": 43.30546265570238,
+      "Relative_sensitivity": 0.6088672351337182,
+      "Selected": true
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Parameter": "kp",
+      "RMS_mV_per_log_effect": 43.15485803403842,
+      "Relative_sensitivity": 0.6067497604788477,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Parameter": "brugg_p",
+      "RMS_mV_per_log_effect": 15.697591806782926,
+      "Relative_sensitivity": 0.22070539686048318,
+      "Selected": true
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Parameter": "brugg_s",
+      "RMS_mV_per_log_effect": 7.6911543770049615,
+      "Relative_sensitivity": 0.10813628612502472,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Parameter": "Dsn",
+      "RMS_mV_per_log_effect": 6.803903135737854,
+      "Relative_sensitivity": 0.09566168876454303,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Parameter": "Dsp",
+      "RMS_mV_per_log_effect": 1.2344378414769175,
+      "Relative_sensitivity": 0.01735598027112904,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Parameter": "kn",
+      "RMS_mV_per_log_effect": 44.83480381058877,
+      "Relative_sensitivity": 1.0,
+      "Selected": true
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Parameter": "kp",
+      "RMS_mV_per_log_effect": 42.19203428638229,
+      "Relative_sensitivity": 0.9410554011706788,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Parameter": "brugg_n",
+      "RMS_mV_per_log_effect": 40.066542918234134,
+      "Relative_sensitivity": 0.8936482266656312,
+      "Selected": true
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Parameter": "brugg_p",
+      "RMS_mV_per_log_effect": 15.27820082703337,
+      "Relative_sensitivity": 0.3407665368979505,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Parameter": "brugg_s",
+      "RMS_mV_per_log_effect": 7.237559811737938,
+      "Relative_sensitivity": 0.16142726624419002,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Parameter": "Dsn",
+      "RMS_mV_per_log_effect": 5.347916454330212,
+      "Relative_sensitivity": 0.11928046963076437,
+      "Selected": true
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Parameter": "Dsp",
+      "RMS_mV_per_log_effect": 0.862192236338198,
+      "Relative_sensitivity": 0.01923042286480512,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Parameter": "brugg_n",
+      "RMS_mV_per_log_effect": 92.26104731450056,
+      "Relative_sensitivity": 1.0,
+      "Selected": true
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Parameter": "kp",
+      "RMS_mV_per_log_effect": 44.09666412159496,
+      "Relative_sensitivity": 0.47795538209400257,
+      "Selected": true
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Parameter": "kn",
+      "RMS_mV_per_log_effect": 41.72009778170326,
+      "Relative_sensitivity": 0.45219623011092963,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Parameter": "brugg_p",
+      "RMS_mV_per_log_effect": 16.106065831033764,
+      "Relative_sensitivity": 0.1745705939813496,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Parameter": "brugg_s",
+      "RMS_mV_per_log_effect": 8.11944821237017,
+      "Relative_sensitivity": 0.08800515980154114,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Parameter": "Dsn",
+      "RMS_mV_per_log_effect": 7.999124036949986,
+      "Relative_sensitivity": 0.08670098887651337,
+      "Selected": false
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Parameter": "Dsp",
+      "RMS_mV_per_log_effect": 1.5179914744617375,
+      "Relative_sensitivity": 0.016453221794536864,
+      "Selected": false
+    },
+    {
+      "Dataset": "HPPC",
+      "Parameter": "kn",
+      "RMS_mV_per_log_effect": 28.11860912586365,
+      "Relative_sensitivity": 1.0,
+      "Selected": true
+    },
+    {
+      "Dataset": "HPPC",
+      "Parameter": "kp",
+      "RMS_mV_per_log_effect": 27.013950218718037,
+      "Relative_sensitivity": 0.9607143119276998,
+      "Selected": false
+    },
+    {
+      "Dataset": "HPPC",
+      "Parameter": "brugg_n",
+      "RMS_mV_per_log_effect": 8.410250182505761,
+      "Relative_sensitivity": 0.2990990822078026,
+      "Selected": true
+    },
+    {
+      "Dataset": "HPPC",
+      "Parameter": "Dsn",
+      "RMS_mV_per_log_effect": 5.9261893798126755,
+      "Relative_sensitivity": 0.2107568462325448,
+      "Selected": true
+    },
+    {
+      "Dataset": "HPPC",
+      "Parameter": "brugg_p",
+      "RMS_mV_per_log_effect": 3.1390591049116723,
+      "Relative_sensitivity": 0.11163635764701992,
+      "Selected": true
+    },
+    {
+      "Dataset": "HPPC",
+      "Parameter": "brugg_s",
+      "RMS_mV_per_log_effect": 1.6544381489786792,
+      "Relative_sensitivity": 0.05883783730458126,
+      "Selected": false
+    },
+    {
+      "Dataset": "HPPC",
+      "Parameter": "Dsp",
+      "RMS_mV_per_log_effect": 0.9307793806507512,
+      "Relative_sensitivity": 0.033101899759139054,
+      "Selected": false
+    }
+  ],
+  "singular_values": [
+    {
+      "Dataset": "C-rate combined",
+      "Index": 1,
+      "Singular_value": 2.4621829157244317,
+      "Relative_singular_value": 1.0,
+      "Condition_number": 65.82008523225142,
+      "Rank_relative_1e-2": 7,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Index": 2,
+      "Singular_value": 0.6948171307658871,
+      "Relative_singular_value": 0.28219557788681016,
+      "Condition_number": 65.82008523225142,
+      "Rank_relative_1e-2": 7,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Index": 3,
+      "Singular_value": 0.558649398951204,
+      "Relative_singular_value": 0.22689191586191976,
+      "Condition_number": 65.82008523225142,
+      "Rank_relative_1e-2": 7,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Index": 4,
+      "Singular_value": 0.28210369305272615,
+      "Relative_singular_value": 0.11457462857495486,
+      "Condition_number": 65.82008523225142,
+      "Rank_relative_1e-2": 7,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Index": 5,
+      "Singular_value": 0.2369336940801239,
+      "Relative_singular_value": 0.09622911952112724,
+      "Condition_number": 65.82008523225142,
+      "Rank_relative_1e-2": 7,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Index": 6,
+      "Singular_value": 0.0753384545358217,
+      "Relative_singular_value": 0.03059823624584584,
+      "Condition_number": 65.82008523225142,
+      "Rank_relative_1e-2": 7,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate combined",
+      "Index": 7,
+      "Singular_value": 0.0374077746486718,
+      "Relative_singular_value": 0.015192930797209094,
+      "Condition_number": 65.82008523225142,
+      "Rank_relative_1e-2": 7,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Index": 1,
+      "Singular_value": 2.4904159344180687,
+      "Relative_singular_value": 1.0,
+      "Condition_number": 300.42083212758047,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Index": 2,
+      "Singular_value": 0.7557534586630416,
+      "Relative_singular_value": 0.3034647539065145,
+      "Condition_number": 300.42083212758047,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Index": 3,
+      "Singular_value": 0.43143892686844176,
+      "Relative_singular_value": 0.17323970703281552,
+      "Condition_number": 300.42083212758047,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Index": 4,
+      "Singular_value": 0.18726706194494253,
+      "Relative_singular_value": 0.07519509466546234,
+      "Condition_number": 300.42083212758047,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Index": 5,
+      "Singular_value": 0.059569320499179186,
+      "Relative_singular_value": 0.02391942633996142,
+      "Condition_number": 300.42083212758047,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Index": 6,
+      "Singular_value": 0.042888916744768975,
+      "Relative_singular_value": 0.017221587828777987,
+      "Condition_number": 300.42083212758047,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate charge",
+      "Index": 7,
+      "Singular_value": 0.008289757793362537,
+      "Relative_singular_value": 0.003328663970863803,
+      "Condition_number": 300.42083212758047,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Index": 1,
+      "Singular_value": 2.484616248808582,
+      "Relative_singular_value": 1.0,
+      "Condition_number": 138.7208745990951,
+      "Rank_relative_1e-2": 5,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Index": 2,
+      "Singular_value": 0.7131192459312486,
+      "Relative_singular_value": 0.2870138381624132,
+      "Condition_number": 138.7208745990951,
+      "Rank_relative_1e-2": 5,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Index": 3,
+      "Singular_value": 0.4913654087763802,
+      "Relative_singular_value": 0.19776309883347123,
+      "Condition_number": 138.7208745990951,
+      "Rank_relative_1e-2": 5,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Index": 4,
+      "Singular_value": 0.2669661488810348,
+      "Relative_singular_value": 0.10744763864804066,
+      "Condition_number": 138.7208745990951,
+      "Rank_relative_1e-2": 5,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Index": 5,
+      "Singular_value": 0.06736699585469876,
+      "Relative_singular_value": 0.027113642151781962,
+      "Condition_number": 138.7208745990951,
+      "Rank_relative_1e-2": 5,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Index": 6,
+      "Singular_value": 0.02393815032063207,
+      "Relative_singular_value": 0.009634546313584982,
+      "Condition_number": 138.7208745990951,
+      "Rank_relative_1e-2": 5,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "C-rate discharge",
+      "Index": 7,
+      "Singular_value": 0.017910903863525594,
+      "Relative_singular_value": 0.007208720409887922,
+      "Condition_number": 138.7208745990951,
+      "Rank_relative_1e-2": 5,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "HPPC",
+      "Index": 1,
+      "Singular_value": 2.3241669908221136,
+      "Relative_singular_value": 1.0,
+      "Condition_number": 101.10621297381552,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "HPPC",
+      "Index": 2,
+      "Singular_value": 0.940964278931911,
+      "Relative_singular_value": 0.40486087387338265,
+      "Condition_number": 101.10621297381552,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "HPPC",
+      "Index": 3,
+      "Singular_value": 0.6165212275137275,
+      "Relative_singular_value": 0.26526546067830054,
+      "Condition_number": 101.10621297381552,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "HPPC",
+      "Index": 4,
+      "Singular_value": 0.5490245030153146,
+      "Relative_singular_value": 0.23622420642895003,
+      "Condition_number": 101.10621297381552,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "HPPC",
+      "Index": 5,
+      "Singular_value": 0.1719525755089248,
+      "Relative_singular_value": 0.0739846044574022,
+      "Condition_number": 101.10621297381552,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "HPPC",
+      "Index": 6,
+      "Singular_value": 0.03480786941685947,
+      "Relative_singular_value": 0.014976492461304208,
+      "Condition_number": 101.10621297381552,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    },
+    {
+      "Dataset": "HPPC",
+      "Index": 7,
+      "Singular_value": 0.022987380522540454,
+      "Relative_singular_value": 0.009890589021062237,
+      "Condition_number": 101.10621297381552,
+      "Rank_relative_1e-2": 6,
+      "Rank_relative_1e-3": 7
+    }
+  ]
+}

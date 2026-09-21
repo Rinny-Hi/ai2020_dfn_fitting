@@ -1,0 +1,90 @@
+{
+  "method": {
+    "capacity_relation": "delta_x=Qcell/Qn, delta_y=Qcell/Qp; c_s_max scales with Qn/Qp at fixed geometry",
+    "initial_SOC": "candidate qOCV inverse of the immediately preceding rest-end voltage",
+    "current": "measured branch mean current",
+    "hysteresis": "negative off; positive on with preceding-branch history state",
+    "capacity_selection_rule": "minimum Qn/Qp change subject to: qOCV RMSE <= baseline+0.5 mV, charge/discharge center RMSE <= baseline+1/+2 mV, and charge/discharge capacity RMSE <= 3.1/1.0%",
+    "kn_selection_rule": "minimum charge voltage RMSE subject to charge capacity RMSE <= 3.1%"
+  },
+  "baseline": {
+    "Qn_Ah": 2.4794721998406626,
+    "Qp_Ah": 4.371198056856199,
+    "csn_max_mol_m3": 24325.525258186357,
+    "csp_max_mol_m3": 47467.25702278789,
+    "x0": 0.0038062237463119,
+    "x100": 0.9542212582298352,
+    "y100": 0.4316424031304631,
+    "y0": 0.9707457852378696
+  },
+  "selected_capacity_candidate": {
+    "Candidate": "Qn1.0200_Qp1.0200",
+    "Qn_Ah": 2.529061643837476,
+    "Qp_Ah": 4.458622017993323,
+    "delta_x": 0.9317794455720815,
+    "delta_y": 0.5285327275562808,
+    "x0": 0.003251486050127121,
+    "x100": 0.9350309316222086,
+    "y100": 0.43296973272284406,
+    "y0": 0.9615024602791249,
+    "qOCV_MAE_2_98_mV": 5.070035935553187,
+    "qOCV_RMSE_2_98_mV": 6.494001290212932,
+    "SOC0_error_mV": 10.00080312399021,
+    "SOC100_error_mV": -6.821971813390171,
+    "max_endpoint_abs_mV": 10.00080312399021,
+    "optimizer_success": true,
+    "Qn_scale": 1.02,
+    "Qp_scale": 1.02,
+    "csn_max_mol_m3": 24812.035763350083,
+    "csp_max_mol_m3": 48416.602163243646,
+    "qOCV_admissible": true,
+    "charge_mean_center_RMSE_mV": 20.862928426098048,
+    "discharge_mean_center_RMSE_mV": 10.60154990829593,
+    "charge_capacity_RMSE_pct": 3.0489637982743547,
+    "discharge_capacity_RMSE_pct": 0.9225919382573986,
+    "charge_mean_abs_capacity_error_mAh": 56.008267871782586,
+    "discharge_mean_abs_capacity_error_mAh": 13.673103614637286,
+    "capacity_change_norm": 0.028284271247461926,
+    "dynamic_admissible": true
+  },
+  "selected_stage": {
+    "x0": 0.003251486050127121,
+    "x100": 0.9350309316222086,
+    "y100": 0.43296973272284406,
+    "y0": 0.9615024602791249
+  },
+  "selected_csmax": {
+    "negative_mol_m3": 24812.035763350083,
+    "positive_mol_m3": 48416.602163243646
+  },
+  "selected_kn": {
+    "kn": 7.4e-07,
+    "charge_mean_center_RMSE_mV": 20.862928426098048,
+    "discharge_mean_center_RMSE_mV": 10.60154990829593,
+    "charge_capacity_RMSE_pct": 3.0489637982743547,
+    "discharge_capacity_RMSE_pct": 0.9225919382573986,
+    "charge_mean_abs_capacity_error_mAh": 56.008267871782586,
+    "discharge_mean_abs_capacity_error_mAh": 13.673103614637286
+  },
+  "qOCV_metrics": {
+    "Qn_Ah": 2.529061643837476,
+    "Qp_Ah": 4.458622017993323,
+    "delta_x": 0.9317794455720815,
+    "delta_y": 0.5285327275562808,
+    "x0": 0.003251486050127121,
+    "x100": 0.9350309316222086,
+    "y100": 0.43296973272284406,
+    "y0": 0.9615024602791249,
+    "qOCV_MAE_2_98_mV": 5.070035935553187,
+    "qOCV_RMSE_2_98_mV": 6.494001290212932,
+    "SOC0_error_mV": 10.00080312399021,
+    "SOC100_error_mV": -6.821971813390171,
+    "max_endpoint_abs_mV": 10.00080312399021,
+    "optimizer_success": true,
+    "Candidate": "Qn1.0200_Qp1.0200",
+    "Qn_scale": 1.02,
+    "Qp_scale": 1.02,
+    "csn_max_mol_m3": 24812.035763350083,
+    "csp_max_mol_m3": 48416.602163243646
+  }
+}

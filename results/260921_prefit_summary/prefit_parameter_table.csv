@@ -1,0 +1,24 @@
+﻿Group,Parameter,Value,Status,Basis
+OCP,Negative OCP,Ai2020 nominal graphite,fixed,No anode hysteresis
+OCP,Positive OCP,Old cathode GITT,fixed,Cathode directional branches used
+Stoichiometry,x0,0.0038062237463119,identified,C/50 qOCV
+Stoichiometry,x100,0.9542212582298352,identified,C/50 qOCV
+Stoichiometry,y100,0.4316424031304631,identified,C/50 qOCV
+Stoichiometry,y0,0.9707457852378696,identified,C/50 qOCV
+Capacity,Qcell,2.3565276563125,measured,C/50 full-cell mean [Ah]
+Capacity,Qn,2.4794721998406626,identified,Qcell / delta x [Ah]
+Capacity,Qp,4.371198056856199,identified,Qcell / delta y [Ah]
+Geometry,Ln,76.5,fixed,Ai2020 nominal [um]
+Geometry,Lp,68.0,fixed,Ai2020 nominal [um]
+Geometry,Rn,5.0,fixed,Ai2020 nominal [um]
+Geometry,Rp,3.0,fixed,Ai2020 nominal [um]
+Solid diffusion,Dsn,2.1e-14,fixed,Specified [m2/s]
+Solid diffusion,Dsp,4.4e-14,fixed,Specified [m2/s]
+Kinetics,kn prefactor,7.4e-07,fixed,EIS N4-only
+Kinetics,kp prefactor,3.12e-07,fixed,EIS first estimate
+Electrolyte,Bruggeman n,2.914,fixed,Ai2020 nominal
+Electrolyte,Bruggeman p,1.83,fixed,Ai2020 nominal
+Electrolyte,Bruggeman s,1.5,fixed,Ai2020 nominal
+Electrolyte,De multiplier,0.0001,fixed,Ai2020 raw function unit conversion
+Effective inventory,"csn,max",24325.525258186357,derived,Qn preserved [mol/m3]
+Effective inventory,"csp,max",47467.25702278789,derived,Qp preserved [mol/m3]

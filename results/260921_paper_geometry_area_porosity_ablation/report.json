@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "old_common_area_cm2": 814.9799999999999,
+    "paper_negative_total_area_cm2": 820.3519999999999,
+    "paper_positive_total_area_cm2": 787.2360000000001,
+    "paper_dfn_overlap_area_cm2": 787.2360000000001,
+    "area_ratio_new_over_old": 0.9659574468085108,
+    "current_density_ratio_new_over_old": 1.0352422907488985,
+    "raw_geometric_capacity_change_pct": -3.404255319148919,
+    "capacity_preserving_csmax_scale": 1.0352422907488985,
+    "paper_collectors_um": {
+      "Cu": 10.0,
+      "Al": 15.0
+    },
+    "collector_only_effect": "none in the isothermal electrochemical DFN because Ai2020 already uses 10/15 um",
+    "source_porosity": {
+      "negative": 0.32,
+      "positive": 0.33
+    },
+    "active_fraction_status": "kept at n=0.61,p=0.62; source values are estimates from measured porosity and assumed inactive fractions"
+  },
+  "summary": [
+    {
+      "Candidate": "Current area + paper collectors",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 20.862928426098048,
+      "mean_full_RMSE_mV": 49.423302893734196,
+      "capacity_RMSE_pct": 3.0489637982743547,
+      "mean_capacity_error_mAh": -56.008267871782586,
+      "mean_abs_capacity_error_mAh": 56.008267871782586
+    },
+    {
+      "Candidate": "Current area + paper collectors",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 10.60154990829593,
+      "mean_full_RMSE_mV": 24.348647311248957,
+      "capacity_RMSE_pct": 0.9225919382573986,
+      "mean_capacity_error_mAh": -12.502773164791314,
+      "mean_abs_capacity_error_mAh": 13.673103614637286
+    },
+    {
+      "Candidate": "Paper overlap + Q preserved",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 19.884052180197997,
+      "mean_full_RMSE_mV": 49.76755229088757,
+      "capacity_RMSE_pct": 3.706297643079171,
+      "mean_capacity_error_mAh": -65.94454817153957,
+      "mean_abs_capacity_error_mAh": 65.94454817153957
+    },
+    {
+      "Candidate": "Paper overlap + Q preserved",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 9.177260885997562,
+      "mean_full_RMSE_mV": 24.475917116284062,
+      "capacity_RMSE_pct": 1.0143177845318132,
+      "mean_capacity_error_mAh": -13.836282224444957,
+      "mean_abs_capacity_error_mAh": 14.938830504541329
+    },
+    {
+      "Candidate": "Paper overlap + Q preserved + source porosity",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 19.111224402292795,
+      "mean_full_RMSE_mV": 50.44825630813213,
+      "capacity_RMSE_pct": 5.039343418446122,
+      "mean_capacity_error_mAh": -84.6171222379685,
+      "mean_abs_capacity_error_mAh": 84.6171222379685
+    },
+    {
+      "Candidate": "Paper overlap + Q preserved + source porosity",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 10.31367613783237,
+      "mean_full_RMSE_mV": 26.866285086091136,
+      "capacity_RMSE_pct": 1.3084105196740614,
+      "mean_capacity_error_mAh": -17.84689566129183,
+      "mean_abs_capacity_error_mAh": 18.867114911945777
+    },
+    {
+      "Candidate": "Paper overlap raw (diagnostic)",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 17.883138868636568,
+      "mean_full_RMSE_mV": 52.980168435719634,
+      "capacity_RMSE_pct": 7.4691123720910815,
+      "mean_capacity_error_mAh": -134.54218756658776,
+      "mean_abs_capacity_error_mAh": 134.54218756658776
+    },
+    {
+      "Candidate": "Paper overlap raw (diagnostic)",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 10.809351111570194,
+      "mean_full_RMSE_mV": 34.35026964171897,
+      "capacity_RMSE_pct": 4.192652923987628,
+      "mean_capacity_error_mAh": -92.4624478970316,
+      "mean_abs_capacity_error_mAh": 92.4624478970316
+    }
+  ]
+}

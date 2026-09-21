@@ -1,0 +1,113 @@
+{
+  "method": "one continuous PyBaMM experiment with CC, CV, and 10-minute rests in original order",
+  "initial_state": "charged endpoint; discharge hysteresis state",
+  "kinetics_refitted": false,
+  "summary": [
+    {
+      "Scenario": "F Continuous original RPT sequence",
+      "Direction": "Charge",
+      "Mean_full_MAE_mV": 29.9879417101931,
+      "Mean_full_RMSE_mV": 57.69225454242845,
+      "Mean_center_MAE_mV": 16.166770374169605,
+      "Mean_center_RMSE_mV": 19.124475121765382,
+      "Mean_abs_initial_error_mV": 289.9170620227111,
+      "Capacity_RMSE_pct": 6.174569288141227
+    },
+    {
+      "Scenario": "F Continuous original RPT sequence",
+      "Direction": "Discharge",
+      "Mean_full_MAE_mV": 16.93518809946777,
+      "Mean_full_RMSE_mV": 28.60029648393899,
+      "Mean_center_MAE_mV": 9.575199302642924,
+      "Mean_center_RMSE_mV": 11.164248058239878,
+      "Mean_abs_initial_error_mV": 102.75620193124684,
+      "Capacity_RMSE_pct": 3.1751960749625447
+    }
+  ],
+  "conditions": [
+    {
+      "Scenario": "F Continuous original RPT sequence",
+      "C_rate": 0.5,
+      "Direction": "Charge",
+      "Full_MAE_mV": 32.11925545579416,
+      "Full_RMSE_mV": 40.67241494196443,
+      "Full_Bias_mV": -6.025379053650279,
+      "Center10_70_MAE_mV": 28.412260848250288,
+      "Center10_70_RMSE_mV": 31.314260261812645,
+      "Initial_voltage_error_mV": 183.01885838541088,
+      "Q_end_exp_Ah": 2.1458557,
+      "Q_end_model_Ah": 2.0434951459722863,
+      "Capacity_error_pct": -4.770150855330743
+    },
+    {
+      "Scenario": "F Continuous original RPT sequence",
+      "C_rate": 0.5,
+      "Direction": "Discharge",
+      "Full_MAE_mV": 13.98363294894789,
+      "Full_RMSE_mV": 25.074745945157222,
+      "Full_Bias_mV": -10.34470836633222,
+      "Center10_70_MAE_mV": 7.898413155928853,
+      "Center10_70_RMSE_mV": 9.94439230226215,
+      "Initial_voltage_error_mV": -67.21595206041985,
+      "Q_end_exp_Ah": 2.2903671,
+      "Q_end_model_Ah": 2.2457746817669553,
+      "Capacity_error_pct": -1.946955063799372
+    },
+    {
+      "Scenario": "F Continuous original RPT sequence",
+      "C_rate": 1.0,
+      "Direction": "Charge",
+      "Full_MAE_mV": 28.998815677247894,
+      "Full_RMSE_mV": 62.17972368299384,
+      "Full_Bias_mV": 16.606546474368333,
+      "Center10_70_MAE_mV": 12.233904787734716,
+      "Center10_70_RMSE_mV": 14.030758405105649,
+      "Initial_voltage_error_mV": 333.4865863074428,
+      "Q_end_exp_Ah": 1.9087741,
+      "Q_end_model_Ah": 1.791118170014981,
+      "Capacity_error_pct": -6.163952559133061
+    },
+    {
+      "Scenario": "F Continuous original RPT sequence",
+      "C_rate": 1.0,
+      "Direction": "Discharge",
+      "Full_MAE_mV": 18.43295552255508,
+      "Full_RMSE_mV": 30.166455740224354,
+      "Full_Bias_mV": -14.495597612398472,
+      "Center10_70_MAE_mV": 12.051005076956491,
+      "Center10_70_RMSE_mV": 14.354860369516867,
+      "Initial_voltage_error_mV": -105.72897857533815,
+      "Q_end_exp_Ah": 2.2609308,
+      "Q_end_model_Ah": 2.200116081682524,
+      "Capacity_error_pct": -2.689808919294492
+    },
+    {
+      "Scenario": "F Continuous original RPT sequence",
+      "C_rate": 2.0,
+      "Direction": "Charge",
+      "Full_MAE_mV": 28.845753997537248,
+      "Full_RMSE_mV": 70.22462500232707,
+      "Full_Bias_mV": 27.434776094274852,
+      "Center10_70_MAE_mV": 7.8541454865238105,
+      "Center10_70_RMSE_mV": 12.028406698377852,
+      "Initial_voltage_error_mV": 353.24574137527964,
+      "Q_end_exp_Ah": 1.4620776,
+      "Q_end_model_Ah": 1.3550087206238484,
+      "Capacity_error_pct": -7.323064068292381
+    },
+    {
+      "Scenario": "F Continuous original RPT sequence",
+      "C_rate": 2.0,
+      "Direction": "Discharge",
+      "Full_MAE_mV": 18.388975826900342,
+      "Full_RMSE_mV": 30.55968776643539,
+      "Full_Bias_mV": -18.388975826900342,
+      "Center10_70_MAE_mV": 8.776179675043426,
+      "Center10_70_RMSE_mV": 9.193491502940613,
+      "Initial_voltage_error_mV": -135.3236751579825,
+      "Q_end_exp_Ah": 2.2142754,
+      "Q_end_model_Ah": 2.1172004343298676,
+      "Capacity_error_pct": -4.384051128876399
+    }
+  ]
+}

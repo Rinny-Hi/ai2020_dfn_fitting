@@ -1,0 +1,89 @@
+{
+  "selected_OCP": "Ai2020 nominal anode + old cathode GITT",
+  "stage": {
+    "x0": 0.0038062237463119,
+    "x100": 0.9542212582298352,
+    "y100": 0.4316424031304631,
+    "y0": 0.9707457852378696
+  },
+  "Qn_Ah": 2.4794721998406626,
+  "Qp_Ah": 4.371198056856199,
+  "qcell_C50_Ah": 2.3565276563125,
+  "fixed_dynamic_parameters": {
+    "Rn_um": 5.0,
+    "Rp_um": 3.0,
+    "Dsn_m2_s": 2.1e-14,
+    "Dsp_m2_s": 4.4e-14,
+    "kn_prefactor": 7.4e-07,
+    "kp_prefactor": 3.12e-07,
+    "Bruggeman_n_p_s": [
+      2.914,
+      1.83,
+      1.5
+    ],
+    "Ln_um": 76.5,
+    "Lp_um": 68.0,
+    "measured_Cu_collector_um": 9.0,
+    "measured_Al_collector_um": 13.0,
+    "effective_csn_max_mol_m3": 24325.525258186357,
+    "effective_csp_max_mol_m3": 47467.25702278789,
+    "negative_hysteresis": false,
+    "positive_hysteresis": true
+  },
+  "summary": [
+    {
+      "Scenario": "C50 OCP endpoint start",
+      "Direction": "Charge",
+      "Mean_full_RMSE_mV": 48.608811898580676,
+      "Mean_center10_70_RMSE_mV": 15.50030116539798,
+      "Mean_center10_70_MAE_mV": 12.601866312905242,
+      "Capacity_RMSE_pct": 5.3901866358359625,
+      "Mean_abs_capacity_error_mAh": 92.84831953451452
+    },
+    {
+      "Scenario": "C50 OCP endpoint start",
+      "Direction": "Discharge",
+      "Mean_full_RMSE_mV": 31.210389443039684,
+      "Mean_center10_70_RMSE_mV": 11.42709263241359,
+      "Mean_center10_70_MAE_mV": 9.764208215280988,
+      "Capacity_RMSE_pct": 1.0032594943874815,
+      "Mean_abs_capacity_error_mAh": 22.39832757579293
+    },
+    {
+      "Scenario": "C50 OCP rest/history start",
+      "Direction": "Charge",
+      "Mean_full_RMSE_mV": 50.09098943171336,
+      "Mean_center10_70_RMSE_mV": 19.991155935063492,
+      "Mean_center10_70_MAE_mV": 16.681017159695234,
+      "Capacity_RMSE_pct": 4.408218594043948,
+      "Mean_abs_capacity_error_mAh": 77.5443416902378
+    },
+    {
+      "Scenario": "C50 OCP rest/history start",
+      "Direction": "Discharge",
+      "Mean_full_RMSE_mV": 25.480112301784825,
+      "Mean_center10_70_RMSE_mV": 10.323140501903644,
+      "Mean_center10_70_MAE_mV": 8.981099915643705,
+      "Capacity_RMSE_pct": 1.4216980510299548,
+      "Mean_abs_capacity_error_mAh": 24.94079542244965
+    },
+    {
+      "Scenario": "Previous current OCP",
+      "Direction": "Charge",
+      "Mean_full_RMSE_mV": 53.93334259184169,
+      "Mean_center10_70_RMSE_mV": 22.70225702655486,
+      "Mean_center10_70_MAE_mV": 19.677920454172895,
+      "Capacity_RMSE_pct": 8.200424272572022,
+      "Mean_abs_capacity_error_mAh": 142.98770081652233
+    },
+    {
+      "Scenario": "Previous current OCP",
+      "Direction": "Discharge",
+      "Mean_full_RMSE_mV": 35.85955234039301,
+      "Mean_center10_70_RMSE_mV": 30.094416108075972,
+      "Mean_center10_70_MAE_mV": 29.185167100117223,
+      "Capacity_RMSE_pct": 1.1291764471196635,
+      "Mean_abs_capacity_error_mAh": 16.472295940072417
+    }
+  ]
+}

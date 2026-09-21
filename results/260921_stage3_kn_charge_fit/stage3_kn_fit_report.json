@@ -1,0 +1,179 @@
+{
+  "fixed_configuration": {
+    "qOCV_MAE_mV": 4.6402528317129175,
+    "kn_EIS": 7.4e-07,
+    "kp_fixed": 3.12e-07,
+    "Dsn_fixed_m2_s": 2.1e-14,
+    "Dsp_fixed_m2_s": 4.4e-14,
+    "brugg_n_p_s_fixed": [
+      2.914,
+      1.83,
+      1.5
+    ]
+  },
+  "objective": {
+    "primary": "equal-curve ordinary least squares of charge voltage on fixed transferred-capacity grids",
+    "equation": "mean_over_rates(mean_over_Q((V_model - V_exp)^2))",
+    "capacity": "reported separately; Pareto front; capacity-RMSE constraint sweep",
+    "prior": "none",
+    "kn_bounds": [
+      1e-07,
+      3e-06
+    ],
+    "capacity_constraints_pct": [
+      0.5,
+      1.0,
+      2.0,
+      3.0,
+      5.0
+    ]
+  },
+  "selected_methods": [
+    {
+      "Method": "Baseline EIS kn",
+      "kn": 7.4e-07,
+      "Voltage_MSE_V2": 0.00042971321807717754,
+      "Voltage_RMSE_mV": 20.729525273801556,
+      "Voltage_MAE_mV": 16.763812093953543,
+      "Voltage_abs_bias_mV": 14.112564445010827,
+      "Capacity_RMSE_pct": 7.04434125852343,
+      "Capacity_MAE_pct": 7.002395441758028,
+      "Capacity_MAE_mAh": 126.7386804839993,
+      "Capacity_MaxAbs_mAh": 139.05867085259337
+    },
+    {
+      "Method": "Voltage-only LS",
+      "kn": 1.0757575757575756e-06,
+      "Voltage_MSE_V2": 0.00019424348336708253,
+      "Voltage_RMSE_mV": 13.93712607990193,
+      "Voltage_MAE_mV": 11.453213676972291,
+      "Voltage_abs_bias_mV": NaN,
+      "Capacity_RMSE_pct": 4.246809102108831,
+      "Capacity_MAE_pct": 4.200424029347498,
+      "Capacity_MAE_mAh": 78.9912143789213,
+      "Capacity_MaxAbs_mAh": 106.51860599970408
+    },
+    {
+      "Method": "Capacity-only reference",
+      "kn": 1.7060606060606057e-06,
+      "Voltage_MSE_V2": 0.0005190173324173141,
+      "Voltage_RMSE_mV": 22.78195190095252,
+      "Voltage_MAE_mV": 20.4757277463095,
+      "Voltage_abs_bias_mV": NaN,
+      "Capacity_RMSE_pct": 2.5520321056200683,
+      "Capacity_MAE_pct": 2.4002239702407935,
+      "Capacity_MAE_mAh": 46.12422404863895,
+      "Capacity_MaxAbs_mAh": 77.75542239149358
+    },
+    {
+      "Method": "Pareto knee (descriptive)",
+      "kn": 1.3515151515151514e-06,
+      "Voltage_MSE_V2": 0.00028429306247341763,
+      "Voltage_RMSE_mV": 16.860992333591096,
+      "Voltage_MAE_mV": 14.8212020503262,
+      "Voltage_abs_bias_mV": NaN,
+      "Capacity_RMSE_pct": 3.011709302187135,
+      "Capacity_MAE_pct": 2.6399529973669815,
+      "Capacity_MAE_mAh": 52.65426482014106,
+      "Capacity_MaxAbs_mAh": 90.96527836681511
+    },
+    {
+      "Method": "Capacity-constrained 3%",
+      "kn": 1.3909090909090906e-06,
+      "Voltage_MSE_V2": 0.0003061391181628025,
+      "Voltage_RMSE_mV": 17.49683166069796,
+      "Voltage_MAE_mV": 15.437019819606057,
+      "Voltage_abs_bias_mV": NaN,
+      "Capacity_RMSE_pct": 2.906429697427937,
+      "Capacity_MAE_pct": 2.4611842724988713,
+      "Capacity_MAE_mAh": 49.640804075290994,
+      "Capacity_MaxAbs_mAh": 89.19878795200198
+    },
+    {
+      "Method": "Capacity-constrained 5%",
+      "kn": 1.0757575757575756e-06,
+      "Voltage_MSE_V2": 0.00019424348336708253,
+      "Voltage_RMSE_mV": 13.93712607990193,
+      "Voltage_MAE_mV": 11.453213676972291,
+      "Voltage_abs_bias_mV": NaN,
+      "Capacity_RMSE_pct": 4.246809102108831,
+      "Capacity_MAE_pct": 4.200424029347498,
+      "Capacity_MAE_mAh": 78.9912143789213,
+      "Capacity_MaxAbs_mAh": 106.51860599970408
+    }
+  ],
+  "discharge_validation": [
+    {
+      "Method": "Baseline EIS kn",
+      "kn": 7.4e-07,
+      "Voltage_MSE_V2": 0.0006927858067826169,
+      "Voltage_RMSE_mV": 26.32082458401744,
+      "Voltage_MAE_mV": 25.211312088870425,
+      "Voltage_abs_bias_mV": 25.211312088870425,
+      "Capacity_RMSE_pct": 0.9652280804075936,
+      "Capacity_MAE_pct": 0.6556446892472162,
+      "Capacity_MAE_mAh": 14.596181466812297,
+      "Capacity_MaxAbs_mAh": 36.44932595613515
+    },
+    {
+      "Method": "Voltage-only LS",
+      "kn": 1.0757575757575756e-06,
+      "Voltage_MSE_V2": 0.00016392464265697245,
+      "Voltage_RMSE_mV": 12.803305926867969,
+      "Voltage_MAE_mV": 11.416773316483225,
+      "Voltage_abs_bias_mV": 10.76812994263454,
+      "Capacity_RMSE_pct": 0.8523262214636685,
+      "Capacity_MAE_pct": 0.6447526183708367,
+      "Capacity_MAE_mAh": 14.392236508543823,
+      "Capacity_MaxAbs_mAh": 31.498397933647837
+    },
+    {
+      "Method": "Capacity-only reference",
+      "kn": 1.7060606060606057e-06,
+      "Voltage_MSE_V2": 7.936030950980243e-05,
+      "Voltage_RMSE_mV": 8.90844035226158,
+      "Voltage_MAE_mV": 7.613615459043452,
+      "Voltage_abs_bias_mV": 5.497057241879385,
+      "Capacity_RMSE_pct": 0.7458341751106478,
+      "Capacity_MAE_pct": 0.6348249927139752,
+      "Capacity_MAE_mAh": 14.214109723653669,
+      "Capacity_MaxAbs_mAh": 26.097782475158482
+    },
+    {
+      "Method": "Pareto knee (descriptive)",
+      "kn": 1.3515151515151514e-06,
+      "Voltage_MSE_V2": 6.042155574819045e-05,
+      "Voltage_RMSE_mV": 7.773130369946876,
+      "Voltage_MAE_mV": 6.034577430611043,
+      "Voltage_abs_bias_mV": 3.2403700197184464,
+      "Capacity_RMSE_pct": 0.7951991421051039,
+      "Capacity_MAE_pct": 0.6395821288543911,
+      "Capacity_MAE_mAh": 14.299073656716269,
+      "Capacity_MaxAbs_mAh": 28.732642664813124
+    },
+    {
+      "Method": "Capacity-constrained 3%",
+      "kn": 1.3909090909090906e-06,
+      "Voltage_MSE_V2": 5.674636234521404e-05,
+      "Voltage_RMSE_mV": 7.53301814316241,
+      "Voltage_MAE_mV": 5.927675477966981,
+      "Voltage_abs_bias_mV": 3.137912074261072,
+      "Capacity_RMSE_pct": 0.7886348733833488,
+      "Capacity_MAE_pct": 0.6389873621308447,
+      "Capacity_MAE_mAh": 14.288501955313096,
+      "Capacity_MaxAbs_mAh": 28.397684102339227
+    },
+    {
+      "Method": "Capacity-constrained 5%",
+      "kn": 1.0757575757575756e-06,
+      "Voltage_MSE_V2": 0.00016392464265697245,
+      "Voltage_RMSE_mV": 12.803305926867969,
+      "Voltage_MAE_mV": 11.416773316483225,
+      "Voltage_abs_bias_mV": 10.76812994263454,
+      "Capacity_RMSE_pct": 0.8523262214636685,
+      "Capacity_MAE_pct": 0.6447526183708367,
+      "Capacity_MAE_mAh": 14.392236508543823,
+      "Capacity_MaxAbs_mAh": 31.498397933647837
+    }
+  ]
+}

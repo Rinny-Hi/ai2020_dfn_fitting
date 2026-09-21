@@ -1,0 +1,43 @@
+{
+  "target": {
+    "source": "260610 C/50 cells 1 and 2, complete cycles 2-5",
+    "qcell_Ah": 2.3565276563125,
+    "charge_capacity_mean_Ah": 2.3557575941250004,
+    "discharge_capacity_mean_Ah": 2.3572977185,
+    "n_charge_branches": 8,
+    "n_discharge_branches": 8
+  },
+  "selected": {
+    "anode_source": "nominal",
+    "cathode_source": "old",
+    "x0": 0.003806223746311917,
+    "x100": 0.9542212582298351,
+    "y100": 0.4316424031304631,
+    "y0": 0.9707457852378695,
+    "delta_x": 0.9504150344835232,
+    "delta_y": 0.5391033821074064,
+    "Qn_Ah": 2.4794721998406626,
+    "Qp_Ah": 4.371198056856199,
+    "qOCV_MAE_2_98_mV": 4.689458955762665,
+    "qOCV_RMSE_2_98_mV": 6.24265734582685,
+    "qOCV_MAE_10_90_mV": 4.774547165829817,
+    "SOC0_error_mV": 10.000000000000231,
+    "SOC100_error_mV": -0.8752644798306619,
+    "max_endpoint_abs_mV": 10.000000000000231,
+    "optimal_hysteresis_scale": 0.9999940391390134,
+    "C50_raw_branch_mean_MAE_10_90_mV": 6.799538688308124,
+    "C50_charge_MAE_10_90_mV": 9.120729227439595,
+    "C50_discharge_MAE_10_90_mV": 4.478416775993004,
+    "C50_branch_mean_MAE_10_90_mV": 6.7995730017163,
+    "solver_feasible": true,
+    "primary_eligible": true,
+    "anode_absolute_anchor": true,
+    "cathode_absolute_anchor": true,
+    "anode_directional_complete": false,
+    "cathode_directional_complete": true,
+    "solver_message": "Optimization terminated successfully"
+  },
+  "selection_rule": "minimum qOCV RMSE among endpoint-feasible candidates, excluding incomplete new-cathode reverse GITT",
+  "new_cathode_reverse_branch_completion_mean": 0.735949027498323,
+  "new_cathode_last_relaxed_voltage_mean_V": 3.911966666666667
+}

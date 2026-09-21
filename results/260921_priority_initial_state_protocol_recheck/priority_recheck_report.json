@@ -1,0 +1,195 @@
+{
+  "qOCV_MAE_mV": 4.6402528317129175,
+  "raw_protocol": {
+    "dynamic_source": "C:\\Users\\user\\OneDrive\\01. 적응형 충전 프로토콜\\4. Enertech 파우치셀 실험데이터\\260808 Enertech셀 열화데이터\\260808 Eneterch셀 열화데이터 v1 6-6.xlsx",
+    "qOCV_source": "C:\\Users\\user\\OneDrive\\01. 적응형 충전 프로토콜\\4. Enertech 파우치셀 실험데이터\\260808 Eneterch셀 초기 저율 데이터\\260808 Enertech셀 초기 저율 데이터 v2.xlsx",
+    "dynamic_prebranch_rest_min": 10.0,
+    "qOCV_primary_steps": [
+      9,
+      10
+    ],
+    "qOCV_rest_before_primary_steps_min": [
+      0.0,
+      0.0
+    ],
+    "qOCV_charge_discharge_gap_10_90_MAE_mV": 41.36776947499834,
+    "qOCV_charge_discharge_gap_10_90_max_mV": 58.26413570527844
+  },
+  "diffusion_time_R2_over_D": {
+    "current": {
+      "negative_s": 1190.4761904761904,
+      "positive_s": 204.54545454545456
+    },
+    "attached_notebook": {
+      "negative_s": 19.737170223084387,
+      "positive_s": 0.8971733668341706
+    },
+    "ratio_current_over_attached": {
+      "negative_s": 60.31645757829164,
+      "positive_s": 227.98877241221294
+    }
+  },
+  "scenario_summary": [
+    {
+      "Scenario": "A Endpoint + default hysteresis",
+      "Direction": "Charge",
+      "Mean_full_MAE_mV": 32.219259684415114,
+      "Mean_full_RMSE_mV": 52.01905001705453,
+      "Mean_center_MAE_mV": 16.503614798145595,
+      "Mean_center_RMSE_mV": 19.817834903266938,
+      "Mean_abs_initial_error_mV": 87.26852839258424,
+      "Capacity_RMSE_pct": 7.04434125852343
+    },
+    {
+      "Scenario": "A Endpoint + default hysteresis",
+      "Direction": "Discharge",
+      "Mean_full_MAE_mV": 27.946842111285736,
+      "Mean_full_RMSE_mV": 32.3026133012381,
+      "Mean_center_MAE_mV": 25.212205335296208,
+      "Mean_center_RMSE_mV": 26.252125706508156,
+      "Mean_abs_initial_error_mV": 117.4396440294053,
+      "Capacity_RMSE_pct": 0.9652280804075936
+    },
+    {
+      "Scenario": "B Rest-SOC + default hysteresis",
+      "Direction": "Charge",
+      "Mean_full_MAE_mV": 35.7534275002108,
+      "Mean_full_RMSE_mV": 59.00054498790596,
+      "Mean_center_MAE_mV": 18.194394914774392,
+      "Mean_center_RMSE_mV": 21.26368744984647,
+      "Mean_abs_initial_error_mV": 202.4890714179078,
+      "Capacity_RMSE_pct": 7.912877708551401
+    },
+    {
+      "Scenario": "B Rest-SOC + default hysteresis",
+      "Direction": "Discharge",
+      "Mean_full_MAE_mV": 33.13075606665289,
+      "Mean_full_RMSE_mV": 38.622060736916545,
+      "Mean_center_MAE_mV": 31.668775935632244,
+      "Mean_center_RMSE_mV": 32.92841079906251,
+      "Mean_abs_initial_error_mV": 126.583497664154,
+      "Capacity_RMSE_pct": 1.820119973727949
+    },
+    {
+      "Scenario": "C Rest-SOC + history hysteresis",
+      "Direction": "Charge",
+      "Mean_full_MAE_mV": 28.104231701710034,
+      "Mean_full_RMSE_mV": 45.489072672102516,
+      "Mean_center_MAE_mV": 18.918292123560946,
+      "Mean_center_RMSE_mV": 21.123708135379637,
+      "Mean_abs_initial_error_mV": 132.75457896656,
+      "Capacity_RMSE_pct": 3.9135962010146703
+    },
+    {
+      "Scenario": "C Rest-SOC + history hysteresis",
+      "Direction": "Discharge",
+      "Mean_full_MAE_mV": 10.960067385503002,
+      "Mean_full_RMSE_mV": 17.38008418640291,
+      "Mean_center_MAE_mV": 5.392184282967041,
+      "Mean_center_RMSE_mV": 6.215584155772561,
+      "Mean_abs_initial_error_mV": 76.10828021243198,
+      "Capacity_RMSE_pct": 1.6785990494401803
+    },
+    {
+      "Scenario": "D Rest-SOC + mean OCP",
+      "Direction": "Charge",
+      "Mean_full_MAE_mV": 28.371009810189047,
+      "Mean_full_RMSE_mV": 49.61847220476759,
+      "Mean_center_MAE_mV": 17.03060483211627,
+      "Mean_center_RMSE_mV": 19.758145132813336,
+      "Mean_abs_initial_error_mV": 167.62182519241324,
+      "Capacity_RMSE_pct": 3.1560556918194225
+    },
+    {
+      "Scenario": "D Rest-SOC + mean OCP",
+      "Direction": "Discharge",
+      "Mean_full_MAE_mV": 15.223736047645076,
+      "Mean_full_RMSE_mV": 22.615254571132805,
+      "Mean_center_MAE_mV": 7.1788305484243935,
+      "Mean_center_RMSE_mV": 8.502661417285012,
+      "Mean_abs_initial_error_mV": 101.3458889293825,
+      "Capacity_RMSE_pct": 1.628446925454792
+    },
+    {
+      "Scenario": "E Rest-SOC + attached R2/Ds diagnostic",
+      "Direction": "Charge",
+      "Mean_full_MAE_mV": 67.87168388349966,
+      "Mean_full_RMSE_mV": 72.17556690878139,
+      "Mean_center_MAE_mV": 79.28446568813537,
+      "Mean_center_RMSE_mV": 80.33416525222283,
+      "Mean_abs_initial_error_mV": 55.49079378044697,
+      "Capacity_RMSE_pct": 8.00031229761463
+    },
+    {
+      "Scenario": "E Rest-SOC + attached R2/Ds diagnostic",
+      "Direction": "Discharge",
+      "Mean_full_MAE_mV": 73.24433533787906,
+      "Mean_full_RMSE_mV": 76.18229961225491,
+      "Mean_center_MAE_mV": 68.25162770692829,
+      "Mean_center_RMSE_mV": 68.38513469353516,
+      "Mean_abs_initial_error_mV": 16.360843480111242,
+      "Capacity_RMSE_pct": 1.5273252332924847
+    }
+  ],
+  "selected_kn_after_state_correction": [
+    {
+      "kn": 5e-07,
+      "Charge_center_voltage_MSE_mV2": 302.92970949714487,
+      "Charge_center_RMSE_mV": 17.404876026480192,
+      "Charge_full_RMSE_mV": 50.456732025167206,
+      "Charge_capacity_RMSE_pct": 6.862550145270129,
+      "Selection": "Voltage-only"
+    },
+    {
+      "kn": 8.999999999999999e-07,
+      "Charge_center_voltage_MSE_mV2": 823.1311605122437,
+      "Charge_center_RMSE_mV": 28.69026246851436,
+      "Charge_full_RMSE_mV": 45.28776216813469,
+      "Charge_capacity_RMSE_pct": 2.8219720372729027,
+      "Selection": "Capacity-constrained 3%"
+    }
+  ],
+  "selected_kn_validation": [
+    {
+      "Scenario": "Selected kn: Capacity-constrained 3%",
+      "Direction": "Charge",
+      "Mean_full_MAE_mV": 30.73460212514074,
+      "Mean_full_RMSE_mV": 45.28776216813469,
+      "Mean_center_MAE_mV": 24.972700340214658,
+      "Mean_center_RMSE_mV": 27.648640528063833,
+      "Mean_abs_initial_error_mV": 122.77824002282337,
+      "Capacity_RMSE_pct": 2.8219720372729027
+    },
+    {
+      "Scenario": "Selected kn: Capacity-constrained 3%",
+      "Direction": "Discharge",
+      "Mean_full_MAE_mV": 15.946316603424044,
+      "Mean_full_RMSE_mV": 19.808037122081284,
+      "Mean_center_MAE_mV": 12.337314945511523,
+      "Mean_center_RMSE_mV": 12.953120217498196,
+      "Mean_abs_initial_error_mV": 67.00977390870729,
+      "Capacity_RMSE_pct": 1.602139031694707
+    },
+    {
+      "Scenario": "Selected kn: Voltage-only",
+      "Direction": "Charge",
+      "Mean_full_MAE_mV": 29.004996957687467,
+      "Mean_full_RMSE_mV": 50.456732025167206,
+      "Mean_center_MAE_mV": 14.181307127529116,
+      "Mean_center_RMSE_mV": 17.220160568088136,
+      "Mean_abs_initial_error_mV": 152.8060216524514,
+      "Capacity_RMSE_pct": 6.862550145270129
+    },
+    {
+      "Scenario": "Selected kn: Voltage-only",
+      "Direction": "Discharge",
+      "Mean_full_MAE_mV": 16.918622852078084,
+      "Mean_full_RMSE_mV": 22.793213942795916,
+      "Mean_center_MAE_mV": 12.676157824839573,
+      "Mean_center_RMSE_mV": 13.243093909943951,
+      "Mean_abs_initial_error_mV": 95.04519731725895,
+      "Capacity_RMSE_pct": 1.8424128838306324
+    }
+  ],
+  "interpretation_guardrail": "Scenario E copies the attached notebook's R and Ds only as a causal R^2/D diagnostic; it is not a parameter recommendation for the Enertech cell."
+}

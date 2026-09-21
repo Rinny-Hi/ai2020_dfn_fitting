@@ -30,8 +30,8 @@ RESULTS.mkdir(parents=True, exist_ok=True)
 NAME = "Ai2020 nominal equilibrium + harvested hysteresis"
 RN_UM = 5.0
 RP_UM = 3.0
-LN_UM = 72.5
-LP_UM = 61.5
+LN_UM = 76.5
+LP_UM = 68.0
 KN_PREF = 7.40e-7
 KP_PREF = 3.12e-7
 AI2020_MREF = 1.0e-11 * 96485.33212

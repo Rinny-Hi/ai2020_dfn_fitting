@@ -1,0 +1,7 @@
+﻿electrode,source,charge_pulse_count,discharge_pulse_count,charge_capacity_mAh,discharge_capacity_mAh,last_voltage_V,last_step_type,last_rest_minutes
+negative,260918 Anode GITT v1 1-5,42,42,1.6800000000000002,1.6800000000000002,1.0165,Rest,120.0
+negative,260918 Anode GITT v2 1-6,44,44,1.76,1.76,0.9895,Rest,120.0
+negative,260918 Anode GITT v3 1-7,45,46,1.8000000000000003,1.84,0.9858,Rest,120.0
+positive,260918 Cathode GITT v1 2-6,70,53,2.8000000000000003,2.1200000000000006,3.9112,Rest,21.45
+positive,260918 Cathode GITT v2 2-7,71,52,2.84,2.08,3.9117,Rest,26.033333333333335
+positive,260918 Cathode GITT v3 2-8,71,51,2.84,2.04,3.913,Rest,109.7
