@@ -1,0 +1,6 @@
+﻿Candidate,Dynamic_MAE_SOC10_70_mV,Mean_abs_capacity_error_Ah,Max_abs_capacity_error_Ah
+"Ai2020 nominal anode, mass-independent fit",48.70757993438812,0.024971678877423405,0.049181795279183996
+"Ai2020 nominal anode, published stoichiometry window",53.37150348783927,0.03900691494704405,0.11000429317018372
+Ai2020 nominal equilibrium + harvested hysteresis,27.088765650088607,0.037770114684721,0.09459294722717863
+"Measured anode, mass-independent fit",37.7953487105807,0.02728237992916571,0.05829454286939079
+Previous measured-anode ±5% control,36.1164373582157,0.025248466755561194,0.05680703061033562

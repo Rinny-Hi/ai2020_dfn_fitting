@@ -1,0 +1,113 @@
+{
+  "fixed_parameters": {
+    "Dsn_m2_s": 2.1e-14,
+    "Dsp_m2_s": 4.4e-14,
+    "Rp_um": 3.0,
+    "Bruggeman_electrolyte_n_p_s": 1.5,
+    "Bruggeman_solid_phase": "retained Ai2020 value (0.0)",
+    "Rn_um": [
+      2.0,
+      3.0,
+      4.0
+    ]
+  },
+  "selection_rule": "qOCV endpoint max <= 10 mV and no failed run; then minimum held-out dynamic MAE. Capacity errors are reported separately, not hidden in an arbitrary weight.",
+  "selected_voltage_candidate": {
+    "Candidate": "Ai2020 nominal equilibrium + harvested hysteresis",
+    "Rn_um": 4.0,
+    "Dynamic_MAE_SOC10_70_mV": 88.28139928437014,
+    "Charge_MAE_SOC10_70_mV": 80.19138806818296,
+    "Discharge_MAE_SOC10_70_mV": 96.37141050055732,
+    "Mean_abs_capacity_error_mAh": 95.62426911134453,
+    "Max_abs_capacity_error_mAh": 364.98748941681276,
+    "Failed_runs": 0,
+    "qOCV_MAE_2_98_mV": 4.6402528317129175,
+    "qOCV_RMSE_2_98_mV": 5.589609657723681,
+    "qOCV_max_endpoint_abs_mV": 2.0115511432896582,
+    "tau_n_s": 761.9047619047619,
+    "relative_negative_surface_area_vs_Rn3": 0.75
+  },
+  "best_Rn_by_OCP": [
+    {
+      "Candidate": "Ai2020 nominal equilibrium + harvested hysteresis",
+      "Rn_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 88.28139928437014,
+      "Charge_MAE_SOC10_70_mV": 80.19138806818296,
+      "Discharge_MAE_SOC10_70_mV": 96.37141050055732,
+      "Mean_abs_capacity_error_mAh": 95.62426911134453,
+      "Max_abs_capacity_error_mAh": 364.98748941681276,
+      "Failed_runs": 0,
+      "qOCV_MAE_2_98_mV": 4.6402528317129175,
+      "qOCV_RMSE_2_98_mV": 5.589609657723681,
+      "qOCV_max_endpoint_abs_mV": 2.0115511432896582,
+      "tau_n_s": 761.9047619047619,
+      "relative_negative_surface_area_vs_Rn3": 0.75
+    },
+    {
+      "Candidate": "Previous measured-anode ±5% control",
+      "Rn_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 95.68096580353752,
+      "Charge_MAE_SOC10_70_mV": 76.90582097920644,
+      "Discharge_MAE_SOC10_70_mV": 114.45611062786861,
+      "Mean_abs_capacity_error_mAh": 112.7264078725372,
+      "Max_abs_capacity_error_mAh": 404.6621398079354,
+      "Failed_runs": 0,
+      "qOCV_MAE_2_98_mV": 7.127563628551003,
+      "qOCV_RMSE_2_98_mV": 9.362275358575662,
+      "qOCV_max_endpoint_abs_mV": 3.798356500656297,
+      "tau_n_s": 761.9047619047619,
+      "relative_negative_surface_area_vs_Rn3": 0.75
+    },
+    {
+      "Candidate": "Measured anode, mass-independent fit",
+      "Rn_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 97.49903328570298,
+      "Charge_MAE_SOC10_70_mV": 81.19362833806247,
+      "Discharge_MAE_SOC10_70_mV": 113.80443823334349,
+      "Mean_abs_capacity_error_mAh": 116.32512953917042,
+      "Max_abs_capacity_error_mAh": 415.56171024305604,
+      "Failed_runs": 0,
+      "qOCV_MAE_2_98_mV": 6.15413256502266,
+      "qOCV_RMSE_2_98_mV": 8.2940754214992,
+      "qOCV_max_endpoint_abs_mV": 2.9830806349897543,
+      "tau_n_s": 761.9047619047619,
+      "relative_negative_surface_area_vs_Rn3": 0.75
+    },
+    {
+      "Candidate": "Ai2020 nominal anode, mass-independent fit",
+      "Rn_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 110.37348315171069,
+      "Charge_MAE_SOC10_70_mV": 102.42226649218696,
+      "Discharge_MAE_SOC10_70_mV": 118.32469981123442,
+      "Mean_abs_capacity_error_mAh": 125.92620448899686,
+      "Max_abs_capacity_error_mAh": 430.4424764215827,
+      "Failed_runs": 0,
+      "qOCV_MAE_2_98_mV": 4.6402528317129175,
+      "qOCV_RMSE_2_98_mV": 5.589609657723681,
+      "qOCV_max_endpoint_abs_mV": 2.0115511432896582,
+      "tau_n_s": 761.9047619047619,
+      "relative_negative_surface_area_vs_Rn3": 0.75
+    },
+    {
+      "Candidate": "Ai2020 nominal anode, published stoichiometry window",
+      "Rn_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 114.10648442010688,
+      "Charge_MAE_SOC10_70_mV": 110.33605809001564,
+      "Discharge_MAE_SOC10_70_mV": 117.87691075019814,
+      "Mean_abs_capacity_error_mAh": 151.30904961281465,
+      "Max_abs_capacity_error_mAh": 473.08075862937176,
+      "Failed_runs": 0,
+      "qOCV_MAE_2_98_mV": 5.997507871862802,
+      "qOCV_RMSE_2_98_mV": 7.419211667110765,
+      "qOCV_max_endpoint_abs_mV": 151.63449929832407,
+      "tau_n_s": 761.9047619047619,
+      "relative_negative_surface_area_vs_Rn3": 0.75
+    }
+  ],
+  "notes": [
+    "qOCV is invariant to Dsn, Dsp, Bruggeman and particle radius in this equilibrium comparison.",
+    "Changing Rn with fixed Dsn changes both Rn^2/Dsn and the active interfacial area 3*eps_s/Rn.",
+    "The direct Ai2020 published window is retained as a negative control but excluded by its endpoint error.",
+    "The 260918 new GITT data are excluded."
+  ]
+}

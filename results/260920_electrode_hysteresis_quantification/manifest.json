@@ -1,0 +1,9 @@
+{
+  "new_260918_GITT_used": false,
+  "window": "endpoint constrained; delta x and delta y fixed by measured full-cell capacity",
+  "anode_sources": "legacy low-rate v1/v2",
+  "cathode_sources": "legacy GITT 7-7/7-8 rest-end",
+  "hysteresis_decay_rate_test_value": 3.2,
+  "kinetics": "Ai2020 nominal",
+  "pybamm_version": "26.8.0.0"
+}

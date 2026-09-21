@@ -1,0 +1,5 @@
+﻿Method,Mean_MAE_all_mV,Mean_MAE_SOC10_70_mV
+Current: endpoint + mean OCP,56.37066655018308,62.56531504811786
+Old notebook exact: RMSE + hysteresis,31.390244689690757,22.59205173511852
+Old window only: RMSE + mean OCP,58.25031901885526,62.12117085370573
+Recommended test: endpoint + hysteresis,29.630904010744263,25.5008680589866

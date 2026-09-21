@@ -1,0 +1,41 @@
+{
+  "recommendation": "provisional OCP-first candidate",
+  "selected_common_hysteresis_scale": 0.55,
+  "new_260918_GITT_used": false,
+  "fixed_window": {
+    "x0": 0.0014045163063722,
+    "x100": 0.7736233049071565,
+    "y100": 0.4507120950658858,
+    "y0": 0.9590036043934697
+  },
+  "fixed_delta_x": 0.7722187886007843,
+  "fixed_delta_y": 0.5082915093275837,
+  "calibration_data": [
+    "legacy half-cell OCP",
+    "full-cell C/20 charge/discharge"
+  ],
+  "held_out_validation": [
+    "0.5C",
+    "1C",
+    "2C",
+    "charge",
+    "discharge"
+  ],
+  "gates": {
+    "qOCV_endpoint_max_mV": 10.0,
+    "C20_branch_mean_MAE_mV": 20.0,
+    "mean_abs_capacity_error_percent_Q": 2.0,
+    "max_abs_capacity_error_percent_Q": 3.0
+  },
+  "selected_metrics": {
+    "qOCV_MAE_2_98_mV": 12.311082086615512,
+    "qOCV_max_endpoint_abs_mV": 10.000000000004228,
+    "C20_branch_mean_MAE_2_98_mV": 16.012502900826203,
+    "Dynamic_MAE_SOC10_70_mV": 34.94984951586138,
+    "Mean_abs_capacity_error_Ah": 0.0340234327784667,
+    "Max_abs_capacity_error_Ah": 0.067653141112606,
+    "Max_negative_OCP_stoichiometry_extrapolation": 0.0057424880844991755,
+    "Max_positive_OCP_stoichiometry_extrapolation": 0.0
+  },
+  "limitation": "Held-out discharge MAE remains high; do not treat as a final validated DFN parameter set."
+}

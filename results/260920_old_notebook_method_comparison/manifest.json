@@ -1,0 +1,8 @@
+{
+  "new_260918_GITT_used": false,
+  "old_notebook": "C:\\Users\\user\\OneDrive\\02. 현대자동차 미팅자료\\★ 추후 제출 코드\\260818_0단계~2단계_진행_결과.ipynb",
+  "pybamm_old_notebook": "26.7.1.0",
+  "pybamm_recheck": "26.8.0.0",
+  "old_metric": "model interpolated on experimental time points; experimental SOC 10-70%",
+  "old_dynamic_model": "DFN one-state hysteresis; nominal Ai2020 k"
+}
