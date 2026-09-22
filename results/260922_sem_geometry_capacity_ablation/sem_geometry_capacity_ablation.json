@@ -1,0 +1,380 @@
+{
+  "sem_inputs": {
+    "negative_double_sided_total_um": 172.04,
+    "Cu_um": 9.0,
+    "Ln_um": 81.52,
+    "positive_double_sided_total_um": 138.93,
+    "Al_um": 13.0,
+    "Lp_um": 62.965,
+    "Rn_um_provisional": 6.0,
+    "Rp_um_provisional": 5.0
+  },
+  "fixed": {
+    "OCP": "C/50-selected Ai2020 nominal anode + old cathode",
+    "initial_SOC": "per-test preceding-rest equivalent SOC",
+    "negative_hysteresis": false,
+    "positive_hysteresis": true,
+    "porosity": "unchanged",
+    "kinetics_diffusion_bruggeman": "unchanged"
+  },
+  "interpretation": {
+    "raw": "c_s,max fixed; implied Qn/Qp change with thickness and can absorb loading error",
+    "Q_preserved": "c_s,max inversely scaled; Qn/Qp fixed and only geometry/transport changes"
+  },
+  "summary": [
+    {
+      "Scenario": "Current baseline",
+      "mean_center_RMSE_mV": 15.15714821848357,
+      "capacity_RMSE_pct": 3.275180645489435,
+      "mean_capacity_error_mAh": -51.24256855634372,
+      "mean_abs_capacity_error_mAh": 51.24256855634372,
+      "max_abs_capacity_error_mAh": 79.28560185170875,
+      "Ln_um": 76.5,
+      "Lp_um": 68.0,
+      "Rn_um": 5.0,
+      "Rp_um": 3.0,
+      "negative_inventory_ratio": 1.0,
+      "positive_inventory_ratio": 1.0,
+      "Dsn_m2_s": 2.1e-14,
+      "Dsp_m2_s": 4.4e-14
+    },
+    {
+      "Scenario": "Nominal thickness + SEM Rn only",
+      "mean_center_RMSE_mV": 17.704317030272033,
+      "capacity_RMSE_pct": 4.839419991865244,
+      "mean_capacity_error_mAh": -78.40727385635131,
+      "mean_abs_capacity_error_mAh": 78.40727385635131,
+      "max_abs_capacity_error_mAh": 123.03959164602651,
+      "Ln_um": 76.5,
+      "Lp_um": 68.0,
+      "Rn_um": 6.0,
+      "Rp_um": 3.0,
+      "negative_inventory_ratio": 1.0,
+      "positive_inventory_ratio": 1.0,
+      "Dsn_m2_s": 2.1e-14,
+      "Dsp_m2_s": 4.4e-14
+    },
+    {
+      "Scenario": "Nominal thickness + SEM Rp only",
+      "mean_center_RMSE_mV": 26.974149680930125,
+      "capacity_RMSE_pct": 6.5258001693931655,
+      "mean_capacity_error_mAh": -90.09072562886722,
+      "mean_abs_capacity_error_mAh": 90.09072562886723,
+      "max_abs_capacity_error_mAh": 184.07992064009005,
+      "Ln_um": 76.5,
+      "Lp_um": 68.0,
+      "Rn_um": 5.0,
+      "Rp_um": 5.0,
+      "negative_inventory_ratio": 1.0,
+      "positive_inventory_ratio": 1.0,
+      "Dsn_m2_s": 2.1e-14,
+      "Dsp_m2_s": 4.4e-14
+    },
+    {
+      "Scenario": "Nominal thickness + SEM radii",
+      "mean_center_RMSE_mV": 34.91221135353744,
+      "capacity_RMSE_pct": 8.20113534120047,
+      "mean_capacity_error_mAh": -118.51887531615775,
+      "mean_abs_capacity_error_mAh": 118.51887531615778,
+      "max_abs_capacity_error_mAh": 233.20366860561293,
+      "Ln_um": 76.5,
+      "Lp_um": 68.0,
+      "Rn_um": 6.0,
+      "Rp_um": 5.0,
+      "negative_inventory_ratio": 1.0,
+      "positive_inventory_ratio": 1.0,
+      "Dsn_m2_s": 2.1e-14,
+      "Dsp_m2_s": 4.4e-14
+    },
+    {
+      "Scenario": "Nominal thickness + SEM radii tau-preserved",
+      "mean_center_RMSE_mV": 31.292523752185957,
+      "capacity_RMSE_pct": 7.115568303228682,
+      "mean_capacity_error_mAh": -97.09451081380507,
+      "mean_abs_capacity_error_mAh": 97.09451081380507,
+      "max_abs_capacity_error_mAh": 201.9894889038676,
+      "Ln_um": 76.5,
+      "Lp_um": 68.0,
+      "Rn_um": 6.0,
+      "Rp_um": 5.0,
+      "negative_inventory_ratio": 1.0,
+      "positive_inventory_ratio": 1.0,
+      "Dsn_m2_s": 3.0240000000000005e-14,
+      "Dsp_m2_s": 1.222222222222222e-13
+    },
+    {
+      "Scenario": "SEM thickness raw",
+      "mean_center_RMSE_mV": 17.999443923821776,
+      "capacity_RMSE_pct": 6.3660044119906,
+      "mean_capacity_error_mAh": -94.33657604203853,
+      "mean_abs_capacity_error_mAh": 94.33657604203853,
+      "max_abs_capacity_error_mAh": 194.7597229156246,
+      "Ln_um": 81.52,
+      "Lp_um": 62.965,
+      "Rn_um": 5.0,
+      "Rp_um": 3.0,
+      "negative_inventory_ratio": 1.0656209150326796,
+      "positive_inventory_ratio": 0.9259558823529412,
+      "Dsn_m2_s": 2.1e-14,
+      "Dsp_m2_s": 4.4e-14
+    },
+    {
+      "Scenario": "SEM thickness + radii raw",
+      "mean_center_RMSE_mV": 42.89613075907662,
+      "capacity_RMSE_pct": 10.909095329620548,
+      "mean_capacity_error_mAh": -156.6483572819796,
+      "mean_abs_capacity_error_mAh": 156.6483572819796,
+      "max_abs_capacity_error_mAh": 282.0209474420083,
+      "Ln_um": 81.52,
+      "Lp_um": 62.965,
+      "Rn_um": 6.0,
+      "Rp_um": 5.0,
+      "negative_inventory_ratio": 1.0656209150326796,
+      "positive_inventory_ratio": 0.9259558823529412,
+      "Dsn_m2_s": 2.1e-14,
+      "Dsp_m2_s": 4.4e-14
+    },
+    {
+      "Scenario": "SEM thickness + radii raw tau-preserved",
+      "mean_center_RMSE_mV": 39.130006725601724,
+      "capacity_RMSE_pct": 9.945921683390743,
+      "mean_capacity_error_mAh": -138.32267716863376,
+      "mean_abs_capacity_error_mAh": 138.32267716863382,
+      "max_abs_capacity_error_mAh": 251.0601010992073,
+      "Ln_um": 81.52,
+      "Lp_um": 62.965,
+      "Rn_um": 6.0,
+      "Rp_um": 5.0,
+      "negative_inventory_ratio": 1.0656209150326796,
+      "positive_inventory_ratio": 0.9259558823529412,
+      "Dsn_m2_s": 3.0240000000000005e-14,
+      "Dsp_m2_s": 1.222222222222222e-13
+    },
+    {
+      "Scenario": "SEM thickness Q-preserved",
+      "mean_center_RMSE_mV": 15.772829097553313,
+      "capacity_RMSE_pct": 3.7344175107662565,
+      "mean_capacity_error_mAh": -56.578889481445884,
+      "mean_abs_capacity_error_mAh": 56.578889481445884,
+      "max_abs_capacity_error_mAh": 96.35433547328675,
+      "Ln_um": 81.52,
+      "Lp_um": 62.965,
+      "Rn_um": 5.0,
+      "Rp_um": 3.0,
+      "negative_inventory_ratio": 1.0,
+      "positive_inventory_ratio": 1.0,
+      "Dsn_m2_s": 2.1e-14,
+      "Dsp_m2_s": 4.4e-14
+    },
+    {
+      "Scenario": "SEM thickness + radii Q-preserved",
+      "mean_center_RMSE_mV": 36.67393700787368,
+      "capacity_RMSE_pct": 8.63990578583147,
+      "mean_capacity_error_mAh": -123.3830665036412,
+      "mean_abs_capacity_error_mAh": 123.3830665036412,
+      "max_abs_capacity_error_mAh": 248.50703680249265,
+      "Ln_um": 81.52,
+      "Lp_um": 62.965,
+      "Rn_um": 6.0,
+      "Rp_um": 5.0,
+      "negative_inventory_ratio": 1.0,
+      "positive_inventory_ratio": 1.0,
+      "Dsn_m2_s": 2.1e-14,
+      "Dsp_m2_s": 4.4e-14
+    },
+    {
+      "Scenario": "SEM thickness + radii Q-preserved tau-preserved",
+      "mean_center_RMSE_mV": 33.02620977167236,
+      "capacity_RMSE_pct": 7.567335700666377,
+      "mean_capacity_error_mAh": -102.36061588263522,
+      "mean_abs_capacity_error_mAh": 102.36061588263522,
+      "max_abs_capacity_error_mAh": 217.60825646382352,
+      "Ln_um": 81.52,
+      "Lp_um": 62.965,
+      "Rn_um": 6.0,
+      "Rp_um": 5.0,
+      "negative_inventory_ratio": 1.0,
+      "positive_inventory_ratio": 1.0,
+      "Dsn_m2_s": 3.0240000000000005e-14,
+      "Dsp_m2_s": 1.222222222222222e-13
+    }
+  ],
+  "direction_summary": [
+    {
+      "Scenario": "Current baseline",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 19.991155935063492,
+      "capacity_RMSE_pct": 4.408218594043948,
+      "mean_capacity_error_mAh": -77.5443416902378,
+      "mean_abs_capacity_error_mAh": 77.5443416902378
+    },
+    {
+      "Scenario": "Current baseline",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 10.323140501903644,
+      "capacity_RMSE_pct": 1.4216980510299548,
+      "mean_capacity_error_mAh": -24.94079542244965,
+      "mean_abs_capacity_error_mAh": 24.94079542244965
+    },
+    {
+      "Scenario": "Nominal thickness + SEM Rn only",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 20.023492093236555,
+      "capacity_RMSE_pct": 6.3015248878041055,
+      "mean_capacity_error_mAh": -106.80548340930973,
+      "mean_abs_capacity_error_mAh": 106.80548340930973
+    },
+    {
+      "Scenario": "Nominal thickness + SEM Rn only",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 15.38514196730751,
+      "capacity_RMSE_pct": 2.6703475061713315,
+      "mean_capacity_error_mAh": -50.00906430339288,
+      "mean_abs_capacity_error_mAh": 50.00906430339288
+    },
+    {
+      "Scenario": "Nominal thickness + SEM Rp only",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 23.877102997330766,
+      "capacity_RMSE_pct": 9.071273970332113,
+      "mean_capacity_error_mAh": -149.61316157397775,
+      "mean_abs_capacity_error_mAh": 149.61316157397775
+    },
+    {
+      "Scenario": "Nominal thickness + SEM Rp only",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 30.07119636452948,
+      "capacity_RMSE_pct": 1.6982709609714202,
+      "mean_capacity_error_mAh": -30.56828968375669,
+      "mean_abs_capacity_error_mAh": 30.56828968375669
+    },
+    {
+      "Scenario": "Nominal thickness + SEM radii",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 30.927058645547785,
+      "capacity_RMSE_pct": 11.220554753110779,
+      "mean_capacity_error_mAh": -181.68434516402894,
+      "mean_abs_capacity_error_mAh": 181.68434516402897
+    },
+    {
+      "Scenario": "Nominal thickness + SEM radii",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 38.89736406152709,
+      "capacity_RMSE_pct": 2.9353692786117738,
+      "mean_capacity_error_mAh": -55.35340546828656,
+      "mean_abs_capacity_error_mAh": 55.35340546828656
+    },
+    {
+      "Scenario": "Nominal thickness + SEM radii tau-preserved",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 28.545128155851188,
+      "capacity_RMSE_pct": 9.915240615714747,
+      "mean_capacity_error_mAh": -163.2139883308972,
+      "mean_abs_capacity_error_mAh": 163.2139883308972
+    },
+    {
+      "Scenario": "Nominal thickness + SEM radii tau-preserved",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 34.039919348520726,
+      "capacity_RMSE_pct": 1.7177392375753848,
+      "mean_capacity_error_mAh": -30.97503329671299,
+      "mean_abs_capacity_error_mAh": 30.97503329671299
+    },
+    {
+      "Scenario": "SEM thickness raw",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 19.19690184267499,
+      "capacity_RMSE_pct": 8.915107798790324,
+      "mean_capacity_error_mAh": -163.88426008696825,
+      "mean_abs_capacity_error_mAh": 163.88426008696828
+    },
+    {
+      "Scenario": "SEM thickness raw",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 16.801986004968565,
+      "capacity_RMSE_pct": 1.254144043926195,
+      "mean_capacity_error_mAh": -24.788891997108802,
+      "mean_abs_capacity_error_mAh": 24.788891997108802
+    },
+    {
+      "Scenario": "SEM thickness + radii raw",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 36.63037860624201,
+      "capacity_RMSE_pct": 15.236326834336039,
+      "mean_capacity_error_mAh": -265.39268269876374,
+      "mean_abs_capacity_error_mAh": 265.39268269876374
+    },
+    {
+      "Scenario": "SEM thickness + radii raw",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 49.16188291191122,
+      "capacity_RMSE_pct": 2.423028356992407,
+      "mean_capacity_error_mAh": -47.90403186519546,
+      "mean_abs_capacity_error_mAh": 47.90403186519546
+    },
+    {
+      "Scenario": "SEM thickness + radii raw tau-preserved",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 33.87335760434741,
+      "capacity_RMSE_pct": 13.97940592996528,
+      "mean_capacity_error_mAh": -246.71656420811527,
+      "mean_abs_capacity_error_mAh": 246.71656420811527
+    },
+    {
+      "Scenario": "SEM thickness + radii raw tau-preserved",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 44.38665584685604,
+      "capacity_RMSE_pct": 1.5552897188420756,
+      "mean_capacity_error_mAh": -29.928790129152286,
+      "mean_abs_capacity_error_mAh": 29.928790129152286
+    },
+    {
+      "Scenario": "SEM thickness Q-preserved",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 19.788882004903403,
+      "capacity_RMSE_pct": 5.061050726495489,
+      "mean_capacity_error_mAh": -86.93302518451515,
+      "mean_abs_capacity_error_mAh": 86.93302518451515
+    },
+    {
+      "Scenario": "SEM thickness Q-preserved",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 11.75677619020322,
+      "capacity_RMSE_pct": 1.5091434104400967,
+      "mean_capacity_error_mAh": -26.224753778376634,
+      "mean_abs_capacity_error_mAh": 26.224753778376634
+    },
+    {
+      "Scenario": "SEM thickness + radii Q-preserved",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 31.78289405702338,
+      "capacity_RMSE_pct": 11.837907013009199,
+      "mean_capacity_error_mAh": -190.03440310499911,
+      "mean_abs_capacity_error_mAh": 190.03440310499911
+    },
+    {
+      "Scenario": "SEM thickness + radii Q-preserved",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 41.564979958723995,
+      "capacity_RMSE_pct": 3.02653292191509,
+      "mean_capacity_error_mAh": -56.73172990228329,
+      "mean_abs_capacity_error_mAh": 56.73172990228329
+    },
+    {
+      "Scenario": "SEM thickness + radii Q-preserved tau-preserved",
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 29.368259661077346,
+      "capacity_RMSE_pct": 10.538959075837955,
+      "mean_capacity_error_mAh": -171.70399049137055,
+      "mean_abs_capacity_error_mAh": 171.70399049137055
+    },
+    {
+      "Scenario": "SEM thickness + radii Q-preserved tau-preserved",
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 36.68415988226737,
+      "capacity_RMSE_pct": 1.8599679596629082,
+      "mean_capacity_error_mAh": -33.0172412738999,
+      "mean_abs_capacity_error_mAh": 33.0172412738999
+    }
+  ]
+}

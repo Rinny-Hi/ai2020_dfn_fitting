@@ -234,6 +234,9 @@ def run_scenario(
 
 
 def transferred_capacity(data, q_meas, charge):
+    if "Q_Ah" in data:
+        capacity = np.asarray(data["Q_Ah"], dtype=float)
+        return capacity - capacity[0]
     soc = np.asarray(data["SOC"], dtype=float)
     return soc * q_meas if charge else (1.0 - soc) * q_meas
 

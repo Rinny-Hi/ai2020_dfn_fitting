@@ -296,6 +296,10 @@ def run_dfn(
     return {
         "t_min": time_s / 60.0,
         "V": voltage,
+        # Preserve the unbounded transferred charge for endpoint-capacity
+        # scoring.  SOC is clipped for plotting only and must not be used to
+        # reconstruct capacity when a branch exceeds the reference Qcell.
+        "Q_Ah": capacity,
         "SOC": np.clip(soc, 0.0, 1.0),
         "negative_surface_sto_min": float(np.nanmin(negative_surface)),
         "negative_surface_sto_max": float(np.nanmax(negative_surface)),

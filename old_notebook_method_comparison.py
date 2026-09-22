@@ -284,6 +284,10 @@ def load_old_dynamic_data(
             output[(rate, charge)] = {
                 "t_min": pd.to_numeric(selected["t_min"], errors="coerce").to_numpy(dtype=float),
                 "V": pd.to_numeric(selected["V_V"], errors="coerce").to_numpy(dtype=float),
+                "I_A": pd.to_numeric(selected["I_A"], errors="coerce").to_numpy(dtype=float),
+                # Keep the measured branch capacity itself.  Reconstructing
+                # it later from clipped SOC can silently cap Q at q_meas.
+                "Q_Ah": capacity,
                 "SOC": np.clip(soc, 0.0, 1.0),
             }
     return output

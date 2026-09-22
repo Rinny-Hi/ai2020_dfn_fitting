@@ -7,8 +7,8 @@ one coupled quantity:
 
 For every capacity candidate only the absolute window positions are re-fitted to
 the C/50 qOCV. Dynamic scoring uses the measured branch current and the voltage
-at the end of the immediately preceding rest to initialise SOC. Charge data are
-used for the final kn choice and discharge data remain validation data.
+at the end of the immediately preceding rest to initialise SOC. The kn scan is
+diagnostic only; the current experimental value is retained pending Rct input.
 """
 
 from __future__ import annotations
@@ -38,14 +38,6 @@ RESULTS = ROOT / "results" / "260921_capacity_consistent_qn_qp_kn_refinement"
 RESULTS.mkdir(parents=True, exist_ok=True)
 
 NOMINAL_CAPACITY_AH = 2.28
-ACTUAL_MEAN_CURRENT_A = {
-    (0.5, True): 1.134967,
-    (0.5, False): 1.130667,
-    (1.0, True): 2.258038,
-    (1.0, False): 2.242548,
-    (2.0, True): 4.451286,
-    (2.0, False): 4.412905,
-}
 
 QN_SCALES = (0.98, 1.00, 1.02, 1.04)
 QP_SCALES = (1.00, 1.02, 1.04, 49943.0 / 47467.25702278789, 1.06)
@@ -170,7 +162,10 @@ def run_candidate(
                 model["v_qocv"], model["soc"], rest_v
             )
             local_stage = priority.stage_at_soc(stage, z_init, charge)
-            simulation_rate = ACTUAL_MEAN_CURRENT_A[(rate, charge)] / NOMINAL_CAPACITY_AH
+            measured_current = float(
+                np.nanmedian(np.abs(experiment[(rate, charge)]["I_A"]))
+            )
+            simulation_rate = measured_current / NOMINAL_CAPACITY_AH
             print(f"{name} | {rate:g}C {direction} | z={z_init:.5f}", flush=True)
             simulation = ehq.run_dfn(
                 simulation_rate,
@@ -192,6 +187,7 @@ def run_candidate(
                     "Candidate": name,
                     "C_rate": rate,
                     "Direction": direction,
+                    "measured_current_A": measured_current,
                     "simulation_rate_C": simulation_rate,
                     "initial_SOC": z_init,
                     **metric,
@@ -346,13 +342,11 @@ def main() -> None:
         kn_select[f"charge_{metric}"] = kn_wide[(metric, "Charge")]
         kn_select[f"discharge_{metric}"] = kn_wide[(metric, "Discharge")]
     kn_select = kn_select.reset_index()
-    kn_feasible = kn_select[kn_select.charge_capacity_RMSE_pct <= 3.1]
-    if kn_feasible.empty:
-        kn_choice = kn_select.loc[kn_select.charge_capacity_RMSE_pct.idxmin()]
-        kn_rule = "minimum charge capacity RMSE fallback"
-    else:
-        kn_choice = kn_feasible.loc[kn_feasible.charge_mean_center_RMSE_mV.idxmin()]
-        kn_rule = "minimum charge voltage RMSE subject to charge capacity RMSE <= 3.1%"
+    # This scan is diagnostic only.  Do not turn an endpoint-capacity improvement
+    # into a new kinetic property; retain the current experimental value until the
+    # SOC-resolved Rct analysis supplies an independently identified k_n.
+    kn_choice = kn_select.iloc[np.argmin(np.abs(kn_select.kn - current.KN_PREF))]
+    kn_rule = "retain current experimental kn; scan is diagnostic pending SOC-resolved Rct"
     kn_select["selected"] = np.isclose(kn_select.kn, float(kn_choice.kn))
     kn_select.to_csv(RESULTS / "kn_candidate_selection.csv", index=False, encoding="utf-8-sig")
 
@@ -387,7 +381,7 @@ def main() -> None:
     fig.savefig(RESULTS / "capacity_and_kn_tradeoff.png", dpi=220)
     plt.close(fig)
 
-    # Final selected curves
+    # Capacity-feasibility curves at the retained experimental kn
     final_runs = kn_runs[float(kn_choice.kn)]
     fig, axes = plt.subplots(2, 3, figsize=(16, 8.5), constrained_layout=True)
     for col, rate in enumerate(ga.RATES):
@@ -398,7 +392,7 @@ def main() -> None:
             q_exp = priority.transferred_capacity(exp, qcell, charge)
             q_sim = priority.transferred_capacity(sim, qcell, charge)
             ax.plot(q_exp, exp["V"], "k", lw=2.3, label="Experiment")
-            ax.plot(q_sim, sim["V"], color="#0072B2", lw=2.0, label="Refined model")
+            ax.plot(q_sim, sim["V"], color="#0072B2", lw=2.0, label="Feasibility model")
             ax.set_title(f"{rate:g}C {'Charge' if charge else 'Discharge'}")
             ax.set_xlabel("Transferred capacity [Ah]")
             ax.set_ylabel("Voltage [V]")
@@ -411,7 +405,7 @@ def main() -> None:
         "method": {
             "capacity_relation": "delta_x=Qcell/Qn, delta_y=Qcell/Qp; c_s_max scales with Qn/Qp at fixed geometry",
             "initial_SOC": "candidate qOCV inverse of the immediately preceding rest-end voltage",
-            "current": "measured branch mean current",
+            "current": "measured branch median absolute CC current",
             "hysteresis": "negative off; positive on with preceding-branch history state",
             "capacity_selection_rule": selection_rule,
             "kn_selection_rule": kn_rule,
@@ -423,21 +417,22 @@ def main() -> None:
             "csp_max_mol_m3": float(model0["csp_max"]),
             **stage0,
         },
-        "selected_capacity_candidate": capacity_choice.to_dict(),
-        "selected_stage": chosen_stage,
-        "selected_csmax": {
+        "adoption_decision": "retain baseline; Qn/Qp and kn scans are feasibility diagnostics only",
+        "best_capacity_feasibility_candidate": capacity_choice.to_dict(),
+        "feasibility_stage": chosen_stage,
+        "feasibility_csmax": {
             "negative_mol_m3": float(chosen_model["csn_max"]),
             "positive_mol_m3": float(chosen_model["csp_max"]),
         },
-        "selected_kn": kn_choice.to_dict(),
+        "retained_kn": kn_choice.to_dict(),
         "qOCV_metrics": {key: value for key, value in chosen_fit.items() if key != "voltage"},
     }
     (RESULTS / "capacity_consistent_refinement_report.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print("\nSELECTED CAPACITY CANDIDATE")
+    print("\nBEST CAPACITY FEASIBILITY CANDIDATE (NOT ADOPTED)")
     print(capacity_choice.to_string())
-    print("\nSELECTED KN")
+    print("\nRETAINED EXPERIMENTAL KN")
     print(kn_choice.to_string())
     print("Saved to", RESULTS)
 
