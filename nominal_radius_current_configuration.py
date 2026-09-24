@@ -32,7 +32,15 @@ RN_UM = 5.0
 RP_UM = 3.0
 LN_UM = 76.5
 LP_UM = 68.0
+# Simulation baselines, not equally trusted physical measurements.
+# The anode half-cell Rct route was rejected on 2026-09-25 because the harvested
+# anode was not reproducible and retained visible residue after extended washing.
+# KN_PREF therefore remains only as a legacy comparison value until later fitting.
 KN_PREF = 7.40e-7
+# KP_PREF is the legacy default. Cathode Rct re-evaluation produced provisional
+# alternatives 4.18e-7 (physical c_s,max representation) and 4.32e-7 (the same
+# Rct re-expressed with the current model's effective c_s,max); see
+# results/260924_kp_eis_recalculation/README_KO.md.
 KP_PREF = 3.12e-7
 AI2020_MREF = 1.0e-11 * 96485.33212
 BRUGG_N = 2.914

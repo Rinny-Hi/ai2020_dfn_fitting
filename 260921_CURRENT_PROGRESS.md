@@ -1,5 +1,7 @@
 # 260921 DFN/OCP 재검토 진행 현황
 
+> **2026-09-25 상태 변경:** 이 문서는 당시 계산 이력 보관용이다. 최신 적용값, 후보값, 폐기값과 새 PC 인수인계는 [`260925_HANDOFF_CURRENT_STATE_KO.md`](260925_HANDOFF_CURRENT_STATE_KO.md)를 기준으로 한다. 음극 half-cell의 재현성이 낮고 세척 후에도 자국이 남아 있으므로, 이 문서에 기재된 음극 Rct 기반 `kn` 해석은 폐기했다. 코드의 `KN_PREF=7.40e-7`은 비교용 임시 baseline이며 확정 물성값이 아니다.
+
 ## 1. 범위와 현재 기준
 
 신규 GITT는 재현성과 용량 차이 검토가 끝날 때까지 현재 모델 선정에서 제외했다. 기존 저율 full-cell 데이터, 기존 half-cell OCP, 0.5C/1C/2C 충·방전 데이터를 사용해 OCP, stoichiometry window, transport/kinetic parameter의 영향을 분리했다.
