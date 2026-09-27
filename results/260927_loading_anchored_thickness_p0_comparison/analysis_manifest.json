@@ -1,0 +1,43 @@
+{
+  "coating_mass_definition": "single-face coating mass = (punched electrode - collector) / 2",
+  "new_mass_mg": {
+    "Negative": 10.1,
+    "Positive": 17.35
+  },
+  "old_mass_mg": {
+    "Negative": 10.4,
+    "Positive": 17.25
+  },
+  "mass_ratio": {
+    "Negative": 0.971153846153846,
+    "Positive": 1.0057971014492755
+  },
+  "punch_diameter_mm": 10.0,
+  "loading_mg_cm2": {
+    "Negative": 12.859719401825144,
+    "Positive": 22.090706101155074
+  },
+  "fixed": {
+    "OCP": "C/50 selected nominal anode + old cathode",
+    "Rn_Rp_um": [
+      3.7542,
+      4.2387
+    ],
+    "Dsn_Dsp_m2_s": [
+      2.1e-14,
+      4.4e-14
+    ],
+    "kn_kp": [
+      9.648533212e-07,
+      4.18e-07
+    ],
+    "Bruggeman_n_p_s": [
+      2.914,
+      1.83,
+      1.5
+    ],
+    "hysteresis": "negative off, positive off",
+    "initialization": "preceding-rest OCP inversion"
+  },
+  "limitation": "active/additive mass fractions unavailable; absolute porosity is represented by scaling the established effective solid inventory by the measured new/old coating-mass ratio"
+}

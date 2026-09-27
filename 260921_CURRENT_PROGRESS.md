@@ -1,6 +1,6 @@
 # 260921 DFN/OCP 재검토 진행 현황
 
-> **2026-09-25 상태 변경:** 이 문서는 당시 계산 이력 보관용이다. 최신 적용값, 후보값, 폐기값과 새 PC 인수인계는 [`260925_HANDOFF_CURRENT_STATE_KO.md`](260925_HANDOFF_CURRENT_STATE_KO.md)를 기준으로 한다. 음극 half-cell의 재현성이 낮고 세척 후에도 자국이 남아 있으므로, 이 문서에 기재된 음극 Rct 기반 `kn` 해석은 폐기했다. 코드의 `KN_PREF=7.40e-7`은 비교용 임시 baseline이며 확정 물성값이 아니다.
+> **2026-09-27 상태 변경:** 이 문서는 당시 계산 이력 보관용이다. 최신 적용값, GITT 0% 기준, fitting subset/bound와 새 채팅 인수인계는 [`260927_HANDOFF_CURRENT_STATE_KO.md`](260927_HANDOFF_CURRENT_STATE_KO.md)를 기준으로 한다. 음극 half-cell의 재현성이 낮아 Rct 기반 `kn` 해석은 폐기했으며, `kn`은 bounded fitting 대상으로 남겼다.
 
 ## 1. 범위와 현재 기준
 

@@ -1,0 +1,6 @@
+﻿Parameter,Selected_count,Total_cases,Selection_ratio,Class
+Dsn,9,9,1.0,core
+brugg_n,9,9,1.0,core
+kn,9,9,1.0,core
+Dsp,0,9,0.0,low-priority
+kp,0,9,0.0,low-priority

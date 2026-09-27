@@ -1,0 +1,33 @@
+{
+  "source_files": {
+    "old": [
+      "C:\\Users\\user\\OneDrive\\01. 적응형 충전 프로토콜\\4. Enertech 파우치셀 실험데이터\\260703 실험데이터\\260703 BoL 데이터 6-5.xlsx",
+      "C:\\Users\\user\\OneDrive\\01. 적응형 충전 프로토콜\\4. Enertech 파우치셀 실험데이터\\260703 실험데이터\\260703 BoL 데이터 6-6.xlsx",
+      "C:\\Users\\user\\OneDrive\\01. 적응형 충전 프로토콜\\4. Enertech 파우치셀 실험데이터\\260703 실험데이터\\260703 BoL 데이터 6-8.xlsx"
+    ],
+    "new": [
+      "E:\\예린\\260927 6-1 0.5C 1C 2C.xlsx",
+      "E:\\예린\\260927 6-2 0.5C 1C 2C.xlsx"
+    ]
+  },
+  "definitions": {
+    "curve_error": "absolute transferred-capacity domain over 99.5% of common support",
+    "center_error": "absolute 0.10-0.70 times 2.356528 Ah target capacity",
+    "capacity_error": "model CC endpoint minus experimental CC endpoint",
+    "candidate_selection": "four-metric Pareto only; no weighted scalar score"
+  },
+  "fixed_parameters": {
+    "Dsn_m2_s": 2.1e-14,
+    "Dsp_m2_s": 4.4e-14,
+    "brugg_n": 2.914,
+    "brugg_p": 1.83,
+    "brugg_s": 1.5,
+    "kp_prefactor": 4.18e-07,
+    "OCP": "Ai2020 nominal anode + old cathode; negative hysteresis off"
+  },
+  "counts": {
+    "experimental_branches": 30,
+    "candidate_rows": 480,
+    "candidates": 16
+  }
+}

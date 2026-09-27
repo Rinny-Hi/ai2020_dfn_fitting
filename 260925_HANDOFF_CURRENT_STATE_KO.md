@@ -1,5 +1,7 @@
 # 260925 Enertech DFN fitting 인수인계
 
+> **후속 문서 있음:** 2026-09-27 이후에는 [`260927_HANDOFF_CURRENT_STATE_KO.md`](260927_HANDOFF_CURRENT_STATE_KO.md)를 우선한다.
+
 이 문서는 다른 PC와 새 Codex 대화에서 현재 작업을 그대로 이어가기 위한 기준 문서다. 과거 문서의 값과 충돌할 경우 이 문서를 우선한다.
 
 ## 1. 저장소와 브랜치
@@ -259,4 +261,3 @@ epsilon_s + epsilon_e + epsilon_binder/carbon = 1
 - PyBaMM 25.10 이후 hysteresis decay-rate 정의 변경 경고가 발생한다. 같은 버전으로 비교해야 한다.
 - 원본 Excel 경로와 데이터 선택 cycle을 바꾸면 결과가 달라지므로 스크립트의 절대경로와 cycle filtering을 확인한다.
 - `outputs/`는 현재 Git에 포함하지 않은 로컬 산출물 폴더다.
-

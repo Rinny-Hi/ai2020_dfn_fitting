@@ -1,0 +1,28 @@
+﻿Scale_eps,N_points,Beta,Selected_parameters,N_selected
+0.02,100,0.8,"kn, Dsn",2
+0.02,100,0.9,"kn, brugg_n, Dsn",3
+0.02,100,0.95,"kn, brugg_n, Dsn",3
+0.02,250,0.8,"kn, Dsn",2
+0.02,250,0.9,"kn, brugg_n, Dsn",3
+0.02,250,0.95,"kn, brugg_n, Dsn",3
+0.02,500,0.8,"kn, Dsn",2
+0.02,500,0.9,"kn, brugg_n, Dsn",3
+0.02,500,0.95,"kn, brugg_n, Dsn",3
+0.05,100,0.8,"kn, Dsn",2
+0.05,100,0.9,"kn, brugg_n, Dsn",3
+0.05,100,0.95,"kn, brugg_n, Dsn",3
+0.05,250,0.8,"kn, Dsn",2
+0.05,250,0.9,"kn, brugg_n, Dsn",3
+0.05,250,0.95,"kn, brugg_n, Dsn",3
+0.05,500,0.8,"kn, Dsn",2
+0.05,500,0.9,"kn, brugg_n, Dsn",3
+0.05,500,0.95,"kn, brugg_n, Dsn",3
+0.1,100,0.8,"kn, Dsn",2
+0.1,100,0.9,"kn, brugg_n, Dsn",3
+0.1,100,0.95,"kn, brugg_n, Dsn",3
+0.1,250,0.8,"kn, Dsn",2
+0.1,250,0.9,"kn, brugg_n, Dsn",3
+0.1,250,0.95,"kn, brugg_n, Dsn",3
+0.1,500,0.8,"kn, Dsn",2
+0.1,500,0.9,"kn, brugg_n, Dsn",3
+0.1,500,0.95,"kn, brugg_n, Dsn",3

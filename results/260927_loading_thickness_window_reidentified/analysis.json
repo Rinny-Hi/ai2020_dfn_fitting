@@ -1,0 +1,30 @@
+{
+  "old_stage": {
+    "x0": 0.0038062237463119,
+    "x100": 0.9542212582298352,
+    "y100": 0.4316424031304631,
+    "y0": 0.9707457852378696
+  },
+  "new_stage": {
+    "x0": 0.0037448916993285987,
+    "x100": 0.9823900757219662,
+    "y100": 0.4370281405280221,
+    "y0": 0.973024298531063
+  },
+  "window_metrics": {
+    "Qn_Ah": 2.407948963306797,
+    "Qp_Ah": 4.396538335446671,
+    "delta_x": 0.9786451840226377,
+    "delta_y": 0.5359961580030409,
+    "qOCV_MAE_mV": 6.241938399678232,
+    "qOCV_RMSE_mV": 7.27395781517787,
+    "endpoint_0_mV": -9.999999999998899,
+    "endpoint_100_mV": 10.000000000004228,
+    "optimizer_success": true
+  },
+  "mass_ratio": {
+    "Negative": 0.971153846153846,
+    "Positive": 1.0057971014492755
+  },
+  "method": "Qn/Qp scaled by measured single-face coating-mass ratios; window widths fixed by Qcell/Q; x0 and y100 re-aligned to C/50 qOCV with <=10 mV endpoint constraints"
+}

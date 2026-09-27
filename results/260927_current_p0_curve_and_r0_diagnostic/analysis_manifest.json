@@ -1,0 +1,5 @@
+{
+  "baseline": "P0 anchored reference",
+  "scope": "July BoL n=3, CC-only, no dynamic fitting",
+  "r0_interpretation": "diagnostic only; an additional R0 should be added only if unexplained jump/I is positive and consistent across cells, rates, and directions"
+}
