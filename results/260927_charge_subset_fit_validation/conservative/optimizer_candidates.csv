@@ -1,0 +1,8 @@
+﻿Candidate,Algorithm,Success,Message,NFEV_reported,Wall_s,Charge_objective_RMSE_mV,Feasible,Minimum_time_margin_min,Dsn,kn,brugg_n
+TRF 1 - all-range GITT,Multi-start TRF,True,`xtol` termination condition is satisfied.,18,44.79760559997521,53.99699915122374,True,0.0006672035708419344,7.466200473885764e-14,1.4502357402082455e-06,2.914
+TRF 2 - 10pct-floor GITT,Multi-start TRF,True,Both `ftol` and `xtol` termination conditions are satisfied.,20,50.00112679996528,54.06336061883441,True,0.00010869267194379972,7.048729100157433e-14,1.4508363826132417e-06,2.914
+TRF 3 - bound center,Multi-start TRF,True,`xtol` termination condition is satisfied.,21,52.960258100007195,54.04658249984782,True,0.0012263846692803781,7.200130026450702e-14,1.4511301992682044e-06,2.914
+TRF 4 - log-space LHS 1,Multi-start TRF,True,Both `ftol` and `xtol` termination conditions are satisfied.,20,53.38939699996263,54.280354439906496,True,0.0003167726804349513,6.009412577845069e-14,1.4537865571628078e-06,2.914
+TRF 5 - log-space LHS 2,Multi-start TRF,True,`xtol` termination condition is satisfied.,21,80.0910162999644,54.34863106174956,True,0.00047869662699895343,5.741098586247392e-14,1.4547853901147338e-06,2.914
+DE -> TRF,DE + TRF,True,`xtol` termination condition is satisfied.,14,209.43605289998231,53.998489985413904,True,0.0003755922726327299,7.441021817841776e-14,1.4501203335249799e-06,2.914
+DA -> TRF,DA + TRF,True,Both `ftol` and `xtol` termination conditions are satisfied.,16,291.71480869996594,54.06936869469174,True,0.0004381890407643141,7.03136802659251e-14,1.4510615367493978e-06,2.914

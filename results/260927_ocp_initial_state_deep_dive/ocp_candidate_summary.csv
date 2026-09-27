@@ -1,0 +1,10 @@
+﻿candidate,anode_source,cathode_source,qOCV_RMSE_2_98_mV,C50_branch_mean_MAE_10_90_mV,primary_eligible,anode_absolute_anchor,cathode_absolute_anchor,anode_directional_complete,cathode_directional_complete,mean_abs_rest_minus_coulomb_SOC_pp,mean_abs_rest_minus_qOCV_at_coulomb_mV
+nominal/old,nominal,old,6.24265734582685,6.7995730017163,True,True,True,False,True,0.5462127739447068,90.13700823469071
+old/old,old,old,8.219560518412882,9.084205302089927,True,True,True,True,True,0.5215186206604255,84.3369559081267
+old/nominal,old,nominal,12.49654557499931,11.539367283674377,True,True,True,True,False,0.660246249679619,103.05110194880223
+nominal/nominal,nominal,nominal,16.35417116754606,17.084780403937877,True,True,True,False,False,0.5784962379684812,92.13638110587502
+new/old,new,old,16.421710043667222,13.065536646825915,True,False,True,True,True,0.3962338950946733,62.831394684209094
+new/nominal,new,nominal,24.728601028289656,18.959941067813908,True,False,True,True,False,0.2989646014996893,47.41390101706348
+nominal/new,nominal,new,5.028047391208347,14.796875823960374,False,True,False,False,False,0.6138858490522685,100.09602127964337
+old/new,old,new,6.31966812277508,8.180393749439332,False,True,False,True,False,0.530477790381022,87.65814621306184
+new/new,new,new,16.641786267456496,13.421889488172251,False,False,False,True,False,0.30417485280718554,50.99541832124194

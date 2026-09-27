@@ -1,0 +1,15 @@
+{
+  "Model": "conservative",
+  "Best_candidate": "TRF 1 - all-range GITT",
+  "Charge_objective_RMSE_mV": 53.99699915122374,
+  "Minimum_time_margin_min": 0.0006672035708419344,
+  "Dsn": 7.466200473885764e-14,
+  "kn": 1.4502357402082455e-06,
+  "brugg_n": 2.914,
+  "Postfit_normalized_condition_number": 1.624877,
+  "Postfit_max_abs_pairwise_cosine": 0.450584,
+  "Charge_full_RMSE_mV": 53.6894793430117,
+  "Discharge_full_RMSE_mV": 49.50670436428442,
+  "Charge_capacity_RMSE_pct": 3.11273475082213,
+  "Discharge_capacity_RMSE_pct": 1.0887776149871822
+}

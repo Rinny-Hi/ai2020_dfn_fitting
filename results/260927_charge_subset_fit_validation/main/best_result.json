@@ -1,0 +1,15 @@
+{
+  "Model": "main",
+  "Best_candidate": "DA -> TRF",
+  "Charge_objective_RMSE_mV": 53.67553596740204,
+  "Minimum_time_margin_min": 0.0025526643909898894,
+  "Dsn": 7.681559813272426e-14,
+  "kn": 8.925614376526643e-07,
+  "brugg_n": 2.5236027820734614,
+  "Postfit_normalized_condition_number": 6.153188,
+  "Postfit_max_abs_pairwise_cosine": 0.936502,
+  "Charge_full_RMSE_mV": 52.89296991896321,
+  "Discharge_full_RMSE_mV": 62.08220675414622,
+  "Charge_capacity_RMSE_pct": 6.4497328378485195,
+  "Discharge_capacity_RMSE_pct": 1.5148748233840115
+}

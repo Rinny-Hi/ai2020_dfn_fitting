@@ -1,0 +1,68 @@
+{
+  "objective": "ordinary voltage residual on 100-point fixed physical-time grids for each July BoL cell and 0.5C/1C/2C charge branch",
+  "capacity_in_objective": false,
+  "grid_start": "first CC record reaching 95% of median command current",
+  "grid_end": "experimental CC cutoff",
+  "baseline": {
+    "Dsn": 4.170774145968247e-14,
+    "kn": 9.648533212e-07,
+    "brugg_n": 2.914
+  },
+  "fixed": {
+    "Dsp": 6.888175323807748e-14,
+    "brugg_p": 1.83,
+    "brugg_s": 1.5,
+    "kp": 5.899519906708763e-07
+  },
+  "baseline_full_grid_feasibility": {
+    "feasible": false,
+    "minimum_time_margin_min": -1.2136493818715053,
+    "time_margins_min": {
+      "0.5C_6-5": -0.8803160485381767,
+      "0.5C_6-6": -1.0303160485381824,
+      "0.5C_6-8": -1.2136493818715053,
+      "1C_6-5": 0.2825914982155595,
+      "1C_6-6": 0.03259149821555951,
+      "1C_6-8": -0.26740850178443765,
+      "2C_6-5": 0.4184676944658463,
+      "2C_6-6": 0.4184676944658463,
+      "2C_6-8": -0.18153230553415156
+    }
+  },
+  "baseline_full_grid_RMSE_mV": null,
+  "lsa_anchor": {
+    "Dsn": 4.170774145968247e-14,
+    "kn": 1.9e-06,
+    "brugg_n": 2.914
+  },
+  "lsa_anchor_reason": "nearest simple common anchor tested with baseline brugg_n and increased kn that leaves central finite differences feasible on every experimental-time grid",
+  "lsa_anchor_feasibility": {
+    "feasible": true,
+    "minimum_time_margin_min": 0.599390708192459,
+    "time_margins_min": {
+      "0.5C_6-5": 0.9327240415257876,
+      "0.5C_6-6": 0.7827240415257819,
+      "0.5C_6-8": 0.599390708192459,
+      "1C_6-5": 1.6829869819463426,
+      "1C_6-6": 1.4329869819463426,
+      "1C_6-8": 1.1329869819463454,
+      "2C_6-5": 1.5121494754324054,
+      "2C_6-6": 1.5121494754324054,
+      "2C_6-8": 0.9121494754324075
+    }
+  },
+  "lsa_anchor_RMSE_mV": 60.49802845516679,
+  "parameter_coordinate": "Dsn and kn log-bound normalized to [0,1]; brugg_n linear-bound normalized to [0,1]",
+  "finite_difference_steps": [
+    0.01,
+    0.025,
+    0.05
+  ],
+  "pass_rule": {
+    "full_column_rank": true,
+    "minimum_relative_sensitivity": 0.1,
+    "maximum_absolute_pairwise_sensitivity_cosine": 0.95,
+    "maximum_normalized_condition_number": 20.0,
+    "must_be_stable_across_all_steps": true
+  }
+}

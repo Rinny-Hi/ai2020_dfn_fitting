@@ -1,0 +1,4 @@
+﻿Label,Normalized_step,Parameter,Difference_scheme,RMS_mV_per_normalized_coordinate,Relative_sensitivity,Pass
+post-fit kn-only,0.01,kn,forward,105.65065410014194,1.0,True
+post-fit kn-only,0.025,kn,forward,105.35291025239353,1.0,True
+post-fit kn-only,0.05,kn,forward,104.8390799833557,1.0,True

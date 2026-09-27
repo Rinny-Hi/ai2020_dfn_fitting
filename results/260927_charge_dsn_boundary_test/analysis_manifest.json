@@ -1,0 +1,10 @@
+{
+  "purpose": "diagnose whether the first-pass Dsn upper bound truncates the voltage optimum",
+  "method": "single TRF restart from each first-pass best point with only Dsn upper bound expanded",
+  "capacity_in_objective": false,
+  "expanded_Dsn_bound_m2_s": [
+    1e-14,
+    1.2e-13
+  ],
+  "interpretation": "diagnostic range, not automatic physical acceptance range"
+}

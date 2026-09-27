@@ -1,0 +1,28 @@
+{
+  "selected_ocp": "Ai2020 nominal graphite equilibrium + old measured cathode equilibrium",
+  "final_parameters": {
+    "Dsn": 7.466200473885764e-14,
+    "kn": 1.4502357402082455e-06,
+    "brugg_n": 2.914
+  },
+  "scenario_definition": {
+    "Baseline": {
+      "brugg_n": 2.914,
+      "positive_hysteresis": false
+    },
+    "+Cathode hysteresis": {
+      "brugg_n": 2.914,
+      "positive_hysteresis": true
+    },
+    "b_n = 1.5": {
+      "brugg_n": 1.5,
+      "positive_hysteresis": false
+    },
+    "Hysteresis + b_n = 1.5": {
+      "brugg_n": 1.5,
+      "positive_hysteresis": true
+    }
+  },
+  "new_bol_raw_available": false,
+  "new_bol_rest_source": "C:\\Users\\user\\Documents\\Codex\\2026-09-18\\https-github-com-rinny-hi-ai2020\\work\\ai2020_dfn_fitting\\results\\260927_comprehensive_prefit_cross_cohort\\branch_qc_all_cells.csv"
+}

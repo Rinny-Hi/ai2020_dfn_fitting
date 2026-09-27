@@ -1,0 +1,10 @@
+{
+  "reason": "best fits lie on the full-time feasibility boundary, so central differences that cross early cutoff differentiate the penalty rather than voltage",
+  "method": "central difference when both sides are feasible; otherwise use the feasible one-sided voltage derivative",
+  "steps": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "capacity_in_analysis": false
+}

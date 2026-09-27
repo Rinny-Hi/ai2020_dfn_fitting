@@ -1,0 +1,29 @@
+{
+  "objective": "charge voltage ordinary L2/RMSE only, 100 physical-time points per cell and C-rate",
+  "capacity_in_objective": false,
+  "invalid_candidate": "simulation cutoff before any fixed experimental grid endpoint; penalized only as a feasibility violation",
+  "validation": "July BoL discharge 0.5C/1C/2C never used by optimizers",
+  "current_mass_corrected_GITT": {
+    "Dsn": 4.170774145968247e-14,
+    "Dsp": 6.888175323807748e-14
+  },
+  "bounds": {
+    "Dsn": [
+      1e-14,
+      8e-14
+    ],
+    "kn": [
+      3e-07,
+      3e-06
+    ],
+    "brugg_n": [
+      1.5,
+      3.5
+    ]
+  },
+  "algorithms": {
+    "multi_start_TRF": "5 starts; main max_nfev=80, conservative=60",
+    "differential_evolution": "popsize=6, maxiter=8, seed=260927, then TRF",
+    "dual_annealing": "maxfun main=180/conservative=120, seed=260927, then TRF"
+  }
+}

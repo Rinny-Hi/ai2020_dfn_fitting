@@ -1,0 +1,3 @@
+﻿Model,Original_Dsn_upper,Expanded_Dsn_upper,Original_RMSE_mV,Expanded_RMSE_mV,RMSE_improvement_mV,Feasible,Minimum_time_margin_min,Dsn,kn,brugg_n,Dsn_log_distance_to_expanded_upper_fraction,Touches_expanded_upper_5pct,NFEV,Success,Message
+main,8e-14,1.2e-13,53.67553596740204,53.67100072099807,0.004535246403968074,True,0.0019205098368217932,7.681805581901967e-14,8.924180135670665e-07,2.5236219393040003,0.1795045413430006,False,6,True,`xtol` termination condition is satisfied.
+conservative,8e-14,1.2e-13,53.99699915122374,53.99375753902131,0.003241612202430133,True,0.00031497877478159353,7.466306237255004e-14,1.450028732507199e-06,2.914,0.19095536349300032,False,8,True,`xtol` termination condition is satisfied.

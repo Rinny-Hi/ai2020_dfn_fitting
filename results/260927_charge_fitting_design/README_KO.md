@@ -7,7 +7,7 @@
 | 주 모델 | `Dsn`, `kn`, `brugg_n` | `Dsp`, `kp`, `brugg_p`, `brugg_s` | 고체 확산·반응속도·음극 전해질 수송을 함께 식별 |
 | 보수 모델 | `Dsn`, `kn` | `brugg_n`, `Dsp`, `kp`, `brugg_p`, `brugg_s` | 상관성과 과적합 위험을 낮춘 최소 subset |
 
-고정값은 `Dsp=6.809001552e-14 m2/s`, `kp≈5.90e-7`, `brugg_n=2.914`(보수 모델만), `brugg_p=1.83`, `brugg_s=1.5`를 사용한다. `Dsp`는 all-range apparent GITT reference이고 `kp`는 cathode P4를 area-specific Rct로 해석해 환산한 apparent EIS 초기값이다. 두 값 모두 확정 intrinsic 물성이라는 의미는 아니다.
+고정값은 최신 전극 질량으로 보정한 `Dsp=6.888175324e-14 m2/s`, `kp≈5.90e-7`, `brugg_n=2.914`(보수 모델만), `brugg_p=1.83`, `brugg_s=1.5`를 사용한다. `Dsp`는 all-range apparent GITT reference이고 `kp`는 cathode P4를 area-specific Rct로 해석해 환산한 apparent EIS 초기값이다. 두 값 모두 확정 intrinsic 물성이라는 의미는 아니다.
 
 ## 2. 목적함수
 
@@ -39,7 +39,7 @@ J_V(\theta)=
 
 | Parameter | Initial | Lower | Upper | 근거/처리 |
 |---|---:|---:|---:|---|
-| `Dsn [m2/s]` | `4.422222641e-14` | `1.0e-14` | `8.0e-14` | endpoint 처리 0--20%의 combined 최소 `1.689e-14`와 0% charge 대표값 `6.792e-14`를 모두 포함; charge-only fitting에서 방향별 실험값을 bound 밖으로 배제하지 않음 |
+| `Dsn [m2/s]` | `4.170774146e-14` | `1.0e-14` | `8.0e-14` | 최신 10.10 mg 질량 기준 endpoint 처리 0--20%의 combined 최소 `1.593e-14`와 0% charge 대표값 `6.406e-14`를 모두 포함; charge-only fitting에서 방향별 실험값을 bound 밖으로 배제하지 않음 |
 | `kn` | `9.648533212e-7` | `3.0e-7` | `3.0e-6` | Ai2020 `kref=1e-11 m/s`를 현재 Butler--Volmer 구현의 `F*kref=9.6485e-7`로 환산하고, 이를 중심으로 약 `±0.5 log10 decade`(약 ÷3.16, ×3.16)를 탐색 |
 | `brugg_n` | `2.914` | `1.5` | `3.5` | 이상 구형 입자 Bruggeman 하한 `1.5`, graphite tortuosity 실험 환산 약 `2.73`, Ai2020의 `1+alpha_B=2.914`를 모두 포함 |
 
@@ -47,7 +47,7 @@ J_V(\theta)=
 
 ### Bound 근거의 성격
 
-- `Dsn`: 현재 실험 결과로 직접 정한 **measurement-envelope bound**다. 10% 제외값만이 아니라 0/5/10/15/20% endpoint 민감도와 방향별 결과를 사용했다. 특히 charge fitting 대상인데 0% charge 값 `6.792e-14`를 제외하는 기존 `5.0e-14` 상한은 논리적으로 맞지 않아 `8.0e-14`로 수정했다.
+- `Dsn`: 현재 실험 결과로 직접 정한 **measurement-envelope bound**다. 10% 제외값만이 아니라 0/5/10/15/20% endpoint 민감도와 방향별 결과를 사용했다. 최신 질량 보정 후 0% charge 값은 `6.406e-14`이며, 이를 제외하는 기존 `5.0e-14` 상한은 논리적으로 맞지 않아 `8.0e-14`로 유지했다. `1.2e-13` 확장 test에서도 optimum과 RMSE가 사실상 변하지 않아 1차 상한 절단 증거는 없었다.
 - `kn`: 동일한 Butler--Volmer 정의를 쓰는 Ai2020 nominal을 중심으로 정한 **nominal-centered uncertainty bound**다. 문헌의 `k`는 교환전류 정의와 단위가 달라 직접 최소·최댓값을 섞지 않았다. 재현성이 낮아 폐기한 anode Rct 값 `2.48e-7/7.40e-7`은 bound의 anchor가 아니라 사후 비교점으로만 남긴다.
 - `brugg_n`: 고전 Bruggeman 값과 실제 graphite tortuosity 측정, Ai2020 값을 함께 포함한 **physics/literature bound**다. Ai2020 식 `Psi_eff=epsilon^(1+alpha_B)Psi_0`에서 음극 `alpha_B=1.914`, 즉 PyBaMM식 exponent는 `2.914`다. Landesfeind 등의 graphite 결과 `epsilon≈0.43`, `tau≈4.3`을 `tau=epsilon^(1-b)`로 환산하면 `b≈2.73`이다.
 
@@ -99,3 +99,11 @@ J_V(\theta)=
 - cutoff capacity signed error, MAE, RMSE(%)
 - Jacobian sensitivity, parameter correlation, singular value/condition number
 - bound 접촉 및 solver failure log
+
+## 7. 실행 결과
+
+physical-time LSA에서 두 subset이 모두 통과해 두 모델을 fitting했다. 주 모델은
+charge objective `53.676 mV`, 보수 모델은 `53.997 mV`였으나, untouched discharge
+full RMSE는 각각 `62.08/49.51 mV`였다. 사후 charge capacity RMSE도
+`6.45/3.11%`로 보수 모델이 우세해 최종적으로 `Dsn+kn`을 선택했다. 상세는
+`results/260927_charge_physical_time_final/README_KO.md`를 따른다.

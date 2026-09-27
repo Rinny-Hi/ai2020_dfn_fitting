@@ -1,0 +1,7 @@
+﻿Model,Step,Condition_number,Max_abs_pairwise_cosine,Min_relative_sensitivity,Difference_modes,Pass
+main,0.005,6.132827312725053,0.9361217772436291,0.10383573424783217,"central,forward_feasible,backward_feasible",True
+main,0.01,6.153188213691301,0.9365024563598728,0.10405684123900681,"central,forward_feasible,backward_feasible",True
+main,0.02,6.195543038204324,0.9372687560829306,0.10452177772810331,"central,forward_feasible,backward_feasible",True
+conservative,0.005,1.6258644634792097,0.45106750613412144,0.12006101018624779,"central,forward_feasible",True
+conservative,0.01,1.6248774826246817,0.4505836884745258,0.12028763365889378,"central,forward_feasible",True
+conservative,0.02,1.6229320999662908,0.44962842505338607,0.11954375535095096,"forward_feasible,forward_feasible",True
