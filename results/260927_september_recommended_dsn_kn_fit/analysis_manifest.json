@@ -1,0 +1,45 @@
+{
+  "decision": "Dsn+kn rejected before fitting because Dsn relative sensitivity stayed below 0.10; fit kn only with Dsn fixed to independent mass-corrected GITT",
+  "selected_ocp": "Ai2020 nominal graphite equilibrium + old measured cathode equilibrium",
+  "window_policy": "retain previously identified window; update each September branch initial SOC from its own 2-hour rest endpoint voltage",
+  "stage": {
+    "x0": 0.0038062237463119,
+    "x100": 0.9542212582298352,
+    "y100": 0.4316424031304631,
+    "y0": 0.9707457852378696
+  },
+  "qcell_Ah": 2.3565276563125,
+  "fixed": {
+    "Dsp": 6.888175323807748e-14,
+    "brugg_n": 2.914,
+    "brugg_p": 1.83,
+    "brugg_s": 1.5,
+    "hysteresis": false,
+    "Dsn": 4.170774145968247e-14,
+    "kp": 5.899519906708763e-07
+  },
+  "fitted": {
+    "kn": 5.348412674531578e-07
+  },
+  "objective": "charge CC ordinary voltage RMSE; 2 cells x 3 rates x 100 fixed physical-time points",
+  "capacity_in_objective": false,
+  "cv_in_objective": false,
+  "validation": {
+    "Charge_physical_time_RMSE_mV": 57.80118745258016,
+    "Charge_capacity_RMSE_pct": 15.815623822706593,
+    "Charge_capacity_MAE_mAh": 108.99197560637487,
+    "Charge_all_time_feasible": true,
+    "Discharge_physical_time_RMSE_mV": 75.79693409241341,
+    "Discharge_capacity_RMSE_pct": 2.0933552325319775,
+    "Discharge_capacity_MAE_mAh": 44.041578932238885,
+    "Discharge_all_time_feasible": true
+  },
+  "kn_identifiability": {
+    "Label": "post-fit kn-only",
+    "Pass": true,
+    "Matrix_rank": 1,
+    "Min_relative_sensitivity": 1.0,
+    "Max_abs_pairwise_cosine": 0.0,
+    "Normalized_condition_number": 1.0
+  }
+}

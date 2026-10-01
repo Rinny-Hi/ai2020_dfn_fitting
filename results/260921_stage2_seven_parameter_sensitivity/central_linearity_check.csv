@@ -1,0 +1,29 @@
+﻿Dataset,Parameter,Central_nonlinearity_ratio
+C-rate combined,kn,0.007528541264587333
+C-rate charge,kn,0.006728097075725181
+C-rate discharge,kn,0.008358116104099853
+HPPC,kn,0.006169921929330444
+C-rate combined,kp,0.007276958316768024
+C-rate charge,kp,0.007843056666414371
+C-rate discharge,kp,0.006717003636593793
+HPPC,kp,0.007642147076103484
+C-rate combined,Dsn,0.03587201846456955
+C-rate charge,Dsn,0.03343941321072458
+C-rate discharge,Dsn,0.03690752195458263
+HPPC,Dsn,0.012421118052382558
+C-rate combined,Dsp,0.025830184488383975
+C-rate charge,Dsp,0.028029566256786338
+C-rate discharge,Dsp,0.025079540940307343
+HPPC,Dsp,0.023600172519597257
+C-rate combined,brugg_n,0.0446215400376257
+C-rate charge,brugg_n,0.03539634932411616
+C-rate discharge,brugg_n,0.0461551505673816
+HPPC,brugg_n,0.01890827544457624
+C-rate combined,brugg_p,0.026390406259758643
+C-rate charge,brugg_p,0.026546848458149006
+C-rate discharge,brugg_p,0.026248836275629534
+HPPC,brugg_p,0.019711873439016144
+C-rate combined,brugg_s,0.024198100603850754
+C-rate charge,brugg_s,0.023923593529345814
+C-rate discharge,brugg_s,0.024414014815419854
+HPPC,brugg_s,0.023955448782961648

@@ -1,0 +1,5 @@
+﻿case,anode_source,cathode_source,status,blocking_reason,x0,x100,y0,y100,DX,DY,endpoint_0_error_mV,endpoint_100_error_mV,qOCV_RMSE_full_mV,qOCV_MAE_full_mV,qOCV_RMSE_2_98_mV,qOCV_MAE_2_98_mV
+A,legacy,legacy_current,READY_EXISTING_METHOD,,,,,,,,,,,,,
+B,new_2h_candidate,legacy_current,NOT_READY,absolute anode stoichiometry mapping not established,,,,,,,,,,,,
+C,legacy,new_2h_candidate,NOT_READY,final cathode 2 h GITT data unavailable,,,,,,,,,,,,
+D,new_2h_candidate,new_2h_candidate,NOT_READY,absolute anode mapping and final cathode data unavailable,,,,,,,,,,,,

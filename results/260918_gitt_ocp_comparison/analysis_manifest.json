@@ -1,0 +1,23 @@
+{
+  "random_seed": 260918,
+  "python_version": "3.12.14",
+  "pybamm_version": "26.8.0.0",
+  "source_branch": "260918-gitt-ocp-test",
+  "legacy_notebook": "260908 Charge Fitting Discharge Validation.ipynb",
+  "negative_ocp_cases": [
+    "Legacy",
+    "New GITT"
+  ],
+  "fixed_items": [
+    "Full-cell C/20 qOCV",
+    "Q_MEAS",
+    "Delta x and Delta y",
+    "1A endpoint equations",
+    "Stage 0 source corrections",
+    "DFN solver and mesh",
+    "temperature",
+    "nominal dynamic parameters"
+  ],
+  "new_gitt_absolute_stoichiometry_note": "New GITT capacity is normalized independently by branch and replicate. The candidate OCP maps the full normalized usable range to x=0..1; the absolute stoichiometry anchor remains unverified.",
+  "elapsed_min": 0.5443967898686727
+}

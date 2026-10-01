@@ -1,0 +1,52 @@
+{
+  "fixed": {
+    "Dsn": 7.466200473885764e-14,
+    "brugg_n": 2.914
+  },
+  "reference_kn": 1.4502357402082455e-06,
+  "test_kn": 2.59e-07,
+  "original_kn_lower_bound": 3e-07,
+  "capacity_in_objective": false,
+  "summary": [
+    {
+      "Scenario": "July final",
+      "Direction": "Charge",
+      "All_full_time_feasible": true,
+      "Minimum_time_margin_min": 0.0006672035708419344,
+      "Physical_time_RMSE_mV": 53.99699915122374,
+      "Overlap_time_RMSE_mV": 53.99699915122374,
+      "Capacity_RMSE_pct": 3.11273475082213,
+      "Capacity_MAE_mAh": 36.48434251285525
+    },
+    {
+      "Scenario": "July final",
+      "Direction": "Discharge",
+      "All_full_time_feasible": true,
+      "Minimum_time_margin_min": 0.2777669093528523,
+      "Physical_time_RMSE_mV": 52.29502176501307,
+      "Overlap_time_RMSE_mV": 52.29502176501307,
+      "Capacity_RMSE_pct": 1.0887776149871822,
+      "Capacity_MAE_mAh": 23.753398197882362
+    },
+    {
+      "Scenario": "kn=2.59e-7",
+      "Direction": "Charge",
+      "All_full_time_feasible": false,
+      "Minimum_time_margin_min": -7.380046049488342,
+      "Physical_time_RMSE_mV": NaN,
+      "Overlap_time_RMSE_mV": 56.17156819633695,
+      "Capacity_RMSE_pct": 9.48575899817892,
+      "Capacity_MAE_mAh": 157.9626146388464
+    },
+    {
+      "Scenario": "kn=2.59e-7",
+      "Direction": "Discharge",
+      "All_full_time_feasible": false,
+      "Minimum_time_margin_min": -0.18650219954037794,
+      "Physical_time_RMSE_mV": NaN,
+      "Overlap_time_RMSE_mV": 45.284603206663434,
+      "Capacity_RMSE_pct": 0.6177370209364798,
+      "Capacity_MAE_mAh": 13.108832742842875
+    }
+  ]
+}

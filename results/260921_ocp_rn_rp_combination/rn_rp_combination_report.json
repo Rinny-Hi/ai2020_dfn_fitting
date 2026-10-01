@@ -1,0 +1,89 @@
+{
+  "fixed": {
+    "Dsn_m2_s": 2.1e-14,
+    "Dsp_m2_s": 4.4e-14,
+    "electrolyte_Bruggeman": 1.5,
+    "solid_phase_Bruggeman": 0.0
+  },
+  "radius_input_conversion": "Values labelled um are multiplied by 1e-6 before PyBaMM input in metres.",
+  "best_geometry_from_hybrid_screen": {
+    "Candidate": "Ai2020 nominal equilibrium + harvested hysteresis",
+    "Rn_um": 4.0,
+    "Rp_um": 4.0,
+    "Dynamic_MAE_SOC10_70_mV": 79.37548839337781,
+    "Charge_MAE_SOC10_70_mV": 71.68996616225127,
+    "Discharge_MAE_SOC10_70_mV": 87.06101062450436,
+    "Mean_abs_capacity_error_mAh": 85.87186307581008,
+    "Max_abs_capacity_error_mAh": 323.27663139569825,
+    "tau_n_s": 761.9047619047619,
+    "tau_p_s": 363.6363636363636
+  },
+  "ocp_ranking_at_best_geometry": [
+    {
+      "Candidate": "Ai2020 nominal equilibrium + harvested hysteresis",
+      "Rn_um": 4.0,
+      "Rp_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 79.37548839337781,
+      "Charge_MAE_SOC10_70_mV": 71.68996616225127,
+      "Discharge_MAE_SOC10_70_mV": 87.06101062450436,
+      "Mean_abs_capacity_error_mAh": 85.87186307581008,
+      "Max_abs_capacity_error_mAh": 323.27663139569825,
+      "qOCV_MAE_2_98_mV": 4.6402528317129175,
+      "qOCV_RMSE_2_98_mV": 5.589609657723681,
+      "qOCV_max_endpoint_abs_mV": 2.0115511432896582
+    },
+    {
+      "Candidate": "Previous measured-anode ±5% control",
+      "Rn_um": 4.0,
+      "Rp_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 86.82424161263503,
+      "Charge_MAE_SOC10_70_mV": 68.46267927399819,
+      "Discharge_MAE_SOC10_70_mV": 105.18580395127186,
+      "Mean_abs_capacity_error_mAh": 98.25152157054461,
+      "Max_abs_capacity_error_mAh": 362.02297949867165,
+      "qOCV_MAE_2_98_mV": 7.127563628551003,
+      "qOCV_RMSE_2_98_mV": 9.362275358575662,
+      "qOCV_max_endpoint_abs_mV": 3.798356500656297
+    },
+    {
+      "Candidate": "Measured anode, mass-independent fit",
+      "Rn_um": 4.0,
+      "Rp_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 88.6650710702831,
+      "Charge_MAE_SOC10_70_mV": 72.77041949509884,
+      "Discharge_MAE_SOC10_70_mV": 104.55972264546737,
+      "Mean_abs_capacity_error_mAh": 102.12476083980692,
+      "Max_abs_capacity_error_mAh": 373.76335279498517,
+      "qOCV_MAE_2_98_mV": 6.15413256502266,
+      "qOCV_RMSE_2_98_mV": 8.2940754214992,
+      "qOCV_max_endpoint_abs_mV": 2.9830806349897543
+    },
+    {
+      "Candidate": "Ai2020 nominal anode, mass-independent fit",
+      "Rn_um": 4.0,
+      "Rp_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 101.46743351473896,
+      "Charge_MAE_SOC10_70_mV": 93.920704633115,
+      "Discharge_MAE_SOC10_70_mV": 109.01416239636295,
+      "Mean_abs_capacity_error_mAh": 113.02573959278618,
+      "Max_abs_capacity_error_mAh": 391.6377160128215,
+      "qOCV_MAE_2_98_mV": 4.6402528317129175,
+      "qOCV_RMSE_2_98_mV": 5.589609657723681,
+      "qOCV_max_endpoint_abs_mV": 2.0115511432896582
+    },
+    {
+      "Candidate": "Ai2020 nominal anode, published stoichiometry window",
+      "Rn_um": 4.0,
+      "Rp_um": 4.0,
+      "Dynamic_MAE_SOC10_70_mV": 105.36557857992689,
+      "Charge_MAE_SOC10_70_mV": 101.99233236004811,
+      "Discharge_MAE_SOC10_70_mV": 108.73882479980568,
+      "Mean_abs_capacity_error_mAh": 138.30611719059456,
+      "Max_abs_capacity_error_mAh": 434.00492479699636,
+      "qOCV_MAE_2_98_mV": 5.997507871862802,
+      "qOCV_RMSE_2_98_mV": 7.419211667110765,
+      "qOCV_max_endpoint_abs_mV": 151.63449929832407
+    }
+  ],
+  "method": "3x3 radius screen with hybrid OCP; then all OCP candidates revalidated at selected geometry"
+}

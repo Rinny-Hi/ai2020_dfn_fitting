@@ -1,0 +1,116 @@
+{
+  "current_kp": 3.12e-07,
+  "new_kp": 4.18e-07,
+  "new_kp_reexpressed_for_current_model_c_s_max": 4.32e-07,
+  "new_over_current_ratio": 1.3397435897435899,
+  "fixed_parameters": {
+    "kn": 7.4e-07,
+    "Rn_um": 5.0,
+    "Rp_um": 3.0,
+    "Ln_um": 76.5,
+    "Lp_um": 68.0,
+    "positive_active_material_volume_fraction_in_model": 0.62,
+    "positive_max_concentration_mol_m3": 47467.25702278789
+  },
+  "protocol": "current selected OCP; measured current; preceding-rest initial SOC; negative hysteresis off; positive hysteresis on",
+  "summary": [
+    {
+      "Case": "Current kp 3.12e-7",
+      "Direction": "Charge",
+      "Mean_full_RMSE_mV": 50.07155111111215,
+      "Mean_center_RMSE_mV": 19.99209951869968,
+      "Capacity_RMSE_pct": 4.4075015416075995,
+      "Mean_capacity_error_mAh": -77.53506459619112,
+      "Mean_abs_capacity_error_mAh": 77.5350645961911
+    },
+    {
+      "Case": "Current kp 3.12e-7",
+      "Direction": "Discharge",
+      "Mean_full_RMSE_mV": 25.477066051196193,
+      "Mean_center_RMSE_mV": 10.32251717087999,
+      "Capacity_RMSE_pct": 1.4218678911220364,
+      "Mean_capacity_error_mAh": -24.941849289721173,
+      "Mean_abs_capacity_error_mAh": 24.941849289721173
+    },
+    {
+      "Case": "EIS recalculated kp 4.18e-7",
+      "Direction": "Charge",
+      "Mean_full_RMSE_mV": 48.21018086407479,
+      "Mean_center_RMSE_mV": 25.883935241104524,
+      "Capacity_RMSE_pct": 2.662354003947055,
+      "Mean_capacity_error_mAh": -49.268541083587586,
+      "Mean_abs_capacity_error_mAh": 49.268541083587586
+    },
+    {
+      "Case": "EIS recalculated kp 4.18e-7",
+      "Direction": "Discharge",
+      "Mean_full_RMSE_mV": 26.031410447040287,
+      "Mean_center_RMSE_mV": 13.138729755208969,
+      "Capacity_RMSE_pct": 1.308936460870923,
+      "Mean_capacity_error_mAh": -22.660924147201257,
+      "Mean_abs_capacity_error_mAh": 22.660924147201257
+    },
+    {
+      "Case": "EIS model-consistent kp 4.32e-7",
+      "Direction": "Charge",
+      "Mean_full_RMSE_mV": 48.14880656648725,
+      "Mean_center_RMSE_mV": 26.767382446036965,
+      "Capacity_RMSE_pct": 2.496314171891501,
+      "Mean_capacity_error_mAh": -46.360462511598456,
+      "Mean_abs_capacity_error_mAh": 46.360462511598456
+    },
+    {
+      "Case": "EIS model-consistent kp 4.32e-7",
+      "Direction": "Discharge",
+      "Mean_full_RMSE_mV": 26.39084811898442,
+      "Mean_center_RMSE_mV": 14.165169151184207,
+      "Capacity_RMSE_pct": 1.2965934210214862,
+      "Mean_capacity_error_mAh": -22.413822941363293,
+      "Mean_abs_capacity_error_mAh": 22.413822941363293
+    }
+  ],
+  "delta": [
+    {
+      "C_rate": 0.5,
+      "Direction": "Charge",
+      "Delta_full_RMSE_mV": 1.2785182616910902,
+      "Delta_center_RMSE_mV": 7.396429633243152,
+      "Delta_capacity_error_mAh": 16.198204335064133
+    },
+    {
+      "C_rate": 0.5,
+      "Direction": "Discharge",
+      "Delta_full_RMSE_mV": 4.679436357995854,
+      "Delta_center_RMSE_mV": 5.622380446570537,
+      "Delta_capacity_error_mAh": 1.1175252681865366
+    },
+    {
+      "C_rate": 1.0,
+      "Direction": "Charge",
+      "Delta_full_RMSE_mV": -1.8249798902927523,
+      "Delta_center_RMSE_mV": 7.7962048994620545,
+      "Delta_capacity_error_mAh": 25.8448538506959
+    },
+    {
+      "C_rate": 1.0,
+      "Direction": "Discharge",
+      "Delta_full_RMSE_mV": 2.857196884091376,
+      "Delta_center_RMSE_mV": 4.310715315949228,
+      "Delta_capacity_error_mAh": 1.8379132201502557
+    },
+    {
+      "C_rate": 2.0,
+      "Direction": "Charge",
+      "Delta_full_RMSE_mV": -5.037649112510437,
+      "Delta_center_RMSE_mV": 2.4828726345093255,
+      "Delta_capacity_error_mAh": 42.756512352050585
+    },
+    {
+      "C_rate": 2.0,
+      "Direction": "Discharge",
+      "Delta_full_RMSE_mV": -5.873600054554945,
+      "Delta_center_RMSE_mV": -1.4844580095328341,
+      "Delta_capacity_error_mAh": 3.8873369392229478
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "restored_bruggeman": {
+    "negative": 2.914,
+    "positive": 1.83,
+    "separator": 1.5
+  },
+  "fixed_solid_diffusivities": {
+    "Dsn_m2_s": 2.1e-14,
+    "Dsp_m2_s": 4.4e-14
+  },
+  "best_radius": {
+    "Case": "Rn=5,Rp=5",
+    "Rn_um": 5.0,
+    "Rp_um": 5.0,
+    "Dynamic_MAE_SOC10_70_mV": 16.15606190788091,
+    "Charge_MAE_SOC10_70_mV": 17.486325141741528,
+    "Discharge_MAE_SOC10_70_mV": 14.825798674020296,
+    "Mean_abs_capacity_error_mAh": 37.41726229286097,
+    "Max_abs_capacity_error_mAh": 92.87763553432629
+  },
+  "de_note": "PyBaMM 26.8 Ai2020 returns about 3.22e-6 at 1000 mol/m3 and 298.15 K despite the parameter label m2/s. The 1e-4 multiplier converts the source correlation from cm2/s to about 3.22e-10 m2/s; using a factor of 1 would be physically inconsistent.",
+  "de_summary": [
+    {
+      "Case": "De_factor=0.0001",
+      "De_factor_vs_Ai2020": 0.0001,
+      "Dynamic_MAE_SOC10_70_mV": 16.15606190788091,
+      "Charge_MAE_SOC10_70_mV": 17.486325141741528,
+      "Discharge_MAE_SOC10_70_mV": 14.825798674020296,
+      "Mean_abs_capacity_error_mAh": 37.41726229286097,
+      "Max_abs_capacity_error_mAh": 92.87763553432629
+    },
+    {
+      "Case": "De_factor=0.001",
+      "De_factor_vs_Ai2020": 0.001,
+      "Dynamic_MAE_SOC10_70_mV": 57.36430558486449,
+      "Charge_MAE_SOC10_70_mV": 51.51601629447426,
+      "Discharge_MAE_SOC10_70_mV": 63.2125948752547,
+      "Mean_abs_capacity_error_mAh": 57.689487873989314,
+      "Max_abs_capacity_error_mAh": 236.64133650489595
+    },
+    {
+      "Case": "De_factor=0.01",
+      "De_factor_vs_Ai2020": 0.01,
+      "Dynamic_MAE_SOC10_70_mV": 61.041990680568745,
+      "Charge_MAE_SOC10_70_mV": 54.966250497175686,
+      "Discharge_MAE_SOC10_70_mV": 67.1177308639618,
+      "Mean_abs_capacity_error_mAh": 61.172121009298735,
+      "Max_abs_capacity_error_mAh": 254.19136173046869
+    },
+    {
+      "Case": "De_factor=0.1",
+      "De_factor_vs_Ai2020": 0.1,
+      "Dynamic_MAE_SOC10_70_mV": 61.405664390294106,
+      "Charge_MAE_SOC10_70_mV": 55.31173293781984,
+      "Discharge_MAE_SOC10_70_mV": 67.49959584276837,
+      "Mean_abs_capacity_error_mAh": 61.539372059567384,
+      "Max_abs_capacity_error_mAh": 256.01055265231435
+    },
+    {
+      "Case": "De_factor=1",
+      "De_factor_vs_Ai2020": 1.0,
+      "Dynamic_MAE_SOC10_70_mV": 61.44199413316863,
+      "Charge_MAE_SOC10_70_mV": 55.346285306919185,
+      "Discharge_MAE_SOC10_70_mV": 67.53770295941807,
+      "Mean_abs_capacity_error_mAh": 61.57659467362121,
+      "Max_abs_capacity_error_mAh": 256.1962261653117
+    }
+  ],
+  "csmax_summary": [
+    {
+      "Case": "Stage0_csn=28700",
+      "Stage0_csn_max_mol_m3": 28700.0,
+      "Dynamic_MAE_SOC10_70_mV": 16.295998239885765,
+      "Charge_MAE_SOC10_70_mV": 17.659722236367003,
+      "Discharge_MAE_SOC10_70_mV": 14.932274243404533,
+      "Mean_abs_capacity_error_mAh": 37.638249674830874,
+      "Max_abs_capacity_error_mAh": 92.67912812875063,
+      "Stage0_Qn_Ah": 2.9253572689649943,
+      "Effective_csn_after_Qn_fit_mol_m3": 25165.363220569372,
+      "Fitted_Qn_Ah": 2.5650758962870013
+    },
+    {
+      "Case": "Stage0_csn=29700",
+      "Stage0_csn_max_mol_m3": 29700.0,
+      "Dynamic_MAE_SOC10_70_mV": 16.15606190788091,
+      "Charge_MAE_SOC10_70_mV": 17.486325141741528,
+      "Discharge_MAE_SOC10_70_mV": 14.825798674020296,
+      "Mean_abs_capacity_error_mAh": 37.41726229286097,
+      "Max_abs_capacity_error_mAh": 92.87763553432629,
+      "Stage0_Qn_Ah": 3.0272860936676067,
+      "Effective_csn_after_Qn_fit_mol_m3": 25165.36322056938,
+      "Fitted_Qn_Ah": 2.5650758962870013
+    }
+  ],
+  "hybrid_branch_difference_due_to_stage0_csn": {
+    "lithiation": {
+      "MAE_mV": 0.74101244493644,
+      "RMSE_mV": 0.9352255200662277,
+      "max_abs_mV": 2.5095554024643363
+    },
+    "delithiation": {
+      "MAE_mV": 0.7410124449364403,
+      "RMSE_mV": 0.9352255200662271,
+      "max_abs_mV": 2.5095554024643363
+    }
+  }
+}

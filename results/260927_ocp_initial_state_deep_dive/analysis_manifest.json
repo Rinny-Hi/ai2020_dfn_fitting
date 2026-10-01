@@ -1,0 +1,66 @@
+{
+  "selected_model_parameters": {
+    "Dsn": 7.466200473885764e-14,
+    "kn": 1.4502357402082455e-06,
+    "brugg_n": 2.914
+  },
+  "qcell_Ah": 2.3565276563125,
+  "coulomb_start_soc_definition": "0.5C charge starts at zero; later charge starts accumulate preceding CC+CV charge minus CC discharge, divided by C/50 Qcell",
+  "selected_ocp_rest_inversion_by_rate": {
+    "0.5": 0.08615270859605277,
+    "1.0": 0.5410445555126541,
+    "2.0": 1.1497643934242738
+  },
+  "coulomb_bookkeeping_soc_by_rate": {
+    "0.5": 0.0,
+    "1.0": 1.0429356345906398,
+    "2.0": 2.200358927584356
+  },
+  "dynamic_overall": [
+    {
+      "scenario": "coulomb_cell",
+      "initial_error_RMSE_mV": 201.73645153782851,
+      "full_RMSE_mV": 57.34014813033127,
+      "early_0_10_RMSE_mV": 103.8767026163127,
+      "middle_10_70_RMSE_mV": 54.563855539941216,
+      "late_70_100_RMSE_mV": 37.52896899438278,
+      "min_time_coverage": 1.0
+    },
+    {
+      "scenario": "endpoint",
+      "initial_error_RMSE_mV": 85.5658573682899,
+      "full_RMSE_mV": 52.18583135906291,
+      "early_0_10_RMSE_mV": 39.01750822580564,
+      "middle_10_70_RMSE_mV": 57.205779195059456,
+      "late_70_100_RMSE_mV": 45.004581093970664,
+      "min_time_coverage": 1.0
+    },
+    {
+      "scenario": "rest_cell",
+      "initial_error_RMSE_mV": 134.58839549725593,
+      "full_RMSE_mV": 53.98943307379545,
+      "early_0_10_RMSE_mV": 74.09169971354248,
+      "middle_10_70_RMSE_mV": 55.70817771326013,
+      "late_70_100_RMSE_mV": 40.98212002432114,
+      "min_time_coverage": 0.9999455201117301
+    },
+    {
+      "scenario": "rest_mean",
+      "initial_error_RMSE_mV": 134.67170288012287,
+      "full_RMSE_mV": 53.99711868814986,
+      "early_0_10_RMSE_mV": 74.12817205977976,
+      "middle_10_70_RMSE_mV": 55.70995802961419,
+      "late_70_100_RMSE_mV": 40.98904663170747,
+      "min_time_coverage": 0.9999564841295853
+    },
+    {
+      "scenario": "rest_mean_cathode_hysteresis",
+      "initial_error_RMSE_mV": 111.62013950726144,
+      "full_RMSE_mV": 56.031393836200046,
+      "early_0_10_RMSE_mV": 65.02907287732992,
+      "middle_10_70_RMSE_mV": 60.02657037918182,
+      "late_70_100_RMSE_mV": 43.000991167131914,
+      "min_time_coverage": 0.9993933715860729
+    }
+  ]
+}

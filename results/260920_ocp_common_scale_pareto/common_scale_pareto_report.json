@@ -1,0 +1,18 @@
+{
+  "selected_scale": 0.7,
+  "selection_status": "Lowest held-out dynamic MAE among OCP/capacity-admissible scales",
+  "new_260918_GITT_used": false,
+  "calibration": "fixed endpoint<=10 mV qOCV window and legacy C/20",
+  "validation": "0.5C/1C/2C held out until ranking",
+  "fixed_window": {
+    "x0": 0.0014045163063722,
+    "x100": 0.7736233049071565,
+    "y100": 0.4507120950658858,
+    "y0": 0.9590036043934697
+  },
+  "gates": {
+    "qOCV_endpoint_mV": 10,
+    "C20_branch_MAE_mV": 20,
+    "mean_capacity_error_Ah": 0.05
+  }
+}

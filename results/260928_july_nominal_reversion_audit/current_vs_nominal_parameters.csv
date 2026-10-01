@@ -1,0 +1,16 @@
+﻿Parameter,Current,Nominal,Status
+"De @1000 mol/m3, 298K",3.222722528605264e-10,3.2227225286052635e-06,different; current includes unit conversion
+"Dsn @x=0.5, 298K",7.466200473885764e-14,3.9e-14,different
+"Dsp @y=0.7, 298K",6.888175323807748e-14,5.387e-15,different
+kn prefactor,1.4502357402082455e-06,9.648533212e-07,different
+kp prefactor,5.899519906708763e-07,9.648533212e-07,different
+Rn [m],3.7542e-06,5e-06,different
+Rp [m],4.2387e-06,3e-06,different
+Ln [m],7.65e-05,7.65e-05,already nominal
+Lp [m],6.8e-05,6.8e-05,already nominal
+brugg_n,2.914,2.914,already nominal
+brugg_p,1.83,1.83,already nominal
+brugg_s,1.5,1.5,already nominal
+Electrode width [m],0.0454,0.047,different
+csn_max [mol/m3],25182.812491955036,28700.0,different; current preserves selected Qn
+csp_max [mol/m3],49140.111895837676,49943.0,different; current preserves selected Qp

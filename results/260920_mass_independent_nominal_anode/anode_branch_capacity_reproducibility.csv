@@ -1,0 +1,5 @@
+﻿source,direction,capacity_Ah,capacity_mAh
+v1,charge,0.0024857,2.4857
+v1,discharge,0.0024959,2.4959000000000002
+v2,charge,0.0024522,2.4522
+v2,discharge,0.0024649,2.4649

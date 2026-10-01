@@ -1,0 +1,20 @@
+{
+  "sources": [
+    "C:\\Users\\user\\OneDrive\\01. 적응형 충전 프로토콜\\4. Enertech 파우치셀 실험데이터\\260927 BoL 실험데이터\\260927 6-1 0.5C 1C 2C.xlsx",
+    "C:\\Users\\user\\OneDrive\\01. 적응형 충전 프로토콜\\4. Enertech 파우치셀 실험데이터\\260927 BoL 실험데이터\\260927 6-2 0.5C 1C 2C.xlsx"
+  ],
+  "source_workbooks_modified": false,
+  "branch_steps": {
+    "0.5C_Discharge": 5,
+    "0.5C_Charge": 7,
+    "1C_Discharge": 10,
+    "1C_Charge": 12,
+    "2C_Discharge": 15,
+    "2C_Charge": 17
+  },
+  "record_rows": {
+    "cc": 1504,
+    "rest": 2892,
+    "charge_cccv": 1092
+  }
+}

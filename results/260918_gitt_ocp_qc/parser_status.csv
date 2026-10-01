@@ -1,0 +1,3 @@
+﻿cell,source_file,sheet_names,step_count,gitt_step_count,pulse_count,two_hour_rest_count,record_mapping_complete,status
+v2,260918 Anode GITT v2 1-6.xlsx,"unit, test, cycle, step, record, log, idle, curve",186,181,90,91,True,OK
+v3,260918 Anode GITT v3 1-7.xlsx,"unit, test, cycle, step, record, log, idle, curve",192,187,93,94,True,OK

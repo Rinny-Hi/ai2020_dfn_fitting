@@ -1,0 +1,39 @@
+{
+  "baseline": {
+    "Dsn": 7.466200473885764e-14,
+    "Dsp": 6.888175323807748e-14,
+    "kn": 1.4502357402082455e-06,
+    "brugg_n": 2.914
+  },
+  "kp": 5.899519906708763e-07,
+  "nominal_kinetic_prefactor": 9.648533212e-07,
+  "De_interpretation": "current model uses raw Ai2020 function x1e-4 as cm2/s to m2/s unit conversion; raw-function rollback is diagnostic, not recommended physics",
+  "already_nominal_and_not_resimulated": [
+    "Ln",
+    "Lp",
+    "porosity_n",
+    "porosity_p",
+    "active_fraction_n",
+    "active_fraction_p",
+    "brugg_n",
+    "brugg_p",
+    "brugg_s"
+  ],
+  "capacity_in_objective": false,
+  "scenarios": [
+    "Current July final",
+    "De raw PyBaMM",
+    "Dsn nominal",
+    "Dsp nominal",
+    "kn nominal",
+    "kp nominal",
+    "Rn nominal",
+    "Rp nominal",
+    "Electrode width nominal",
+    "csn_max nominal",
+    "csp_max nominal",
+    "Positive OCP nominal",
+    "All dynamic nominal"
+  ],
+  "failures": []
+}

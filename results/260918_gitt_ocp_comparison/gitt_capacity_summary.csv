@@ -1,0 +1,13 @@
+﻿replicate,capacity_type,step_number,capacity_Ah,start_voltage_V,end_voltage_V
+v2,gitt_lithiation,,0.0017900000000000006,0.8859,0.005
+v2,gitt_delithiation,,0.0017600000000000005,0.1485,1.5004
+v2,initial_full_lithiation,2.0,0.0021,1.9499,0.005
+v2,initial_full_delithiation,3.0,0.00198,0.1024,1.5
+v2,initial_full_lithiation,4.0,0.00178,1.4318,0.005
+v2,initial_full_delithiation,5.0,0.00177,0.1137,1.5001
+v3,gitt_lithiation,,0.0018600000000000008,0.7396,0.005
+v3,gitt_delithiation,,0.0018300000000000007,0.1496,1.5002
+v3,initial_full_lithiation,2.0,0.00203,2.815,0.005
+v3,initial_full_delithiation,3.0,0.00194,0.1006,1.5
+v3,initial_full_lithiation,4.0,0.00176,1.4399,0.005
+v3,initial_full_delithiation,5.0,0.00175,0.1035,1.5002

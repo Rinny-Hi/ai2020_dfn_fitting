@@ -1,0 +1,9 @@
+﻿Scenario,Direction,Capacity_RMSE_pct,Mean_abs_capacity_error_mAh,Duration_RMSE_min,Cohort
+Baseline,Charge,24.137875842282213,209.07659178903927,4.431423215524979,New September (endpoint only)
+Baseline,Discharge,2.8290583760133168,58.418619559086856,1.5863650881025915,New September (endpoint only)
++Cathode hysteresis,Charge,24.420791261654042,210.4655111926485,4.443734362462792,New September (endpoint only)
++Cathode hysteresis,Discharge,2.819034560436108,58.178852422242635,1.5781043860437611,New September (endpoint only)
+b_n = 1.5,Charge,40.338471305190275,361.4078647668777,7.739112901747629,New September (endpoint only)
+b_n = 1.5,Discharge,3.701618127002217,72.33415687573289,1.7689111843986012,New September (endpoint only)
+Hysteresis + b_n = 1.5,Charge,40.43116468558799,361.37042958276226,7.72304692602693,New September (endpoint only)
+Hysteresis + b_n = 1.5,Discharge,3.691711278335628,72.0936085519257,1.7613679182464228,New September (endpoint only)

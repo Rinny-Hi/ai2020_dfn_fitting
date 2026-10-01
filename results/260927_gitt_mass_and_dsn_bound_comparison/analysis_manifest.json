@@ -1,0 +1,25 @@
+{
+  "equation_scaling": "D_current = D_old * (m_current / m_old)^2",
+  "unchanged_inputs": [
+    "pulse voltages",
+    "pulse duration",
+    "molar mass",
+    "molar volume",
+    "10 mm geometric punch area",
+    "endpoint aggregation"
+  ],
+  "mass_definition": "single-face composite coating mass = (punched electrode - current collector) / 2",
+  "old_mass_mg": {
+    "Anode": 10.4,
+    "Cathode": 17.25
+  },
+  "current_mass_mg": {
+    "Anode": 10.1,
+    "Cathode": 17.35
+  },
+  "recommended_fitting_reference": {
+    "Dsn_m2_s": 4.170774145968247e-14,
+    "Dsp_m2_s": 6.888175323807748e-14
+  },
+  "interpretation": "Use current masses for the mass-corrected apparent-GITT fitting reference, but retain the old-mass result as a measurement uncertainty case because replicate punch statistics and active-material mass fractions are unavailable."
+}

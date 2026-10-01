@@ -1,0 +1,6 @@
+﻿Capacity_constraint_pct,Feasible,kn,Voltage_RMSE_mV,Capacity_RMSE_pct
+0.5,False,,,
+1.0,False,,,
+2.0,False,,,
+3.0,True,1.3909090909090906e-06,17.49683166069796,2.906429697427937
+5.0,True,1.0757575757575756e-06,13.93712607990193,4.246809102108831

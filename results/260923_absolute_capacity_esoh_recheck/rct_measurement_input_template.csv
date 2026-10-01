@@ -1,0 +1,3 @@
+﻿electrode,SOC_or_stoichiometry,temperature_C,Rct_ohm_cm2,electrolyte_concentration_mol_m3,replicate_count,status
+negative,,25.0,,1000.0,,awaiting measured Rct
+positive,,25.0,,1000.0,,awaiting measured Rct

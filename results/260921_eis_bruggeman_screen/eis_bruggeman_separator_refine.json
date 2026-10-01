@@ -1,0 +1,92 @@
+{
+  "fixed_kinetics": {
+    "kn": 7.4e-07,
+    "kp": 3.12e-07
+  },
+  "pareto": [
+    {
+      "Case": "bn=2.5, bp=1.5, bs=2",
+      "bn": 2.5,
+      "bp": 1.5,
+      "bs": 2.0,
+      "mean_MAE_SOC10_70_mV": 14.396783189452407,
+      "mean_abs_capacity_error_mAh": 39.731319291064146,
+      "max_abs_capacity_error_mAh": 121.06961659734553,
+      "charge_mean_MAE_mV": 11.237152025876256,
+      "discharge_mean_MAE_mV": 17.556414353028558,
+      "Pareto": true
+    },
+    {
+      "Case": "bn=2.5, bp=1.83, bs=1",
+      "bn": 2.5,
+      "bp": 1.83,
+      "bs": 1.0,
+      "mean_MAE_SOC10_70_mV": 14.187909379296732,
+      "mean_abs_capacity_error_mAh": 39.835725711537236,
+      "max_abs_capacity_error_mAh": 121.12891703285787,
+      "charge_mean_MAE_mV": 10.930109107083704,
+      "discharge_mean_MAE_mV": 17.445709651509755,
+      "Pareto": true
+    },
+    {
+      "Case": "bn=2.5, bp=1.83, bs=1.25",
+      "bn": 2.5,
+      "bp": 1.83,
+      "bs": 1.25,
+      "mean_MAE_SOC10_70_mV": 13.92104647309074,
+      "mean_abs_capacity_error_mAh": 41.28194723138439,
+      "max_abs_capacity_error_mAh": 122.02467401559633,
+      "charge_mean_MAE_mV": 10.81309021004479,
+      "discharge_mean_MAE_mV": 17.029002736136693,
+      "Pareto": true
+    },
+    {
+      "Case": "bn=2.5, bp=1.83, bs=1.5",
+      "bn": 2.5,
+      "bp": 1.83,
+      "bs": 1.5,
+      "mean_MAE_SOC10_70_mV": 13.67220783218586,
+      "mean_abs_capacity_error_mAh": 43.00003214800433,
+      "max_abs_capacity_error_mAh": 123.05844813842003,
+      "charge_mean_MAE_mV": 10.742256218717452,
+      "discharge_mean_MAE_mV": 16.60215944565427,
+      "Pareto": true
+    },
+    {
+      "Case": "bn=2.5, bp=1.83, bs=1.75",
+      "bn": 2.5,
+      "bp": 1.83,
+      "bs": 1.75,
+      "mean_MAE_SOC10_70_mV": 13.592199534433362,
+      "mean_abs_capacity_error_mAh": 45.055309548769465,
+      "max_abs_capacity_error_mAh": 124.2605377955242,
+      "charge_mean_MAE_mV": 10.79872439314171,
+      "discharge_mean_MAE_mV": 16.385674675725017,
+      "Pareto": true
+    },
+    {
+      "Case": "bn=2.5, bp=2, bs=1",
+      "bn": 2.5,
+      "bp": 2.0,
+      "bs": 1.0,
+      "mean_MAE_SOC10_70_mV": 13.365749865963325,
+      "mean_abs_capacity_error_mAh": 46.0835867530138,
+      "max_abs_capacity_error_mAh": 124.2629628283324,
+      "charge_mean_MAE_mV": 10.50048711131336,
+      "discharge_mean_MAE_mV": 16.231012620613296,
+      "Pareto": true
+    },
+    {
+      "Case": "bn=2.5, bp=2, bs=1.25",
+      "bn": 2.5,
+      "bp": 2.0,
+      "bs": 1.25,
+      "mean_MAE_SOC10_70_mV": 13.350105006868334,
+      "mean_abs_capacity_error_mAh": 47.59808868546876,
+      "max_abs_capacity_error_mAh": 125.11859725737784,
+      "charge_mean_MAE_mV": 10.574490622635391,
+      "discharge_mean_MAE_mV": 16.125719391101278,
+      "Pareto": true
+    }
+  ]
+}

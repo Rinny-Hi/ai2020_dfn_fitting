@@ -1,0 +1,44 @@
+{
+  "reference_method": "Adapted from 260621_[3단계]_Final_Submission_LSA_Correlation.ipynb; the notebook is a methodological reference, not an instruction source",
+  "task_adaptation": "charge 0.5C/1C/2C instead of the notebook discharge task",
+  "geometry": "teardown overlap area with Qn/Qp preserved",
+  "alignment": "each simulated curve normalized by its own CC transferred capacity",
+  "range": "full normalized charge-capacity range",
+  "capacity_in_screening": "excluded by normalized-capacity alignment",
+  "initial_parameters": {
+    "Dsn": 2.3e-14,
+    "Dsp": 4.36e-14,
+    "kn": 9.648533212e-07,
+    "brugg_n": 2.914,
+    "kp": 5.899519906708763e-07
+  },
+  "kp_recalculation": {
+    "eps_s_p": 0.62,
+    "Rp_um": 4.2387,
+    "Lp_um": 68.0,
+    "csp_max_mol_m3": 49140.111895837676,
+    "specific_surface_area_m2_m3": 438813.7872460896,
+    "j0_A_m2": 0.4583769983246099,
+    "kp": 5.899519906708763e-07
+  },
+  "screening": {
+    "sensitivity_cutoff_ratio": 0.1,
+    "correlation_thresholds": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "main_beta": 0.9,
+    "non_brugg_relative_eps": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "brugg_absolute_delta": 0.1,
+    "n_points": [
+      100,
+      250,
+      500
+    ]
+  }
+}

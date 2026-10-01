@@ -1,0 +1,57 @@
+{
+  "cohort": "July BoL, cells 6-5/6-6/6-8",
+  "objective_for_sensitivity": "voltage residual on experimental time axis, 10-55% of q_meas, 80 points per cell and C-rate; equal weighting; capacity excluded",
+  "q_meas_Ah": 2.3565276563125,
+  "baseline_objective_RMSE_mV": 43.271343051671444,
+  "geometry": {
+    "DFN area": {
+      "area_cm2": 814.9799999999999,
+      "initial_parameters": {
+        "Dsn": 2.3e-14,
+        "Dsp": 4.36e-14,
+        "kn": 9.648533212e-07,
+        "brugg_n": 2.914,
+        "kp": 6.107432502539909e-07
+      },
+      "kp_recalculation": {
+        "eps_s_p": 0.62,
+        "Rp_um": 4.2387,
+        "Lp_um": 68.0,
+        "csp_max_mol_m3": 47467.25702278789,
+        "specific_surface_area_m2_m3": 438813.7872460896,
+        "j0_A_m2": 0.4583769983246099,
+        "kp": 6.107432502539909e-07
+      }
+    },
+    "Teardown overlap area": {
+      "area_cm2": 787.2360000000001,
+      "initial_parameters": {
+        "Dsn": 2.3e-14,
+        "Dsp": 4.36e-14,
+        "kn": 9.648533212e-07,
+        "brugg_n": 2.914,
+        "kp": 5.899519906708763e-07
+      },
+      "kp_recalculation": {
+        "eps_s_p": 0.62,
+        "Rp_um": 4.2387,
+        "Lp_um": 68.0,
+        "csp_max_mol_m3": 49140.111895837676,
+        "specific_surface_area_m2_m3": 438813.7872460896,
+        "j0_A_m2": 0.4583769983246099,
+        "kp": 5.899519906708763e-07
+      }
+    }
+  },
+  "fitting_geometry": "Teardown overlap area",
+  "kp_assumption": "18.78433 ohm cm2 is area-specific Rct; total cell area cancels. kp changes with Rp, Lp, eps_s,p and c_s,p,max.",
+  "normalized_sensitivity_singular_values": [
+    2.0769189833768418,
+    0.7470042735762291,
+    0.351292789780162,
+    0.06833915965744583,
+    0.017756318693496066
+  ],
+  "normalized_condition_number": 116.96788164416046,
+  "perturbation": "multiplicative +/-5%"
+}

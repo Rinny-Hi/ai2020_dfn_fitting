@@ -1,0 +1,259 @@
+{
+  "fixed": {
+    "OCP": "Ai2020 nominal equilibrium + harvested hysteresis",
+    "Rn_um": 5.0,
+    "Rp_um": 3.0,
+    "stoichiometry_window": {
+      "x0": 0.0039484733040496,
+      "x100": 0.915316126551233,
+      "y100": 0.4297781061613709,
+      "y0": 0.9733077756777092
+    }
+  },
+  "old_values": {
+    "Dsn_m2_s": 3.9e-14,
+    "Dsp_m2_s": 5.387e-15,
+    "bruggeman_n_p_s": [
+      2.914,
+      1.83,
+      1.5
+    ]
+  },
+  "new_values": {
+    "Dsn_m2_s": 2.1e-14,
+    "Dsp_m2_s": 4.4e-14,
+    "bruggeman_n_p_s": [
+      1.5,
+      1.5,
+      1.5
+    ]
+  },
+  "summary": [
+    {
+      "Case": "Baseline Ai2020 transport",
+      "Dsn_changed": false,
+      "Dsp_changed": false,
+      "Bruggeman_changed": false,
+      "Dynamic_MAE_SOC10_70_mV": 27.088755304872876,
+      "Charge_MAE_SOC10_70_mV": 27.990396006379964,
+      "Discharge_MAE_SOC10_70_mV": 26.187114603365796,
+      "Mean_abs_capacity_error_mAh": 37.771100760992326,
+      "Max_abs_capacity_error_mAh": 94.59439161887303,
+      "Delta_Dynamic_MAE_SOC10_70_mV": 0.0,
+      "Delta_Charge_MAE_SOC10_70_mV": 0.0,
+      "Delta_Discharge_MAE_SOC10_70_mV": 0.0,
+      "Delta_Mean_abs_capacity_error_mAh": 0.0,
+      "Delta_Max_abs_capacity_error_mAh": 0.0
+    },
+    {
+      "Case": "Bruggeman",
+      "Dsn_changed": false,
+      "Dsp_changed": false,
+      "Bruggeman_changed": true,
+      "Dynamic_MAE_SOC10_70_mV": 73.0895309701954,
+      "Charge_MAE_SOC10_70_mV": 65.46582974463657,
+      "Discharge_MAE_SOC10_70_mV": 80.71323219575422,
+      "Mean_abs_capacity_error_mAh": 62.94035157741502,
+      "Max_abs_capacity_error_mAh": 228.12174534074228,
+      "Delta_Dynamic_MAE_SOC10_70_mV": 46.00077566532252,
+      "Delta_Charge_MAE_SOC10_70_mV": 37.4754337382566,
+      "Delta_Discharge_MAE_SOC10_70_mV": 54.52611759238842,
+      "Delta_Mean_abs_capacity_error_mAh": 25.169250816422696,
+      "Delta_Max_abs_capacity_error_mAh": 133.52735372186925
+    },
+    {
+      "Case": "Dsn",
+      "Dsn_changed": true,
+      "Dsp_changed": false,
+      "Bruggeman_changed": false,
+      "Dynamic_MAE_SOC10_70_mV": 25.116815736598568,
+      "Charge_MAE_SOC10_70_mV": 26.20650364247167,
+      "Discharge_MAE_SOC10_70_mV": 24.027127830725465,
+      "Mean_abs_capacity_error_mAh": 39.70462723257461,
+      "Max_abs_capacity_error_mAh": 96.23881161786284,
+      "Delta_Dynamic_MAE_SOC10_70_mV": -1.9719395682743084,
+      "Delta_Charge_MAE_SOC10_70_mV": -1.7838923639082935,
+      "Delta_Discharge_MAE_SOC10_70_mV": -2.1599867726403303,
+      "Delta_Mean_abs_capacity_error_mAh": 1.933526471582283,
+      "Delta_Max_abs_capacity_error_mAh": 1.6444199989898038
+    },
+    {
+      "Case": "Dsn+Bruggeman",
+      "Dsn_changed": true,
+      "Dsp_changed": false,
+      "Bruggeman_changed": true,
+      "Dynamic_MAE_SOC10_70_mV": 70.65882154204631,
+      "Charge_MAE_SOC10_70_mV": 63.47329307582711,
+      "Discharge_MAE_SOC10_70_mV": 77.84435000826551,
+      "Mean_abs_capacity_error_mAh": 55.731394951267944,
+      "Max_abs_capacity_error_mAh": 221.95086555236819,
+      "Delta_Dynamic_MAE_SOC10_70_mV": 43.570066237173435,
+      "Delta_Charge_MAE_SOC10_70_mV": 35.48289706944715,
+      "Delta_Discharge_MAE_SOC10_70_mV": 51.65723540489971,
+      "Delta_Mean_abs_capacity_error_mAh": 17.96029419027562,
+      "Delta_Max_abs_capacity_error_mAh": 127.35647393349515
+    },
+    {
+      "Case": "Dsn+Dsp",
+      "Dsn_changed": true,
+      "Dsp_changed": true,
+      "Bruggeman_changed": false,
+      "Dynamic_MAE_SOC10_70_mV": 31.24399074078931,
+      "Charge_MAE_SOC10_70_mV": 31.511909079895798,
+      "Discharge_MAE_SOC10_70_mV": 30.976072401682817,
+      "Mean_abs_capacity_error_mAh": 30.920885572969194,
+      "Max_abs_capacity_error_mAh": 70.40323554005838,
+      "Delta_Dynamic_MAE_SOC10_70_mV": 4.155235435916435,
+      "Delta_Charge_MAE_SOC10_70_mV": 3.521513073515834,
+      "Delta_Discharge_MAE_SOC10_70_mV": 4.788957798317021,
+      "Delta_Mean_abs_capacity_error_mAh": -6.850215188023132,
+      "Delta_Max_abs_capacity_error_mAh": -24.191156078814657
+    },
+    {
+      "Case": "Dsn+Dsp+Bruggeman",
+      "Dsn_changed": true,
+      "Dsp_changed": true,
+      "Bruggeman_changed": true,
+      "Dynamic_MAE_SOC10_70_mV": 77.72699140084319,
+      "Charge_MAE_SOC10_70_mV": 69.88489272069268,
+      "Discharge_MAE_SOC10_70_mV": 85.56909008099372,
+      "Mean_abs_capacity_error_mAh": 77.99687499352346,
+      "Max_abs_capacity_error_mAh": 330.1009649958337,
+      "Delta_Dynamic_MAE_SOC10_70_mV": 50.63823609597031,
+      "Delta_Charge_MAE_SOC10_70_mV": 41.89449671431271,
+      "Delta_Discharge_MAE_SOC10_70_mV": 59.38197547762792,
+      "Delta_Mean_abs_capacity_error_mAh": 40.22577423253114,
+      "Delta_Max_abs_capacity_error_mAh": 235.50657337696066
+    },
+    {
+      "Case": "Dsp",
+      "Dsn_changed": false,
+      "Dsp_changed": true,
+      "Bruggeman_changed": false,
+      "Dynamic_MAE_SOC10_70_mV": 33.839179734719394,
+      "Charge_MAE_SOC10_70_mV": 33.6019741659022,
+      "Discharge_MAE_SOC10_70_mV": 34.07638530353659,
+      "Mean_abs_capacity_error_mAh": 35.75725253250399,
+      "Max_abs_capacity_error_mAh": 68.66838748811396,
+      "Delta_Dynamic_MAE_SOC10_70_mV": 6.750424429846518,
+      "Delta_Charge_MAE_SOC10_70_mV": 5.611578159522235,
+      "Delta_Discharge_MAE_SOC10_70_mV": 7.889270700170794,
+      "Delta_Mean_abs_capacity_error_mAh": -2.0138482284883352,
+      "Delta_Max_abs_capacity_error_mAh": -25.92600413075907
+    },
+    {
+      "Case": "Dsp+Bruggeman",
+      "Dsn_changed": false,
+      "Dsp_changed": true,
+      "Bruggeman_changed": true,
+      "Dynamic_MAE_SOC10_70_mV": 80.15981819962069,
+      "Charge_MAE_SOC10_70_mV": 71.88167153773145,
+      "Discharge_MAE_SOC10_70_mV": 88.4379648615099,
+      "Mean_abs_capacity_error_mAh": 91.57714978239238,
+      "Max_abs_capacity_error_mAh": 334.9981821801278,
+      "Delta_Dynamic_MAE_SOC10_70_mV": 53.07106289474781,
+      "Delta_Charge_MAE_SOC10_70_mV": 43.89127553135148,
+      "Delta_Discharge_MAE_SOC10_70_mV": 62.2508502581441,
+      "Delta_Mean_abs_capacity_error_mAh": 53.80604902140006,
+      "Delta_Max_abs_capacity_error_mAh": 240.40379056125477
+    }
+  ],
+  "shapley": [
+    {
+      "Metric": "Dynamic_MAE_SOC10_70_mV",
+      "Factor": "Dsn",
+      "Shapley_contribution": -2.3059051926971303,
+      "Baseline": 27.088755304872876,
+      "All_changed": 77.72699140084319,
+      "Total_change": 50.63823609597031
+    },
+    {
+      "Metric": "Dynamic_MAE_SOC10_70_mV",
+      "Factor": "Dsp",
+      "Shapley_contribution": 6.805775135150471,
+      "Baseline": 27.088755304872876,
+      "All_changed": 77.72699140084319,
+      "Total_change": 50.63823609597031
+    },
+    {
+      "Metric": "Dynamic_MAE_SOC10_70_mV",
+      "Factor": "Bruggeman",
+      "Shapley_contribution": 46.13836615351697,
+      "Baseline": 27.088755304872876,
+      "All_changed": 77.72699140084319,
+      "Total_change": 50.63823609597031
+    },
+    {
+      "Metric": "Charge_MAE_SOC10_70_mV",
+      "Factor": "Dsn",
+      "Shapley_contribution": -1.9406573527849986,
+      "Baseline": 27.990396006379964,
+      "All_changed": 69.88489272069268,
+      "Total_change": 41.89449671431271
+    },
+    {
+      "Metric": "Charge_MAE_SOC10_70_mV",
+      "Factor": "Dsp",
+      "Shapley_contribution": 5.961267139882436,
+      "Baseline": 27.990396006379964,
+      "All_changed": 69.88489272069268,
+      "Total_change": 41.89449671431271
+    },
+    {
+      "Metric": "Charge_MAE_SOC10_70_mV",
+      "Factor": "Bruggeman",
+      "Shapley_contribution": 37.87388692721527,
+      "Baseline": 27.990396006379964,
+      "All_changed": 69.88489272069268,
+      "Total_change": 41.89449671431271
+    },
+    {
+      "Metric": "Discharge_MAE_SOC10_70_mV",
+      "Factor": "Dsn",
+      "Shapley_contribution": -2.67115303260925,
+      "Baseline": 26.187114603365796,
+      "All_changed": 85.56909008099372,
+      "Total_change": 59.38197547762792
+    },
+    {
+      "Metric": "Discharge_MAE_SOC10_70_mV",
+      "Factor": "Dsp",
+      "Shapley_contribution": 7.650283130418506,
+      "Baseline": 26.187114603365796,
+      "All_changed": 85.56909008099372,
+      "Total_change": 59.38197547762792
+    },
+    {
+      "Metric": "Discharge_MAE_SOC10_70_mV",
+      "Factor": "Bruggeman",
+      "Shapley_contribution": 54.40284537981866,
+      "Baseline": 26.187114603365796,
+      "All_changed": 85.56909008099372,
+      "Total_change": 59.38197547762792
+    },
+    {
+      "Metric": "Mean_abs_capacity_error_mAh",
+      "Factor": "Dsn",
+      "Shapley_contribution": -5.889803370042524,
+      "Baseline": 37.771100760992326,
+      "All_changed": 77.99687499352346,
+      "Total_change": 40.22577423253114
+    },
+    {
+      "Metric": "Mean_abs_capacity_error_mAh",
+      "Factor": "Dsp",
+      "Shapley_contribution": 10.059386695484385,
+      "Baseline": 37.771100760992326,
+      "All_changed": 77.99687499352346,
+      "Total_change": 40.22577423253114
+    },
+    {
+      "Metric": "Mean_abs_capacity_error_mAh",
+      "Factor": "Bruggeman",
+      "Shapley_contribution": 36.056190907089274,
+      "Baseline": 37.771100760992326,
+      "All_changed": 77.99687499352346,
+      "Total_change": 40.22577423253114
+    }
+  ]
+}

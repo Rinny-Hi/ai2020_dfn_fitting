@@ -1,0 +1,21 @@
+{
+  "new_260918_GITT_used": false,
+  "window": "endpoint constrained; delta x and delta y fixed by measured C/20 capacity",
+  "negative_ocp": "legacy low-rate v1/v2 directional branches with one-state hysteresis",
+  "positive_ocp": "legacy GITT 7-7/7-8 rest-end directional branches with one-state hysteresis",
+  "kinetics": "Ai2020 nominal",
+  "pybamm_version": "26.8.0.0",
+  "stage": {
+    "Method": "current_endpoint_window",
+    "x0": 0.0014165965903237385,
+    "x100": 0.7736353851911081,
+    "y100": 0.4450982240113249,
+    "y0": 0.9533897333389086,
+    "qOCV_RMSE_2_98_mV": 18.03859844702208,
+    "qOCV_MAE_2_98_mV": 16.2146527829546,
+    "qOCV_bias_2_98_mV": 16.2146527829546,
+    "SOC_0_endpoint_error_mV": 2.220446049250313e-12,
+    "SOC_100_endpoint_error_mV": -4.1744385725905886e-10,
+    "optimizer_success": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "selected_candidate": "Immediate-target common-scale control",
+  "new_260918_GITT_used": false,
+  "calibration": "legacy half-cell OCP + full-cell C/20 history",
+  "validation": "0.5C/1C/2C held out",
+  "fixed_window": {
+    "x0": 0.0014045163063722,
+    "x100": 0.7736233049071565,
+    "y100": 0.4507120950658858,
+    "y0": 0.9590036043934697
+  },
+  "fixed_delta_x": 0.7722187886007843,
+  "fixed_delta_y": 0.5082915093275837,
+  "admissibility": {
+    "qOCV_endpoint_mV": 10,
+    "C20_branch_MAE_mV": 20,
+    "mean_capacity_error_Ah": 0.05
+  }
+}

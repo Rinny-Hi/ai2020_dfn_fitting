@@ -1,0 +1,151 @@
+{
+  "applied_coating_thickness_um": {
+    "Ln": 74.0,
+    "Lp": 66.0
+  },
+  "effective_csmax_mol_m3": {
+    "negative": 25147.3335439359,
+    "positive": 48905.658750751165
+  },
+  "low_rate": [
+    {
+      "anode_hysteresis_scale": 0.0,
+      "qOCV_MAE_10_90_mV": 4.769089929043106,
+      "C50_charge_MAE_10_90_mV": 9.115348377816058,
+      "C50_discharge_MAE_10_90_mV": 4.4845931213522965,
+      "C50_branch_mean_MAE_10_90_mV": 6.799970749584178
+    },
+    {
+      "anode_hysteresis_scale": 0.25,
+      "qOCV_MAE_10_90_mV": 4.769089929043106,
+      "C50_charge_MAE_10_90_mV": 11.461648135575611,
+      "C50_discharge_MAE_10_90_mV": 8.182244637982699,
+      "C50_branch_mean_MAE_10_90_mV": 9.821946386779155
+    },
+    {
+      "anode_hysteresis_scale": 0.5,
+      "qOCV_MAE_10_90_mV": 4.769089929043106,
+      "C50_charge_MAE_10_90_mV": 17.235977241484736,
+      "C50_discharge_MAE_10_90_mV": 18.351626413113372,
+      "C50_branch_mean_MAE_10_90_mV": 17.793801827299056
+    },
+    {
+      "anode_hysteresis_scale": 0.75,
+      "qOCV_MAE_10_90_mV": 4.769089929043106,
+      "C50_charge_MAE_10_90_mV": 26.772270045008387,
+      "C50_discharge_MAE_10_90_mV": 29.44527095272641,
+      "C50_branch_mean_MAE_10_90_mV": 28.1087704988674
+    },
+    {
+      "anode_hysteresis_scale": 1.0,
+      "qOCV_MAE_10_90_mV": 4.769089929043106,
+      "C50_charge_MAE_10_90_mV": 37.760282565623406,
+      "C50_discharge_MAE_10_90_mV": 40.53891549233945,
+      "C50_branch_mean_MAE_10_90_mV": 39.14959902898143
+    }
+  ],
+  "dynamic_by_direction": [
+    {
+      "anode_hysteresis_scale": 0.0,
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 14.924337588602084,
+      "mean_center_MAE_mV": 11.81558660280561,
+      "mean_abs_capacity_error_mAh": 83.9179957192245
+    },
+    {
+      "anode_hysteresis_scale": 0.0,
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 9.78486295747969,
+      "mean_center_MAE_mV": 8.09869300540128,
+      "mean_abs_capacity_error_mAh": 21.504790666614742
+    },
+    {
+      "anode_hysteresis_scale": 0.25,
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 18.37237155064074,
+      "mean_center_MAE_mV": 15.365867096134158,
+      "mean_abs_capacity_error_mAh": 118.25339001273095
+    },
+    {
+      "anode_hysteresis_scale": 0.25,
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 19.539909654289087,
+      "mean_center_MAE_mV": 18.006822570167476,
+      "mean_abs_capacity_error_mAh": 21.52088488720135
+    },
+    {
+      "anode_hysteresis_scale": 0.5,
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 26.06881455583199,
+      "mean_center_MAE_mV": 22.767476331083547,
+      "mean_abs_capacity_error_mAh": 154.89478734081914
+    },
+    {
+      "anode_hysteresis_scale": 0.5,
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 30.77038086207261,
+      "mean_center_MAE_mV": 29.52262412788262,
+      "mean_abs_capacity_error_mAh": 21.555397362426877
+    },
+    {
+      "anode_hysteresis_scale": 0.75,
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 35.63402546558036,
+      "mean_center_MAE_mV": 32.93008714332737,
+      "mean_abs_capacity_error_mAh": 194.25400953124802
+    },
+    {
+      "anode_hysteresis_scale": 0.75,
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 42.30807087572248,
+      "mean_center_MAE_mV": 41.243539321581096,
+      "mean_abs_capacity_error_mAh": 21.612968078282908
+    },
+    {
+      "anode_hysteresis_scale": 1.0,
+      "Direction": "Charge",
+      "mean_center_RMSE_mV": 45.87861333011171,
+      "mean_center_MAE_mV": 43.73817506069503,
+      "mean_abs_capacity_error_mAh": 236.7862282565001
+    },
+    {
+      "anode_hysteresis_scale": 1.0,
+      "Direction": "Discharge",
+      "mean_center_RMSE_mV": 53.97249866343949,
+      "mean_center_MAE_mV": 52.996022872341655,
+      "mean_abs_capacity_error_mAh": 21.814116578315446
+    }
+  ],
+  "dynamic_overall": [
+    {
+      "anode_hysteresis_scale": 0.0,
+      "mean_center_RMSE_mV": 12.354600273040887,
+      "mean_center_MAE_mV": 9.957139804103445,
+      "mean_abs_capacity_error_mAh": 52.711393192919616
+    },
+    {
+      "anode_hysteresis_scale": 0.25,
+      "mean_center_RMSE_mV": 18.956140602464913,
+      "mean_center_MAE_mV": 16.686344833150816,
+      "mean_abs_capacity_error_mAh": 69.88713744996615
+    },
+    {
+      "anode_hysteresis_scale": 0.5,
+      "mean_center_RMSE_mV": 28.4195977089523,
+      "mean_center_MAE_mV": 26.145050229483086,
+      "mean_abs_capacity_error_mAh": 88.22509235162302
+    },
+    {
+      "anode_hysteresis_scale": 0.75,
+      "mean_center_RMSE_mV": 38.97104817065142,
+      "mean_center_MAE_mV": 37.08681323245423,
+      "mean_abs_capacity_error_mAh": 107.93348880476545
+    },
+    {
+      "anode_hysteresis_scale": 1.0,
+      "mean_center_RMSE_mV": 49.92555599677561,
+      "mean_center_MAE_mV": 48.36709896651834,
+      "mean_abs_capacity_error_mAh": 129.30017241740777
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+﻿Model,Step,Parameter,Difference_mode,Lower_feasible,Upper_feasible,RMS_mV_per_normalized_coordinate
+main,0.005,Dsn,central,True,True,9.833258174230602
+main,0.005,kn,forward_feasible,False,True,94.70013618588052
+main,0.005,brugg_n,backward_feasible,True,False,67.55373432904156
+main,0.01,Dsn,central,True,True,9.839788046070826
+main,0.01,kn,forward_feasible,False,True,94.56166388397233
+main,0.01,brugg_n,backward_feasible,True,False,67.19875516855821
+main,0.02,Dsn,central,True,True,9.853643689575199
+main,0.02,kn,forward_feasible,False,True,94.27359449633437
+main,0.02,brugg_n,backward_feasible,True,False,66.49094830268886
+conservative,0.005,Dsn,central,True,True,9.980504496379831
+conservative,0.005,kn,forward_feasible,False,True,83.12860670501863
+conservative,0.01,Dsn,central,True,True,9.980962205714153
+conservative,0.01,kn,forward_feasible,False,True,82.9757964481845
+conservative,0.02,Dsn,forward_feasible,False,True,9.880408173087423
+conservative,0.02,kn,forward_feasible,False,True,82.65097699232365

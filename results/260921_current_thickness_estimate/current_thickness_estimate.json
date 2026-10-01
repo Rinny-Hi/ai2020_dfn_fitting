@@ -1,0 +1,42 @@
+{
+  "assumptions": {
+    "positive_double_sided_total_um": 138.0,
+    "negative_double_sided_total_um": 155.0,
+    "assumed_Al_collector_um": 15.0,
+    "assumed_Cu_collector_um": 10.0,
+    "formula": "single coating thickness = (double-sided total - collector) / 2",
+    "capacity_constraint": "csmax rescaled inversely with thickness to preserve fitted Qn and Qp"
+  },
+  "fixed_current_configuration": {
+    "kn": 7.4e-07,
+    "kp": 3.12e-07,
+    "Bruggeman": [
+      2.5,
+      1.83,
+      1.5
+    ],
+    "qOCV_MAE_mV": 4.6402528317129175
+  },
+  "summary": [
+    {
+      "Scenario": "Ai2020 nominal thickness",
+      "Ln_um": 76.5,
+      "Lp_um": 68.0,
+      "csn_max_mol_m3": 25165.36322056938,
+      "csp_max_mol_m3": 46705.09132084174,
+      "mean_MAE_SOC10_70_mV": 13.67220783218586,
+      "mean_abs_capacity_error_mAh": 43.00003214800433,
+      "max_abs_capacity_error_mAh": 123.05844813842003
+    },
+    {
+      "Scenario": "Estimated teardown thickness",
+      "Ln_um": 72.5,
+      "Lp_um": 61.50000000000001,
+      "csn_max_mol_m3": 26553.79705342838,
+      "csp_max_mol_m3": 51641.40178564615,
+      "mean_MAE_SOC10_70_mV": 14.885094593954948,
+      "mean_abs_capacity_error_mAh": 39.94585947241057,
+      "max_abs_capacity_error_mAh": 119.90298358195635
+    }
+  ]
+}

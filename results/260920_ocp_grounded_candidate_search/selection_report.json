@@ -1,0 +1,39 @@
+{
+  "new_260918_GITT_used": false,
+  "calibration_data": [
+    "legacy half-cell OCP",
+    "full-cell C/20 charge/discharge"
+  ],
+  "validation_data": [
+    "0.5C",
+    "1C",
+    "2C",
+    "charge",
+    "discharge"
+  ],
+  "fixed": {
+    "delta_x": 0.7722187886007843,
+    "delta_y": 0.5082915093275837
+  },
+  "prespecified_admissibility": {
+    "max_qocv_endpoint_error_mV": 10.0,
+    "mean_abs_capacity_error_Ah": 0.05,
+    "inside_halfcell_coverage": true
+  },
+  "selection_status": "Selected among candidates meeting endpoint, capacity, and coverage checks",
+  "selected_candidate": "C20-balanced, endpoint <= 10 mV",
+  "solver_notes": {
+    "C20-balanced, endpoint <= 5 mV": {
+      "success": true,
+      "message": "Optimization terminated successfully"
+    },
+    "C20-balanced, endpoint <= 10 mV": {
+      "success": true,
+      "message": "Optimization terminated successfully"
+    },
+    "C20-balanced, endpoint <= 20 mV": {
+      "success": true,
+      "message": "Optimization terminated successfully"
+    }
+  }
+}

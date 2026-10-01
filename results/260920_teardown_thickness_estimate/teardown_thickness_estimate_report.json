@@ -1,0 +1,64 @@
+{
+  "assumption": "Double-sided total thickness includes one current collector and two equal coating layers.",
+  "collector_thickness_source": "Current Ai2020-based model values; replace after direct measurement.",
+  "positive": {
+    "double_sided_total_um": 138.0,
+    "assumed_current_collector_um": 15.0,
+    "estimated_single_side_coating_um": 61.49999999999999
+  },
+  "negative": {
+    "double_sided_total_um": 155.0,
+    "assumed_current_collector_um": 10.0,
+    "estimated_single_side_coating_um": 72.5
+  },
+  "method": "Thickness and c_s_max updated together; Qn and Qp fixed by measured half-cell capacity/coating mass.",
+  "old": {
+    "Scenario": "Previous Chen-consistent thickness",
+    "Negative_thickness_um": 76.5,
+    "Positive_thickness_um": 68.0,
+    "Negative_c_s_max_mol_m3": 25192.903555595163,
+    "Positive_c_s_max_mol_m3": 53227.45670109481,
+    "Q_n_Ah": 2.5678830502680956,
+    "Q_p_Ah": 4.901647364867216,
+    "x0": 0.00171832025796179,
+    "x100": 0.91208968617976,
+    "y100": 0.4841578250122246,
+    "y0": 0.9610846673542028,
+    "qOCV_MAE_2_98_mV": 12.657546957496852,
+    "qOCV_RMSE_2_98_mV": 14.853715644726636,
+    "max_endpoint_abs_mV": 9.154238379119661,
+    "Dynamic_MAE_SOC10_70_mV": 33.39692379641168,
+    "Mean_abs_capacity_error_Ah": 0.045654003033815276,
+    "Max_abs_capacity_error_Ah": 0.09257662795333807
+  },
+  "estimated": {
+    "Scenario": "Estimated teardown thickness",
+    "Negative_thickness_um": 72.5,
+    "Positive_thickness_um": 61.49999999999999,
+    "Negative_c_s_max_mol_m3": 26582.85685521421,
+    "Positive_c_s_max_mol_m3": 58853.122856495065,
+    "Q_n_Ah": 2.567883050268096,
+    "Q_p_Ah": 4.901647364867214,
+    "x0": 0.0017183202576783474,
+    "x100": 0.9120896861794764,
+    "y100": 0.4841578249944155,
+    "y0": 0.961084667336394,
+    "qOCV_MAE_2_98_mV": 12.657546970412492,
+    "qOCV_RMSE_2_98_mV": 14.853715655057451,
+    "max_endpoint_abs_mV": 9.15423834565754,
+    "Dynamic_MAE_SOC10_70_mV": 37.636603070664776,
+    "Mean_abs_capacity_error_Ah": 0.039277279088180454,
+    "Max_abs_capacity_error_Ah": 0.08773427052598257
+  },
+  "dynamic_delta_estimated_minus_old": {
+    "MAE_SOC10_70_mV": 4.239679274253099,
+    "mean_abs_capacity_error_Ah": -0.006376723945634821,
+    "max_abs_capacity_error_Ah": -0.004842357427355504
+  },
+  "important_limitations": [
+    "Current collector thickness is provisional until Monday measurement.",
+    "Equal coating thickness on both sides is assumed.",
+    "Porosity, particle radius, diffusion and kinetic parameters are not changed in this trial.",
+    "Positive coating mass is treated as LiCoO2 mass as in the prior Chen-style trial."
+  ]
+}

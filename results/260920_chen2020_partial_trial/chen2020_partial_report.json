@@ -1,0 +1,47 @@
+{
+  "method": "Chen 2020 Eq. 7 for negative c_s_max and Eq. 5 for positive c_s_max",
+  "assumption": "17.25 mg positive and 10.40 mg negative are one-sided coating masses for a 10 mm disk; positive coating is treated as 100% LiCoO2, matching Chen's primary calculation convention",
+  "anode_halfcell_capacity_Ah_per_10mm_disk": 0.002474675,
+  "anode_areal_capacity_mAh_cm2": 3.150854070367489,
+  "positive_coating_mass_mg_per_10mm_disk": 17.25,
+  "negative_coating_mass_mg_per_10mm_disk": 10.4,
+  "negative_specific_capacity_mAh_g_coating": 237.94951923076923,
+  "positive_coating_mass_mg_cm2": 21.963382146681557,
+  "cell_effective_area_cm2": 814.9799999999999,
+  "negative_c_s_max_original_mol_m3": 29700.0,
+  "negative_c_s_max_chen_mol_m3": 25192.903555595163,
+  "positive_c_s_max_original_mol_m3": 49943.0,
+  "positive_c_s_max_chen_mol_m3": 53227.45670109481,
+  "fit": {
+    "Q_n_Ah": 2.5678830502680956,
+    "Q_p_Ah": 4.901647364867216,
+    "x0": 0.00171832025796179,
+    "x100": 0.91208968617976,
+    "y100": 0.4841578250122246,
+    "y0": 0.9610846673542028,
+    "delta_x": 0.9103713659217982,
+    "delta_y": 0.47692684234197824,
+    "Q_Li_Ah": 4.7153105726163655,
+    "qOCV_MAE_2_98_mV": 12.657546957496852,
+    "qOCV_RMSE_2_98_mV": 14.853715644726636,
+    "endpoint_0_error_mV": -0.11714483743396897,
+    "endpoint_100_error_mV": -9.154238379119661,
+    "max_endpoint_abs_mV": 9.154238379119661,
+    "dVdQ_RMSE_5_95_V_per_Ah": 0.0469921886014546,
+    "J_OCV": 2.206328684543968,
+    "J_dVdQ": 0.22082657895546792,
+    "J_endpoint": 0.41906901607342395,
+    "J_total": 2.8462242795728594,
+    "optimizer_success": true
+  },
+  "dynamic_summary": {
+    "Dynamic_MAE_SOC10_70_mV": 33.39692379641168,
+    "Mean_abs_capacity_error_Ah": 0.045654003033815276,
+    "Max_abs_capacity_error_Ah": 0.09257662795333807
+  },
+  "limitations": [
+    "Positive coating is assumed to be 100% LiCoO2; binder/conductive-additive fraction is not measured",
+    "No three-electrode full-cell OCV; terminal qOCV difference fitting is used instead",
+    "Cell effective area and layer count remain inherited from the current model"
+  ]
+}

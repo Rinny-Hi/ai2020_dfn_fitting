@@ -1,0 +1,3 @@
+﻿Role,Step_number,Step_type,Duration_h,Capacity_Ah,Onset_V,End_V,Previous_step_type,Rest_before_step_min
+qOCV discharge primary,9,CC DChg,20.51888888888889,2.3362,4.1942,2.9999,CC Chg,0.0
+qOCV charge primary,10,CC Chg,20.535,2.3393,3.0088,4.2,CC DChg,0.0
