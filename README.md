@@ -2,9 +2,13 @@
 
 Enertech 파우치셀의 OCP, GITT, EIS, HPPC, 충·방전 데이터를 이용해 PyBaMM의 Ai2020 DFN 기준 모델을 검토하고 파라미터를 식별한 연구 저장소입니다. 초기 노트북, 후속 분석 스크립트, 원본 데이터 일부, 날짜별 결과를 함께 보존합니다.
 
-**현재 결과를 읽는 출발점은 [2026-09-27 인수인계](260927_HANDOFF_CURRENT_STATE_KO.md)와 [최종 physical-time 피팅 결과](results/260927_charge_physical_time_final/README_KO.md)입니다.** 이전 노트북과 결과 폴더는 실험 당시의 가정을 기록하므로 최신 권장 설정과 다를 수 있습니다.
+## 2026-10-08 집 Codex 연결용 기준
 
-## 현재 권장 설정
+현재 진행 범위는 **September 제외, SOC 2–98% stoichiometry 검토, 공통 overlap geometry 반영, parameter fitting 직전까지**입니다. 집에서 이어할 때는 [2026-10-08 인수인계](261008_HOME_CODEX_HANDOFF_KO.md)와 [2–98% 실행 노트북](261008_Enertech_Ai2020_피팅전_P0_2-98.ipynb)을 먼저 사용하세요. 아래의 2026-09-27 post-fit 문서는 과거 피팅 분기의 기록으로 보존합니다.
+
+**과거 post-fit 분기를 확인할 때는 [2026-09-27 인수인계](260927_HANDOFF_CURRENT_STATE_KO.md)와 [physical-time 피팅 결과](results/260927_charge_physical_time_final/README_KO.md)를 사용합니다.** 이전 노트북과 결과 폴더는 실험 당시의 가정을 기록하므로 이 분기의 최신 기준과 다를 수 있습니다.
+
+## 과거 post-fit 분기 결과
 
 2026-09-28까지 저장된 결과 기준, July BoL 3셀의 0.5C·1C·2C **charge** 전압으로 `Dsn`과 `kn`을 피팅하고 **discharge**를 독립 검증한 보수 모델이 선택됐습니다. `Dsn=7.4662e-14 m²/s`, `kn=1.45024e-6`, `brugg_n=2.914`(고정)입니다. Charge objective RMSE는 53.997 mV, discharge full RMSE는 49.51 mV입니다. 용량은 목적함수에 넣지 않고 사후에 평가했습니다. 값의 의미와 한계는 [최종 결과 문서](results/260927_charge_physical_time_final/README_KO.md)를 확인하세요.
 
