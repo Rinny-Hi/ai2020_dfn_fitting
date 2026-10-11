@@ -1,6 +1,6 @@
 # 파일 지도
 
-이 문서는 저장소 **현재 배치**를 기준으로 작성했습니다. 연구 순서는 파일명의 날짜와 항상 같지 않습니다. 최신 결정은 루트의 [`260927_HANDOFF_CURRENT_STATE_KO.md`](../260927_HANDOFF_CURRENT_STATE_KO.md)와 [`260927_charge_physical_time_final/README_KO.md`](../results/260927_charge_physical_time_final/README_KO.md)를 우선합니다.
+이 문서는 저장소 **현재 배치**를 기준으로 작성했습니다. 연구 순서는 파일명의 날짜와 항상 같지 않습니다. 피팅된 모델의 기존 권장 설정은 [`260927_HANDOFF_CURRENT_STATE_KO.md`](../260927_HANDOFF_CURRENT_STATE_KO.md)와 [`260927_charge_physical_time_final/README_KO.md`](../results/260927_charge_physical_time_final/README_KO.md)를 우선합니다. 2026-10-11에 추가한 [단계별 재현](../results/261011_july_bol_stage_reproduction/README_KO.md)은 별도 진단이며, [다음 비교 계획](261011_OCP_WINDOW_HYSTERESIS_PLAN.md)은 미실행입니다.
 
 ## 디렉터리와 입력
 
@@ -9,7 +9,7 @@
 | [`260902 Enertech셀 데이터 모음.xlsx`](../260902%20Enertech셀%20데이터%20모음.xlsx) | 통합 half-cell OCP/GITT, full-cell C/20 qOCV, 동적 데이터, prior | 저장소에 포함. 여러 초기 노트북과 GITT 스크립트가 루트에서 읽음 |
 | [`data/raw/260918_Anode_GITT/`](../data/raw/260918_Anode_GITT/) | 음극 GITT v2, v3, 결합 원본 | 저장소에 포함. `gitt_ocp_qc.py`, `gitt_ocp_analysis.py` 입력 |
 | `260808 Eneterch셀 열화데이터 v1 6-6(5).xlsx` | 초기 HPPC 노트북의 BoL HPPC 원본 | 저장소에 없음. 초기 노트북 실행 위치에 별도 준비 |
-| July BoL 3셀, September BoL 2셀 원본 Excel | 후속 charge/discharge 피팅·cohort 비교 입력 | 저장소에 없음. 재실행 담당 에이전트가 파일을 찾아 `OLD_FILES`·`NEW_FILES` 등과 연결해야 함 |
+| July BoL 3셀, September BoL 2셀 원본 Excel | 후속 charge/discharge 피팅·cohort 비교 입력 | 저장소에 없음. [다음 대화 인수인계](../261011_NEXT_CHAT_HANDOFF_KO.md)의 정확한 파일명과 위치를 참고 |
 | [`results/`](../results/) | 실행별 CSV, JSON, PNG, Markdown 보고서 | 과거 실행 산출물 포함. 재실행 시 같은 폴더를 덮어쓸 수 있음 |
 | [`outputs/`](../outputs/) | 공유용 결과 압축 파일 | 분석의 주 산출물 위치는 `results/` |
 
@@ -17,7 +17,7 @@
 
 스크립트가 읽는 CSV는 대부분 `results/`의 이전 단계 산출물입니다. 로컬 CSV 경로를 사용자에게 묻기 전에 저장소에서 파일명과 생산 스크립트를 검색하세요. 경로 추적과 수정 원칙은 루트 [`AGENTS.md`](../AGENTS.md)에 적었습니다.
 
-## 노트북 4개
+## 노트북 5개
 
 | 파일 | 성격 | 필요한 입력 |
 | --- | --- | --- |
@@ -25,6 +25,7 @@
 | [`260908 Charge Fitting Discharge Validation.ipynb`](../260908%20Charge%20Fitting%20Discharge%20Validation.ipynb) | 초기 charge-only 피팅, discharge 검증 | 루트 통합 Excel. 기본값은 `SMOKE_TEST=True` |
 | [`260918 GITT OCP QC and Stage1 Preparation.ipynb`](../260918%20GITT%20OCP%20QC%20and%20Stage1%20Preparation.ipynb) | 새 음극 GITT의 파싱·QC 결과 확인 | `gitt_ocp_qc.py` 및 포함된 raw 원본 |
 | [`260918 GITT OCP Stage1 Comparison.ipynb`](../260918%20GITT%20OCP%20Stage1%20Comparison.ipynb) | legacy/new OCP 및 Stage 1 비교 결과 열람 | `gitt_ocp_analysis.py`가 만든 `results/260918_gitt_ocp_comparison/` |
+| [`261011 Ai2020 July BoL DFN 단계별 재현.ipynb`](../261011%20Ai2020%20July%20BoL%20DFN%20단계별%20재현.ipynb) | July BoL 3셀 실제 순차 이력에서 Geometry/OCP/window/kinetics·transport 단계를 비교하고 coverage 기록 | 루트 통합 Excel, 저장소 밖 June C/50 두 파일과 July BoL 세 파일. [결과·한계](../results/261011_july_bol_stage_reproduction/README_KO.md) |
 
 이 노트북들은 당시 실험 기록입니다. `260927` 최종 physical-time 피팅의 실행 파일은 아래 Python 스크립트입니다.
 

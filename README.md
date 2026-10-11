@@ -4,6 +4,8 @@ Enertech 파우치셀의 OCP, GITT, EIS, HPPC, 충·방전 데이터를 이용�
 
 **현재 결과를 읽는 출발점은 [2026-09-27 인수인계](260927_HANDOFF_CURRENT_STATE_KO.md)와 [최종 physical-time 피팅 결과](results/260927_charge_physical_time_final/README_KO.md)입니다.** 이전 노트북과 결과 폴더는 실험 당시의 가정을 기록하므로 최신 권장 설정과 다를 수 있습니다.
 
+**2026-10-11 추가:** [July BoL 3셀의 Geometry → OCP → window → Dsn/Dsp/kp 단계별 재현 결과](results/261011_july_bol_stage_reproduction/README_KO.md)와 [재현 노트북](261011%20Ai2020%20July%20BoL%20DFN%20단계별%20재현.ipynb)을 추가했습니다. 이는 9월 최종 피팅을 대체하는 설정이 아니라 단계별 영향과 조기 cutoff를 확인하는 별도 진단입니다. OCP·window·hysteresis의 새 공정 비교는 [사용자 제공 실행계획](docs/261011_OCP_WINDOW_HYSTERESIS_PLAN.md)으로 남겼으며 **아직 실행하지 않았습니다.** 다음 대화용 입력 목록과 요청문은 [인수인계](261011_NEXT_CHAT_HANDOFF_KO.md)에 있습니다.
+
 ## 현재 권장 설정
 
 2026-09-28까지 저장된 결과 기준, July BoL 3셀의 0.5C·1C·2C **charge** 전압으로 `Dsn`과 `kn`을 피팅하고 **discharge**를 독립 검증한 보수 모델이 선택됐습니다. `Dsn=7.4662e-14 m²/s`, `kn=1.45024e-6`, `brugg_n=2.914`(고정)입니다. Charge objective RMSE는 53.997 mV, discharge full RMSE는 49.51 mV입니다. 용량은 목적함수에 넣지 않고 사후에 평가했습니다. 값의 의미와 한계는 [최종 결과 문서](results/260927_charge_physical_time_final/README_KO.md)를 확인하세요.
@@ -20,8 +22,10 @@ ai2020_dfn_fitting/
 ├── requirements-gitt-ocp.txt        후속 Python 분석 환경의 버전 목록
 ├── 260902 Enertech셀 데이터 모음.xlsx  통합 OCP/GITT/qOCV/동적 데이터
 ├── 2609*.ipynb                      초기 피팅 및 GITT 검토 노트북 4개
+├── 261011 Ai2020 July BoL DFN 단계별 재현.ipynb  7월 3셀 순차 DFN 단계별 진단
 ├── *.py                              분석, 피팅, 검증 및 그림 생성 스크립트
 ├── 2609*.md                          날짜별 진행·인수인계 기록
+├── 261011_NEXT_CHAT_HANDOFF_KO.md     다음 비교의 입력·범위·요청문
 ├── data/raw/260918_Anode_GITT/      저장소에 포함된 음극 GITT 원본 3개
 ├── results/                          분석별 CSV·JSON·그림·보고서
 └── outputs/                          별도 공유용 결과 압축 파일
@@ -93,5 +97,7 @@ python p0_charge_postfit_identifiability_audit.py
 - [최종 physical-time 피팅 결과](results/260927_charge_physical_time_final/README_KO.md)
 - [September BoL 별도 검증](results/260927_september_recommended_dsn_kn_fit/README_KO.md)
 - [날짜별 파일·실행 지도](docs/FILE_MAP.md)
+- [2026-10-11 단계별 재현 결과](results/261011_july_bol_stage_reproduction/README_KO.md)
+- [다음 대화 인수인계](261011_NEXT_CHAT_HANDOFF_KO.md)
 
 측정 데이터와 연구 결과를 변경할 때는 기존 `results/`를 덮어쓰기 전에 사용 입력과 설정을 기록하고 새 결과 폴더에서 비교하세요.
