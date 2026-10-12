@@ -17,7 +17,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import pybamm
 import pybamm.input.parameters.lithium_ion.Ai2020 as ai_params
 
 import analyze_oregan_brugg_2p5_anode_potential as anode_analysis
@@ -142,20 +141,25 @@ def nominal_detail_from_data(data: tuple) -> dict:
     }
 
 
-def load_ocp_sources(base: dict) -> tuple[dict, dict]:
+def load_ocp_sources(_dynamic_model: dict) -> tuple[dict, dict]:
     """Build old/new/nominal OCP details exactly as in the C/50 study."""
 
     bundle = ga.load_legacy_bundle(ga.get_paths(ROOT))
+    # The half-cell capacity-to-stoichiometry conversion must use the same
+    # reference model used to create the stored C/50 windows.  Using the later
+    # capacity-consistent dynamic cs,max here would remap the measured OCP a
+    # second time and make the window internally inconsistent.
+    source_reference = ga.build_legacy_model_inputs(bundle)
     new_cathode, _ = c50.extract_new_cathode_delith()
     anodes = {
-        "old": c50.old_detail(ehq.build_anode_detail(bundle, base)),
+        "old": c50.old_detail(ehq.build_anode_detail(bundle, source_reference)),
         "new": new_anode_detail_with_input_fallback(),
         "nominal": nominal_detail_from_data(
             ai_params.graphite_ocp_Enertech_Ai2020_data
         ),
     }
     cathodes = {
-        "old": c50.old_detail(ehq.build_cathode_detail(bundle, base)),
+        "old": c50.old_detail(ehq.build_cathode_detail(bundle, source_reference)),
         "new": new_cathode,
         "nominal": nominal_detail_from_data(ai_params.lico2_ocp_Ai2020_data),
     }
@@ -327,6 +331,14 @@ def write_readme(summary: pd.DataFrame, source_rows: pd.DataFrame) -> None:
     lines.extend(
         [
             "",
+            "## 판단",
+            "",
+            "- 절대 stoichiometry가 확보된 조합 중 `Ai2020 anode + existing GITT cathode`가 전체 시간 RMSE, 중앙 시간 RMSE, 용량 RMSE, 최대 용량 오차를 종합했을 때 가장 우수했다.",
+            "- `existing low-rate anode + existing GITT cathode`는 C/50 qOCV는 경쟁력이 있었지만 동적 검증에서 전체 시간 RMSE 44.12 mV, 용량 RMSE 2.50%, 최대 용량 오차 66.9 mAh로 현재 조합보다 열세였다.",
+            "- `new GITT anode + existing GITT cathode`는 전체 시간 RMSE가 36.71 mV로 가장 낮았지만 절대 stoichiometry anchor가 없고 용량 RMSE도 현재 조합보다 커서 최종 선정 근거로 사용하지 않는다.",
+            "- 따라서 현재 OCP인 `Ai2020 nominal graphite + existing measured LCO GITT`를 유지한다.",
+            "- 실행 중 기존 저율 음극 OCP 조합 일부에서 측정 OCP 보간범위 상한 extrapolation 경고가 발생했다. 이는 고율 동적 상태에서 표면 stoichiometry가 측정 support를 벗어날 수 있음을 뜻하므로 추가적인 물리적 주의사항이다.",
+            "",
             "## 해석 제한",
             "",
             "- `new GITT anode`는 절대 stoichiometry anchor가 확립되지 않아 sensitivity-only이다.",
@@ -404,7 +416,17 @@ def main() -> None:
             (source.anode_source == anode_name)
             & (source.cathode_source == cathode_name)
         ].iloc[0]
-        trust = "primary eligible" if bool(row.primary_eligible) else "sensitivity-only"
+        # A dynamic result is decision-grade here only when both electrode OCP
+        # axes have an absolute stoichiometry anchor.  The older C/50 table's
+        # `primary_eligible` flag mainly screened solver feasibility and the
+        # incomplete new-cathode reverse branch, so it did not demote the
+        # unanchored new-anode candidate by itself.
+        trust = (
+            "decision-grade comparator"
+            if bool(row.anode_absolute_anchor)
+            and bool(row.cathode_absolute_anchor)
+            else "sensitivity-only"
+        )
         anode = anodes[anode_name]
         cathode = cathodes[cathode_name]
         model, stage = candidate_inputs(
