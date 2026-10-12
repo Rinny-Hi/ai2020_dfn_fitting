@@ -1,0 +1,38 @@
+{
+  "model": "ORegan2022 transport; b_n=2.5; retained k_n",
+  "C_rate_basis_Ah": 2.28,
+  "C50_capacity_Ah": 2.3565276563125,
+  "target_throughput_Ah": 1.8852221250500003,
+  "ideal_6C_no_constraint_time_min": 8.268518092324562,
+  "voltage_only_6C_CC_CV": {
+    "time_min": 21.011040661015386,
+    "minimum_anode_potential_mV": -69.08105269374671,
+    "current_at_80pct_C": 0.9183235316577598,
+    "cc_end_time_min": 0.3941492160414913,
+    "cc_end_SOC_pct": 3.8134931714776727
+  },
+  "voltage_and_anode_safe_piecewise_5pct": {
+    "time_min": 30.87782170245,
+    "max_voltage_V": 4.179195546201397,
+    "minimum_anode_potential_mV": -0.013512086626303599,
+    "rates_C": [
+      3.9866455078125,
+      3.042431640625,
+      2.6850830078125,
+      2.4759033203125003,
+      2.2609130859374997,
+      2.0575439453125,
+      1.8977539062499997,
+      1.7670166015624997,
+      1.6508056640624997,
+      1.543310546875,
+      1.4387207031249998,
+      1.3283203125,
+      1.2208251953125,
+      1.1104248046874998,
+      0.9942138671874999,
+      0.8663818359375001
+    ]
+  },
+  "qualification": "piecewise result is a greedy 5%-SOC screening estimate, not a certified global optimum"
+}

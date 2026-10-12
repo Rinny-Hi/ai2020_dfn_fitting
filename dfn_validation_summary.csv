@@ -1,0 +1,12 @@
+﻿Item,Value,Status,Interpretation
+July Dsn,7.466200473885765e-14,fitted effective,optimizer-dependent; not intrinsic
+July kn,1.4502357402082455e-06,fitted effective,charge fit; held-out discharge checked
+Dsp,6.888175323807748e-14,fixed apparent GITT,low charge sensitivity
+kp,5.899519906708763e-07,fixed apparent EIS,excluded from joint fit due kn correlation
+brugg_n,2.914,fixed Ai2020,3-parameter fit did not improve validation
+July charge physical-time RMSE [mV],53.99699915122374,validated,capacity excluded from objective
+July discharge physical-time RMSE [mV],52.29502176501307,validated,49.51 mV is a different legacy aggregation
+July charge capacity RMSE [%],3.11273475082213,post hoc,not in objective
+July discharge capacity RMSE [%],1.0887776149871822,post hoc,not in objective
+September Dsn,4.1707741459682473e-14,fixed GITT,Dsn+kn prefit identifiability failed
+September kn,5.348412674531578e-07,fitted effective,cohort-specific

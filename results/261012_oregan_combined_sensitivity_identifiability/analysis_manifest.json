@@ -1,0 +1,28 @@
+{
+  "electrolyte_set": "ORegan2022",
+  "brugg_n": 2.45,
+  "parameters": [
+    "Dsn",
+    "Dsp",
+    "kn",
+    "kp"
+  ],
+  "initial": {
+    "Dsn": 4.1707741459682473e-14,
+    "Dsp": 6.888175323807748e-14,
+    "kn": 9.648533212e-07,
+    "kp": 5.899519906708763e-07
+  },
+  "sensitivity_perturbation": "multiplicative +/-5%",
+  "dynamic_data": "cell 6-6, 0.5C/1C/2C charge and discharge; 80 capacity-grid points per branch",
+  "hppc_source": "C:\\Users\\user\\OneDrive\\01. 적응형 충전 프로토콜\\4. Enertech 파우치셀 실험데이터\\260808 Enertech셀 열화데이터\\260808 Eneterch셀 열화데이터 v1 6-6.xlsx",
+  "hppc_data": "cycles 1-10, five key points per cycle",
+  "combined_weighting": "dynamic and HPPC blocks divided by sqrt(number of points), giving equal dataset-level least-squares weight",
+  "baseline_metrics": {
+    "Dynamic_RMSE_mV": 28.106235953202415,
+    "HPPC_RMSE_mV": 56.12535222109225,
+    "HPPC_initial_SOC_pct": 98.29008422816696,
+    "HPPC_points": 50,
+    "Dynamic_points": 480
+  }
+}

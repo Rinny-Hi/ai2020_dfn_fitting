@@ -1,0 +1,28 @@
+{
+  "reason_for_common_kinetics_scale": "kn/kp normalized sensitivity cosine = 0.993; their ratio is not separately identifiable",
+  "fixed_brugg_n": 2.45,
+  "fit_coordinates": [
+    "Dsn_scale",
+    "Dsp_scale",
+    "common_k_scale"
+  ],
+  "bounds_scale": {
+    "Dsn": [
+      0.5,
+      2.0
+    ],
+    "Dsp": [
+      0.5,
+      2.0
+    ],
+    "common_kn_kp": [
+      0.3,
+      3.0
+    ]
+  },
+  "objective": "equal dataset-level least-squares weight for 480 dynamic center-overlap voltage points and 50 HPPC key-point voltages",
+  "capacity_in_objective": false,
+  "optimization_success": true,
+  "optimization_message": "`ftol` termination condition is satisfied.",
+  "nfev": 5
+}

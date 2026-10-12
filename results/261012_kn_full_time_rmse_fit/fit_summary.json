@@ -1,0 +1,13 @@
+{
+  "objective": "full elapsed-time voltage RMSE; six CC branches equal weight",
+  "hppc_in_objective": false,
+  "capacity_or_endpoint_in_objective": false,
+  "best_kn_scale": 0.754221915190537,
+  "best_kn_table_value": 7.54221915190537e-12,
+  "best_kn_PyBaMM_prefactor": 7.277135197934144e-07,
+  "baseline_objective_RMSE_mV": 38.587781604348905,
+  "best_objective_RMSE_mV": 37.05412153510612,
+  "posthoc_capacity_RMSE_pct": 2.3672878992125765,
+  "posthoc_max_abs_capacity_error_mAh": 67.97611464031239,
+  "optimizer_success": true
+}

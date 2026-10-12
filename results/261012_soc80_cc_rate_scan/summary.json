@@ -1,0 +1,39 @@
+{
+  "model": "ORegan2022 transport; b_n=2.5; retained k_n=1e-11 table value",
+  "initial_SOC_pct": 0.0,
+  "target_SOC_pct": 80.0,
+  "C_rate_basis_capacity_Ah": 2.28,
+  "C50_full_cell_capacity_Ah": 2.3565276563125,
+  "target_throughput_Ah": 1.8852221250500003,
+  "ideal_6C_time_min": 8.268518092324562,
+  "upper_voltage_limit_V": 4.2,
+  "anode_constraint_V_vs_Li": 0.0,
+  "voltage_only": {
+    "max_feasible_C_rate": 1.04443359375,
+    "C_rate": 1.0444336,
+    "Current_A": 2.381308608,
+    "Reached_80pct_before_4p2V": true,
+    "Time_to_80pct_min": 47.50049074823661,
+    "Voltage_at_80pct_V": 4.199952587835159,
+    "Anode_potential_at_80pct_mV": -9.036656603084515,
+    "Minimum_anode_potential_to_80pct_mV": -9.036656603084515,
+    "Cutoff_capacity_Ah": 1.8853295164199415,
+    "Cutoff_SOC_pct": 80.00455718691242,
+    "Cutoff_time_min": 47.503196605921254,
+    "Cutoff_voltage_V": 4.200000000000001
+  },
+  "voltage_and_anode": {
+    "max_feasible_C_rate": 0.9638671875,
+    "C_rate": 0.9638672,
+    "Current_A": 2.197617216,
+    "Reached_80pct_before_4p2V": true,
+    "Time_to_80pct_min": 51.470896150369626,
+    "Voltage_at_80pct_V": 4.185537734140068,
+    "Anode_potential_at_80pct_mV": 0.013858476454698777,
+    "Minimum_anode_potential_to_80pct_mV": 0.013858476454698777,
+    "Cutoff_capacity_Ah": 1.9179624853340074,
+    "Cutoff_SOC_pct": 81.38934759353683,
+    "Cutoff_time_min": 52.36478322166587,
+    "Cutoff_voltage_V": 4.200000000000001
+  }
+}

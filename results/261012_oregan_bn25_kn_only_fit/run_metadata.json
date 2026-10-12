@@ -1,0 +1,18 @@
+{
+  "electrolyte_transport": "ORegan2022",
+  "negative_electrode_bruggeman": 2.5,
+  "fit_parameter": "negative-electrode kinetic prefactor only",
+  "fixed_parameters": {
+    "Dsn": 4.1707741459682473e-14,
+    "Dsp": 6.888175323807748e-14,
+    "kp": 5.899519906708763e-07
+  },
+  "hppc_initial_soc": 0.9829008422816696,
+  "hppc_fit_metric": "20 pulse voltage changes relative to adjacent rest",
+  "dynamic_fit_metric": "central 10-70% capacity-overlap voltage",
+  "combined_weighting": "equal dataset weight (mean of two MSE values)",
+  "profile_scale_bounds": [
+    0.35,
+    2.5
+  ]
+}
