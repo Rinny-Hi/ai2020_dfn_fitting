@@ -1,0 +1,44 @@
+{
+  "baseline": "S6 = ORegan2022 electrolyte transport, b_n=2.5",
+  "objective": "fixed physical-time terminal-voltage RMSE over six Cell 6-6 branches; 120 points per branch",
+  "capacity_in_objective": false,
+  "anode_potential_in_objective": false,
+  "early_cutoff_handling": "voltage-grid feasibility penalty up to 500 mV",
+  "bounds": {
+    "Dsn": [
+      1e-14,
+      8e-14
+    ],
+    "kn": [
+      3e-07,
+      3e-06
+    ],
+    "brugg_n": [
+      1.5,
+      3.5
+    ]
+  },
+  "s7a_selected_parameters": [
+    "kn",
+    "brugg_n"
+  ],
+  "s7a_pass_rule": {
+    "minimum_relative_sensitivity": 0.1,
+    "maximum_absolute_pairwise_cosine": 0.95,
+    "maximum_normalized_condition_number": 20.0,
+    "full_column_rank": true
+  },
+  "s7b_parameters": [
+    "Dsn",
+    "kn",
+    "brugg_n"
+  ],
+  "pso": {
+    "particles": 7,
+    "iterations": 7,
+    "inertia": 0.72,
+    "cognitive": 1.49,
+    "social": 1.49,
+    "note": "single deterministic seed per workflow; optimizer stochastic uncertainty is not quantified"
+  }
+}
