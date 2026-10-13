@@ -245,12 +245,18 @@ def overall_summary(detail: pd.DataFrame) -> pd.DataFrame:
                 "Overall_full_time_RMSE_mV": float(
                     np.sqrt(np.mean(part.Full_time_RMSE_mV.to_numpy(float) ** 2))
                 ),
+                "Overall_full_time_MAE_mV": float(
+                    np.mean(part.Full_time_MAE_mV.to_numpy(float))
+                ),
                 "Overall_center_time_RMSE_mV": float(
                     np.sqrt(
                         np.nanmean(
                             part.Center10_70_Qcell_time_RMSE_mV.to_numpy(float) ** 2
                         )
                     )
+                ),
+                "Overall_center_time_MAE_mV": float(
+                    np.mean(part.Center10_70_Qcell_time_MAE_mV.to_numpy(float))
                 ),
                 "Capacity_RMSE_pct": float(
                     np.sqrt(np.mean(part.Capacity_error_pct.to_numpy(float) ** 2))
@@ -286,18 +292,20 @@ def write_readme(summary: pd.DataFrame, detail: pd.DataFrame) -> None:
             "",
             "## 종합 결과",
             "",
-            "| 단계 | 성공/6 | 전체 시간 RMSE | 중앙 시간 RMSE | 용량 RMSE | 최대 용량 오차 |",
+            "| 단계 | 성공/6 | 전체 RMSE/MAE | 10–70% RMSE/MAE | 용량 RMSE | 최대 용량 오차 |",
             "|---|---:|---:|---:|---:|---:|",
         ]
     )
     for _, row in summary.iterrows():
         lines.append(
-            "| {} {} | {}/6 | {:.2f} mV | {:.2f} mV | {:.2f}% | {:.1f} mAh |".format(
+            "| {} {} | {}/6 | {:.2f}/{:.2f} mV | {:.2f}/{:.2f} mV | {:.2f}% | {:.1f} mAh |".format(
                 row.Stage,
                 row.Label,
                 int(row.Successful_branches),
                 row.Overall_full_time_RMSE_mV,
+                row.Overall_full_time_MAE_mV,
                 row.Overall_center_time_RMSE_mV,
+                row.Overall_center_time_MAE_mV,
                 row.Capacity_RMSE_pct,
                 row.Max_abs_capacity_error_mAh,
             )

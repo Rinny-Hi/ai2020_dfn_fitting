@@ -15,14 +15,14 @@ S3에서 OCP/window와 함께 effective cs,max 및 공통 overlap 면적을 적�
 
 ## 종합 결과
 
-| 단계 | 성공/6 | 전체 시간 RMSE | 중앙 시간 RMSE | 용량 RMSE | 최대 용량 오차 |
+| 단계 | 성공/6 | 전체 RMSE/MAE | 10–70% RMSE/MAE | 용량 RMSE | 최대 용량 오차 |
 |---|---:|---:|---:|---:|---:|
-| S1 Ai2020 raw | 6/6 | 118.20 mV | 112.31 mV | 14.40% | 444.4 mAh |
-| S2 S1 + corrected De | 6/6 | 76.28 mV | 72.72 mV | 7.92% | 214.1 mAh |
-| S3 S2 + selected OCP/window | 6/6 | 49.03 mV | 42.25 mV | 0.96% | 35.9 mAh |
-| S4 S3 + measured Rn/Rp | 6/6 | 46.27 mV | 38.87 mV | 3.22% | 100.0 mAh |
-| S5 S4 + kp/Dsn/Dsp | 6/6 | 43.90 mV | 35.74 mV | 1.08% | 30.9 mAh |
-| S6 S5 + ORegan2022/bn=2.5 | 6/6 | 38.59 mV | 26.30 mV | 1.02% | 29.8 mAh |
+| S1 Ai2020 raw | 6/6 | 118.20/105.14 mV | 112.31/101.76 mV | 14.40% | 444.4 mAh |
+| S2 S1 + corrected De | 6/6 | 76.28/63.85 mV | 72.72/60.61 mV | 7.92% | 214.1 mAh |
+| S3 S2 + selected OCP/window | 6/6 | 49.03/41.14 mV | 42.25/38.60 mV | 0.96% | 35.9 mAh |
+| S4 S3 + measured Rn/Rp | 6/6 | 46.27/38.25 mV | 38.87/34.27 mV | 3.22% | 100.0 mAh |
+| S5 S4 + kp/Dsn/Dsp | 6/6 | 43.90/35.61 mV | 35.74/32.88 mV | 1.08% | 30.9 mAh |
+| S6 S5 + ORegan2022/bn=2.5 | 6/6 | 38.59/27.68 mV | 26.30/21.84 mV | 1.02% | 29.8 mAh |
 
 ## C-rate별 전체 시간 전압 RMSE
 

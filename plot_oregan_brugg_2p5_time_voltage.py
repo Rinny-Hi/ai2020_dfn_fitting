@@ -57,9 +57,11 @@ def time_voltage_metrics(
     center_error = error(center_grid)
     return {
         "Full_time_RMSE_mV": float(np.sqrt(np.mean(full_error**2))),
+        "Full_time_MAE_mV": float(np.mean(np.abs(full_error))),
         "Center10_70_Qcell_time_RMSE_mV": float(
             np.sqrt(np.mean(center_error**2))
         ),
+        "Center10_70_Qcell_time_MAE_mV": float(np.mean(np.abs(center_error))),
         "Experiment_end_time_min": float(te[-1]),
         "DFN_end_time_min": float(tm[-1]),
         "End_time_error_min": float(tm[-1] - te[-1]),
