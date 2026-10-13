@@ -1,9 +1,10 @@
-"""Compare the six cumulative model-building stages requested on Cell 6-6.
+"""Compare the cumulative model-building stages requested on Cell 6-6.
 
 The sequence is deliberately cumulative:
 1. raw PyBaMM Ai2020,
 2. Ai2020 with only the electrolyte-diffusivity unit correction,
-3. selected OCP/window and capacity-consistent inventory/overlap bookkeeping,
+2b. Ai2020 OCP with the selected window and capacity-consistent inventory,
+3. selected OCP with the same selected window,
 4. measured particle radii,
 5. measured kp, Dsn, and Dsp,
 6. ORegan2022 electrolyte transport and b_n=2.5.
@@ -37,7 +38,7 @@ import priority_initial_state_protocol_recheck as priority
 
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT / "results" / "261013_cumulative_six_stage_model_comparison"
+OUT = ROOT / "results" / "261013_cumulative_seven_stage_model_comparison"
 
 AI_WINDOW = {
     "x0": 0.0065,
@@ -58,9 +59,14 @@ STAGE_META = (
         "Only Ai2020 electrolyte diffusivity is multiplied by 1e-4",
     ),
     (
+        "S2b",
+        "S2 + selected window",
+        "Ai2020 OCPs retained; selected C/50 window and capacity-consistent inventory applied",
+    ),
+    (
         "S3",
-        "S2 + selected OCP/window",
-        "Ai2020 graphite + existing LCO GITT; C/50 window and capacity-consistent inventory",
+        "S2b + selected OCP",
+        "Ai2020 graphite + existing LCO GITT with the same selected window/inventory",
     ),
     (
         "S4",
@@ -82,6 +88,7 @@ STAGE_META = (
 COLORS = {
     "S1": "#999999",
     "S2": "#CC79A7",
+    "S2b": "#9467BD",
     "S3": "#56B4E9",
     "S4": "#009E73",
     "S5": "#E69F00",
@@ -180,6 +187,11 @@ def build_stages(qcell: float) -> dict[str, dict]:
             ],
         },
     )
+    # S2b uses the same selected window and physical inventory as S3 while
+    # retaining the Ai2020 electrode OCP functions.  This separates the
+    # window/inventory effect (S2 -> S2b) from the OCP-source effect
+    # (S2b -> S3).
+    s2b_model = copy_model(s3_model)
 
     s4_model = update_params(
         s3_model,
@@ -222,6 +234,12 @@ def build_stages(qcell: float) -> dict[str, dict]:
     return {
         "S1": {"model": s1_model, **ai_common},
         "S2": {"model": s2_model, **ai_common},
+        "S2b": {
+            "model": s2b_model,
+            "stage": selected_stage,
+            "anode": ai_anode,
+            "cathode": ai_cathode,
+        },
         "S3": {"model": s3_model, **selected_common},
         "S4": {"model": s4_model, **selected_common},
         "S5": {"model": s5_model, **selected_common},
@@ -270,13 +288,14 @@ def overall_summary(detail: pd.DataFrame) -> pd.DataFrame:
             }
         )
     frame = pd.DataFrame(rows)
-    frame["Stage_order"] = frame.Stage.str.removeprefix("S").astype(int)
+    order = {code: index for index, (code, _, _) in enumerate(STAGE_META)}
+    frame["Stage_order"] = frame.Stage.map(order)
     return frame.sort_values("Stage_order").drop(columns="Stage_order")
 
 
 def write_readme(summary: pd.DataFrame, detail: pd.DataFrame) -> None:
     lines = [
-        "# Ai2020에서 현재 기준모델까지 누적 6단계 비교",
+        "# Ai2020에서 현재 기준모델까지 누적 7단계 비교",
         "",
         "## 비교 정의",
         "",
@@ -286,7 +305,7 @@ def write_readme(summary: pd.DataFrame, detail: pd.DataFrame) -> None:
     lines.extend(
         [
             "",
-            "S3에서 OCP/window와 함께 effective cs,max 및 공통 overlap 면적을 적용했다. 이는 선택된 window의 Qn/Qp를 실제 DFN inventory로 구현하기 위한 연동 bookkeeping이며 동적 fitting은 아니다.",
+            "S2b에서 selected window와 함께 effective cs,max 및 공통 overlap 면적을 적용했다. 이는 선택된 window의 Qn/Qp를 실제 DFN inventory로 구현하기 위한 연동 bookkeeping이며 동적 fitting은 아니다. S2b는 Ai2020 OCP를 유지하므로 S2→S2b는 window/inventory 효과, S2b→S3는 OCP source 변경 효과다.",
             "",
             "모든 단계는 Cell 6-6 July-BOL 0.5C/1C/2C 충·방전 실험의 각 rest-end 전압에서 독립 초기화했으며, 별도 fitting 없이 4.2/3.0 V cutoff까지 계산했다.",
             "",
@@ -344,7 +363,8 @@ def write_readme(summary: pd.DataFrame, detail: pd.DataFrame) -> None:
             "## 해석",
             "",
             "- S1→S2에서 De 단위 보정만으로 전체 전압 RMSE가 118.20→76.28 mV, 용량 RMSE가 14.40→7.92%로 감소했다.",
-            "- S2→S3의 선택 OCP/window 및 연동 inventory 반영이 가장 큰 추가 개선으로, 전체 전압 RMSE는 49.03 mV, 용량 RMSE는 0.96%가 됐다.",
+            "- S2→S2b는 Ai2020 OCP를 유지한 상태에서 selected window/inventory만 반영한 결과다. 10–70% 충전 RMSE는 99.69→78.09 mV, 방전 RMSE는 25.29→12.53 mV로 감소했고 용량 RMSE는 7.92→1.99%로 개선됐다.",
+            "- S2b→S3는 동일한 window/inventory에서 OCP source만 변경한 결과다. 10–70% 충전 RMSE는 78.09→49.06 mV로 크게 감소했지만 방전 RMSE는 12.53→34.11 mV로 증가했다. 다만 6곡선 종합 RMSE와 용량 RMSE는 모두 개선됐다.",
             "- S3→S4의 측정 입자반경 반영은 전압 RMSE를 소폭 줄였지만 용량 RMSE를 3.22%로 일시 증가시켰다. 입자반경이 분극과 cutoff 도달시점에 함께 영향을 준 결과다.",
             "- S4→S5의 kp/Dsn/Dsp 반영은 전압 및 용량 오차를 다시 감소시켰다.",
             "- S6가 전체 전압 RMSE 38.59 mV, 중앙 RMSE 26.30 mV로 가장 우수하며 용량 RMSE도 1.02%로 유지된다. 기존 현재 기준모델 결과와 수치상 일치한다.",
@@ -501,13 +521,13 @@ def main() -> None:
         fontsize=9,
     )
     fig.suptitle(
-        "Cumulative DFN build-up: raw Ai2020 to the current reference model\n"
+        "Cumulative DFN build-up with separated window and OCP effects\n"
         "Cell 6-6, measured vs simulated voltage-time curves",
         fontsize=16,
         weight="bold",
         y=1.10,
     )
-    fig.savefig(OUT / "six_stage_time_voltage_overlay.png", dpi=240, bbox_inches="tight")
+    fig.savefig(OUT / "seven_stage_time_voltage_overlay.png", dpi=240, bbox_inches="tight")
     plt.close(fig)
 
     detail = pd.DataFrame(detail_rows)
@@ -554,7 +574,7 @@ def main() -> None:
                 )
     ax_h.set_title("Full elapsed-time voltage RMSE by stage and branch [mV]", weight="bold")
     fig_h.colorbar(image, ax=ax_h, label="RMSE (mV)")
-    fig_h.savefig(OUT / "six_stage_branch_rmse_heatmap.png", dpi=240, bbox_inches="tight")
+    fig_h.savefig(OUT / "seven_stage_branch_rmse_heatmap.png", dpi=240, bbox_inches="tight")
     plt.close(fig_h)
 
     fig_s, axes_s = plt.subplots(1, 2, figsize=(13.5, 5.3), constrained_layout=True)
@@ -588,13 +608,13 @@ def main() -> None:
         ax.set_xlabel("Cumulative stage")
         ax.grid(True, alpha=0.25)
     fig_s.suptitle("Error evolution across the cumulative model-building stages", weight="bold")
-    fig_s.savefig(OUT / "six_stage_error_evolution.png", dpi=240, bbox_inches="tight")
+    fig_s.savefig(OUT / "seven_stage_error_evolution.png", dpi=240, bbox_inches="tight")
     plt.close(fig_s)
 
-    detail.to_csv(OUT / "six_stage_detail.csv", index=False, encoding="utf-8-sig")
-    summary.to_csv(OUT / "six_stage_summary.csv", index=False, encoding="utf-8-sig")
+    detail.to_csv(OUT / "seven_stage_detail.csv", index=False, encoding="utf-8-sig")
+    summary.to_csv(OUT / "seven_stage_summary.csv", index=False, encoding="utf-8-sig")
     pd.DataFrame(curve_rows).to_csv(
-        OUT / "six_stage_curve_data.csv", index=False, encoding="utf-8-sig"
+        OUT / "seven_stage_curve_data.csv", index=False, encoding="utf-8-sig"
     )
     write_readme(summary, detail)
     print("\n[summary]\n", summary.to_string(index=False))
