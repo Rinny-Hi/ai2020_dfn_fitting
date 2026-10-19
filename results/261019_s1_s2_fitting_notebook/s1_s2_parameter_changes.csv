@@ -1,0 +1,7 @@
+﻿Parameter,S1,S2,Unit,Reason
+"Electrolyte diffusivity at 1 M, 298.15 K",3.2227225286052635e-06,3.222722528605264e-10,m² s⁻¹,source correlation cm²/s → PyBaMM SI; multiply by 1e-4
+x0 / x100,0.006500 / 0.840000,0.003224 / 0.985111,-,C/50 qOCV fit using original Ai2020 OCP
+y0 / y100,0.965100 / 0.435000,0.867309 / 0.441938,-,C/50 qOCV fit using original Ai2020 OCP
+Negative maximum concentration,28700.0,24375.65139249233,mol m⁻³,capacity-consistent inverse calculation from fitted Qn
+Positive maximum concentration,49943.0,62278.74812757408,mol m⁻³,capacity-consistent inverse calculation from fitted Qp
+Common DFN overlap area,0.08149799999999999,0.0787236,m²,smaller cathode footprint × 34 coated faces

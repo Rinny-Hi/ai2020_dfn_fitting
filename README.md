@@ -2,6 +2,16 @@
 
 Enertech 파우치셀의 OCP, GITT, EIS, HPPC, 충·방전 데이터를 이용해 PyBaMM의 Ai2020 DFN 기준 모델을 검토하고 파라미터를 식별한 연구 저장소입니다. 초기 노트북, 후속 분석 스크립트, 원본 데이터 일부, 날짜별 결과를 함께 보존합니다.
 
+## 2026-10-19 현재 결과
+
+현대차 제출용 재현 흐름과 음극 OCP 후보 비교는 [2026-10-19 결과 요약](261019_결과_요약.md)에서 시작합니다. 핵심 실행 파일은 다음과 같습니다.
+
+- [S1–S3 현대차 제출용 간결본](261019_Ai2020_S1_S3_현대차제출용_간결본.ipynb)
+- [S1–S2 상세 fitting 흐름](261019_Ai2020_S1_S2_fitting_flow.ipynb)
+- [Ai2020/실험 저율 음극 OCP 동일 파이프라인 비교](results/261019_lowrate_anode_full_pipeline_comparison/README_KO.md)
+
+현재 선정은 **실험 GITT 양극 + Ai2020 graphite 음극 OCP**입니다. 실험 저율 음극 OCP도 S3–S7a까지 동일하게 검토했지만, 절대 stoichiometry 축이 독립적으로 측정되지 않았고 Ai2020의 전극 inventory를 이용해 환산되어 기준모델 채택은 보류했습니다.
+
 ## 2026-10-08 집 Codex 연결용 기준
 
 현재 진행 범위는 **September 제외, SOC 2–98% stoichiometry 검토, 공통 overlap geometry 반영, parameter fitting 직전까지**입니다. 집에서 이어할 때는 [2026-10-08 인수인계](261008_HOME_CODEX_HANDOFF_KO.md)와 [2–98% 실행 노트북](261008_Enertech_Ai2020_피팅전_P0_2-98.ipynb)을 먼저 사용하세요. 아래의 2026-09-27 post-fit 문서는 과거 피팅 분기의 기록으로 보존합니다.

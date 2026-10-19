@@ -1,0 +1,9 @@
+﻿Item,Value
+Notebook scope,S1 raw Ai2020 → S2 corrected De + Ai2020-OCP window fit
+PyBaMM version,26.7.1.0
+Random seed,261019
+C/50 charge branches,8
+C/50 discharge branches,8
+Dynamic validation branches,12
+Voltage metric domain,common elapsed time; center = 10–70% Qcell
+Status,PASS
