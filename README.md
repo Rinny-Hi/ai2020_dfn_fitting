@@ -2,6 +2,21 @@
 
 Enertech 파우치셀의 OCP, GITT, EIS, HPPC, 충·방전 데이터를 이용해 PyBaMM의 Ai2020 DFN 기준 모델을 검토하고 파라미터를 식별한 연구 저장소입니다. 초기 노트북, 후속 분석 스크립트, 원본 데이터 일부, 날짜별 결과를 함께 보존합니다.
 
+## 2026-10-20 현재 결과
+
+오늘 확정한 1단계 OCP/window 흐름, ORegan2022 `b_n=2.914` 시작 fitting 및
+GITT/Ai2020 `Dsn` 교차 비교는 [2026-10-20 결과 요약](261020_결과_요약.md)에
+정리했습니다.
+
+- [1단계 OCP·stoichiometry 간결본](261020_Ai2020_1단계_OCP_Stoichiometry_간결본.ipynb)
+- [ORegan2022 b_n=2.914 시작 fitting](results/261020_oregan_bn2914_start_fit/README_KO.md)
+- [GITT/Ai2020 Dsn 교차 비교](results/261020_final_dsn_ai2020_vs_gitt/README_KO.md)
+
+현재 OCP 선정은 **Ai2020 graphite 음극 + 실험 GITT 양극**이다. `Dsn`은 두 후보의
+동적 차이가 미미하지만 대상 전극의 실험 anchor라는 근거로 GITT 값을 유지한다.
+ORegan2022 `b_n=2.914`를 공식 fitting 시작점으로 사용하고 2.5/2.45를
+multi-start 교차검증에 사용한다.
+
 ## 2026-10-19 현재 결과
 
 현대차 제출용 재현 흐름과 음극 OCP 후보 비교는 [2026-10-19 결과 요약](261019_결과_요약.md)에서 시작합니다. 핵심 실행 파일은 다음과 같습니다.

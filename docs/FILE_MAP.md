@@ -1,6 +1,14 @@
 # 파일 지도
 
-이 문서는 저장소 **현재 배치**를 기준으로 작성했습니다. 연구 순서는 파일명의 날짜와 항상 같지 않습니다. 최신 결정은 루트의 [`260927_HANDOFF_CURRENT_STATE_KO.md`](../260927_HANDOFF_CURRENT_STATE_KO.md)와 [`260927_charge_physical_time_final/README_KO.md`](../results/260927_charge_physical_time_final/README_KO.md)를 우선합니다.
+이 문서는 저장소 **현재 배치**를 기준으로 작성했습니다. 연구 순서는 파일명의 날짜와 항상 같지 않습니다. 최신 결정은 루트의 [`261020_결과_요약.md`](../261020_결과_요약.md)를 우선합니다. 2026-09-27 physical-time 피팅 분기는 당시 결과 기록으로 보존합니다.
+
+## 2026-10-20 실행 파일
+
+| 작업 | 실행 파일 | 결과 |
+| --- | --- | --- |
+| 1단계 OCP/window 간결본 생성 | [`build_stage1_compact.py`](../build_stage1_compact.py) | [`261020_Ai2020_1단계_OCP_Stoichiometry_간결본.ipynb`](../261020_Ai2020_1단계_OCP_Stoichiometry_간결본.ipynb) |
+| ORegan2022 `b_n=2.914` 시작 fitting | [`fit_oregan_bn2914_start.py`](../fit_oregan_bn2914_start.py) | [`261020_oregan_bn2914_start_fit`](../results/261020_oregan_bn2914_start_fit/) |
+| GITT/Ai2020 `Dsn` 교차 비교 | [`compare_final_dsn_ai2020_gitt.py`](../compare_final_dsn_ai2020_gitt.py) | [`261020_final_dsn_ai2020_vs_gitt`](../results/261020_final_dsn_ai2020_vs_gitt/) |
 
 ## 디렉터리와 입력
 

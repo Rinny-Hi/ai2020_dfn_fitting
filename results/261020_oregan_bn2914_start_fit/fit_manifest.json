@@ -1,0 +1,32 @@
+{
+  "electrolyte": "ORegan2022",
+  "official_start": {
+    "Dsn": 4.1707741459682473e-14,
+    "kn": 9.648533212e-07,
+    "brugg_n": 2.914
+  },
+  "fitted_parameters": [
+    "kn",
+    "brugg_n"
+  ],
+  "bounds": {
+    "Dsn": [
+      1e-14,
+      8e-14
+    ],
+    "kn": [
+      3e-07,
+      3e-06
+    ],
+    "brugg_n": [
+      1.5,
+      3.5
+    ]
+  },
+  "objective": "fixed physical-time terminal-voltage RMSE over six Cell 6-6 charge/discharge branches",
+  "capacity_in_objective": false,
+  "anode_potential_in_objective": false,
+  "pso_particles": 7,
+  "pso_iterations": 7,
+  "seed": 261013
+}
