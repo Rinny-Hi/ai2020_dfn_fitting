@@ -1,0 +1,60 @@
+[
+  {
+    "OCP_case": "Ai2020_anode__measured_cathode",
+    "N_observations": 480,
+    "N_parameters": 4,
+    "Pearson_abs_max_offdiagonal": 0.9985018166733213,
+    "Normalized_column_singular_values": [
+      1.831103605828304,
+      0.7009297228031905,
+      0.39097668880588615,
+      0.05379904482432437
+    ],
+    "Normalized_column_condition_number": 34.03598728950667,
+    "Correlation_greedy_subsets": {
+      "0.8": [
+        "kn",
+        "Dsp"
+      ],
+      "0.95": [
+        "kn",
+        "Dsp",
+        "Dsn"
+      ],
+      "0.99": [
+        "kn",
+        "Dsp",
+        "Dsn"
+      ]
+    }
+  },
+  {
+    "OCP_case": "measured_anode__measured_cathode",
+    "N_observations": 480,
+    "N_parameters": 4,
+    "Pearson_abs_max_offdiagonal": 0.9993662922888552,
+    "Normalized_column_singular_values": [
+      1.8507625914762666,
+      0.6506627354045782,
+      0.3860400474597917,
+      0.047842622264333244
+    ],
+    "Normalized_column_condition_number": 38.684388603339855,
+    "Correlation_greedy_subsets": {
+      "0.8": [
+        "kn",
+        "Dsp"
+      ],
+      "0.95": [
+        "kn",
+        "Dsp",
+        "Dsn"
+      ],
+      "0.99": [
+        "kn",
+        "Dsp",
+        "Dsn"
+      ]
+    }
+  }
+]

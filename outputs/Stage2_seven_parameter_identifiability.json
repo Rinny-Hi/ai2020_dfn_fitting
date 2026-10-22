@@ -1,0 +1,88 @@
+[
+  {
+    "OCP_case": "Ai2020_anode__measured_cathode",
+    "Observation_count": 480,
+    "Candidate_parameters": [
+      "Dsn",
+      "Dsp",
+      "kn",
+      "kp",
+      "brugg_n",
+      "brugg_s",
+      "brugg_p"
+    ],
+    "Singular_values_unit_columns": [
+      2.4710564254126295,
+      0.7241094491533581,
+      0.482623694892063,
+      0.30089383779737305,
+      0.19920138108674523,
+      0.06875080418358061,
+      0.04092740249910551
+    ],
+    "Condition_number_unit_columns": 60.37657594973528,
+    "Correlation_greedy_subsets": {
+      "0.8": [
+        "brugg_n",
+        "Dsp"
+      ],
+      "0.95": [
+        "brugg_n",
+        "kn",
+        "brugg_p",
+        "Dsp",
+        "Dsn"
+      ],
+      "0.99": [
+        "brugg_n",
+        "kn",
+        "brugg_p",
+        "Dsp",
+        "Dsn"
+      ]
+    }
+  },
+  {
+    "OCP_case": "measured_anode__measured_cathode",
+    "Observation_count": 480,
+    "Candidate_parameters": [
+      "Dsn",
+      "Dsp",
+      "kn",
+      "kp",
+      "brugg_n",
+      "brugg_s",
+      "brugg_p"
+    ],
+    "Singular_values_unit_columns": [
+      2.489468908699268,
+      0.6737557739879881,
+      0.4788652885812466,
+      0.2603769277211434,
+      0.21952288137030965,
+      0.04491147456871997,
+      0.035808721660519814
+    ],
+    "Condition_number_unit_columns": 69.52130076857733,
+    "Correlation_greedy_subsets": {
+      "0.8": [
+        "brugg_n",
+        "Dsp"
+      ],
+      "0.95": [
+        "brugg_n",
+        "kn",
+        "brugg_p",
+        "Dsp",
+        "Dsn"
+      ],
+      "0.99": [
+        "brugg_n",
+        "kn",
+        "brugg_p",
+        "Dsp",
+        "Dsn"
+      ]
+    }
+  }
+]

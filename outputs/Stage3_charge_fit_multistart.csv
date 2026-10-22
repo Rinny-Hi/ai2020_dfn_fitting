@@ -1,0 +1,13 @@
+﻿OCP_case,Electrolyte,Start,kn,brugg_n,Train_voltage_RMSE_mV,Objective_RMS_mV,N_function_evals,Optimizer_success,Optimizer_message
+Ai2020_anode__measured_cathode,Ai2020_corrected,1,1.2494830282548344e-06,3.2720257708400156,41.15767090611303,39.055899783119266,9,True,`ftol` termination condition is satisfied.
+Ai2020_anode__measured_cathode,Ai2020_corrected,2,1.2417000581131764e-06,3.2697621853830143,41.164826801038345,39.05634962659816,10,True,`ftol` termination condition is satisfied.
+Ai2020_anode__measured_cathode,Ai2020_corrected,3,1.2424617819943994e-06,3.2699911276754614,41.16407297428766,39.05628599659941,9,True,`ftol` termination condition is satisfied.
+Ai2020_anode__measured_cathode,ORegan2022,1,2.999995627523778e-06,3.0492344491507435,38.86219584449423,37.37595207645718,12,True,`xtol` termination condition is satisfied.
+Ai2020_anode__measured_cathode,ORegan2022,2,2.9999960209785467e-06,3.0492602541921476,38.86198879522675,37.375991588047604,12,True,Both `ftol` and `xtol` termination conditions are satisfied.
+Ai2020_anode__measured_cathode,ORegan2022,3,2.9999987210281283e-06,3.049198665535292,38.86251105351344,37.37594423929402,13,True,Both `ftol` and `xtol` termination conditions are satisfied.
+measured_anode__measured_cathode,Ai2020_corrected,1,1.9302229034374285e-06,3.4999999572389235,37.30500230735318,35.78381820654055,11,True,`ftol` termination condition is satisfied.
+measured_anode__measured_cathode,Ai2020_corrected,2,1.930960149078244e-06,3.499999966704386,37.3054891232479,35.783770774959685,12,True,`ftol` termination condition is satisfied.
+measured_anode__measured_cathode,Ai2020_corrected,3,1.9315278516623874e-06,3.4999999927174175,37.305897495506215,35.78381192496923,12,True,`ftol` termination condition is satisfied.
+measured_anode__measured_cathode,ORegan2022,1,2.999999941751698e-06,3.131698983267147,34.701854839903646,33.342368545276706,10,True,`ftol` termination condition is satisfied.
+measured_anode__measured_cathode,ORegan2022,2,2.9999988892873874e-06,3.1315275380002987,34.70332616341259,33.34237493324262,10,True,`ftol` termination condition is satisfied.
+measured_anode__measured_cathode,ORegan2022,3,2.9999973418754044e-06,3.130987350951952,34.70773507159007,33.34226792236061,10,True,`ftol` termination condition is satisfied.

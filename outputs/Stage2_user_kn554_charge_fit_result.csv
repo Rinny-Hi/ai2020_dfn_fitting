@@ -1,0 +1,2 @@
+﻿fit_parameters,start_kn,start_brugg_n,fitted_kn,fitted_brugg_n,kp_fixed,train_voltage_RMSE_mV,objective_RMS_mV,optimizer_success,message,n_function_evals,shortfall_weight_mV
+kn only,5.54e-07,2.914,6.977111568060168e-07,2.914,4.768215585284518e-07,42.79683730840519,40.037666361938626,True,`ftol` termination condition is satisfied.,4,300.0

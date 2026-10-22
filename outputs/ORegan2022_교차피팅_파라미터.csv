@@ -1,0 +1,7 @@
+﻿OCP_case,fit_direction,fit_type,start,kn,brugg_n,Objective_RMS_mV,Train_voltage_RMSE_mV,optimizer_success,nfev
+Ai2020_anode__measured_cathode,discharge,kn+bn,1,7.439385480557088e-07,2.446880316018057,28.152067647335603,30.095826247317984,True,8
+Ai2020_anode__measured_cathode,charge,kn_only_bn2.5,bounded_scalar,9.70279348377558e-07,2.5,39.331901035437006,42.037592316090084,True,8
+Ai2020_anode__measured_cathode,discharge,kn_only_bn2.5,bounded_scalar,8.408431622688792e-07,2.5,28.42028821961315,30.382566100331417,True,8
+measured_anode__measured_cathode,discharge,kn+bn,1,4.199383183420934e-07,2.4185171019434146,25.57999739111242,27.346167483461123,True,7
+measured_anode__measured_cathode,charge,kn_only_bn2.5,bounded_scalar,8.842937486246721e-07,2.5,38.04375864818655,40.67048873332349,True,8
+measured_anode__measured_cathode,discharge,kn_only_bn2.5,bounded_scalar,4.88961575264854e-07,2.5,26.074820055727933,27.87515516294735,True,8

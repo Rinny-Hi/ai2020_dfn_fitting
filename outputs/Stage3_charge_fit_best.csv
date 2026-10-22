@@ -1,0 +1,5 @@
+﻿OCP_case,Electrolyte,Start,kn,brugg_n,Train_voltage_RMSE_mV,Objective_RMS_mV,N_function_evals,Optimizer_success,Optimizer_message
+Ai2020_anode__measured_cathode,Ai2020_corrected,1,1.2494830282548344e-06,3.2720257708400156,41.15767090611303,39.055899783119266,9,True,`ftol` termination condition is satisfied.
+Ai2020_anode__measured_cathode,ORegan2022,3,2.9999987210281283e-06,3.049198665535292,38.86251105351344,37.37594423929402,13,True,Both `ftol` and `xtol` termination conditions are satisfied.
+measured_anode__measured_cathode,Ai2020_corrected,2,1.930960149078244e-06,3.499999966704386,37.3054891232479,35.783770774959685,12,True,`ftol` termination condition is satisfied.
+measured_anode__measured_cathode,ORegan2022,3,2.9999973418754044e-06,3.130987350951952,34.70773507159007,33.34226792236061,10,True,`ftol` termination condition is satisfied.

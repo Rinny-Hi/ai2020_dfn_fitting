@@ -1,6 +1,17 @@
 # 파일 지도
 
-이 문서는 저장소 **현재 배치**를 기준으로 작성했습니다. 연구 순서는 파일명의 날짜와 항상 같지 않습니다. 최신 결정은 루트의 [`261020_결과_요약.md`](../261020_결과_요약.md)를 우선합니다. 2026-09-27 physical-time 피팅 분기는 당시 결과 기록으로 보존합니다.
+이 문서는 저장소 **현재 배치**를 기준으로 작성했습니다. 연구 순서는 파일명의 날짜와 항상 같지 않습니다. 최신 결정은 [`outputs/README_KO.md`](../outputs/README_KO.md)와 그곳에서 연결한 최종 보고서를 우선합니다. [`261020_결과_요약.md`](../261020_결과_요약.md) 및 2026-09-27 physical-time 피팅 분기는 당시 결과 기록으로 보존합니다.
+
+## 2026-10-21 최신 산출물
+
+| 작업 | 실행 파일·열람 파일 | 결과 |
+| --- | --- | --- |
+| 최종 ORegan2022 권고 조합과 양방향 검증 | [`outputs/261021_Ai2020_DFN_ORegan_양방향검증_간결본.ipynb`](../outputs/261021_Ai2020_DFN_ORegan_양방향검증_간결본.ipynb), [`work/oregan_cross_direction_fit.py`](../work/oregan_cross_direction_fit.py), [`work/build_oregan_ai2020_final_comparison.py`](../work/build_oregan_ai2020_final_comparison.py) | [`outputs/README_KO.md`](../outputs/README_KO.md)의 최종 권고 절, 관련 CSV·그림 |
+| Stage 1 동적 전압 3단계 비교 | [`work/make_stage1_dynamic_threeway.py`](../work/make_stage1_dynamic_threeway.py), [`work/make_stage1_dynamic_english.py`](../work/make_stage1_dynamic_english.py) | [`outputs/Stage1_dynamic_voltage_0p5C_1C_2C_English.png`](../outputs/Stage1_dynamic_voltage_0p5C_1C_2C_English.png), RMSE/MAE CSV |
+| Stage 2 `k_n`만 충전 피팅, 방전 검증, 음극 전위 비교 | [`work/run_stage2_user_kn_initial_fit.py`](../work/run_stage2_user_kn_initial_fit.py), [`work/make_stage2_user_kn554_fit_tables.py`](../work/make_stage2_user_kn554_fit_tables.py), [`work/plot_stage2_kn_only_anode_soc.py`](../work/plot_stage2_kn_only_anode_soc.py) | [`outputs/Stage2_intermediate_kn554_to_charge_fit_summary_English.csv`](../outputs/Stage2_intermediate_kn554_to_charge_fit_summary_English.csv), 전위 곡선 CSV·그림 |
+| 현대차 미팅 PPT | [`outputs/261021_미팅자료_Ai2020_ORegan_최신검증본.pptx`](../outputs/261021_미팅자료_Ai2020_ORegan_최신검증본.pptx) | 저장된 최종 발표용 버전 |
+
+DFN 계산 스크립트는 `work/stage2_inputs/`와 `work/run_inputs/`의 외부 원본 Excel을 참조한다. 저장된 CSV에서 그림·표를 만드는 스크립트와 전체 DFN 재실행의 입력 요건은 서로 다르다. 입력 누락을 임의 데이터로 대체하지 않는다.
 
 ## 2026-10-20 실행 파일
 

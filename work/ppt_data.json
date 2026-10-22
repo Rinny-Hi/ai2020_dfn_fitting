@@ -1,0 +1,1056 @@
+{
+  "prefit": [
+    {
+      "ocp": "Ai2020",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 33.9,
+      "full_mae": 26.8,
+      "soc_rmse": 30.7,
+      "soc_mae": 27.6,
+      "soc_low": 10.2,
+      "soc_high": 69.8
+    },
+    {
+      "ocp": "Ai2020",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 32.1,
+      "full_mae": 24.4,
+      "soc_rmse": 24.1,
+      "soc_mae": 20.0,
+      "soc_low": 69.8,
+      "soc_high": 10.1
+    },
+    {
+      "ocp": "Ai2020",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 43.2,
+      "full_mae": 26.0,
+      "soc_rmse": 20.1,
+      "soc_mae": 17.7,
+      "soc_low": 10.2,
+      "soc_high": 69.9
+    },
+    {
+      "ocp": "Ai2020",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 35.4,
+      "full_mae": 26.7,
+      "soc_rmse": 24.8,
+      "soc_mae": 19.8,
+      "soc_low": 69.4,
+      "soc_high": 10.5
+    },
+    {
+      "ocp": "Ai2020",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 49.7,
+      "full_mae": 25.6,
+      "soc_rmse": 12.8,
+      "soc_mae": 11.4,
+      "soc_low": 10.8,
+      "soc_high": 59.2
+    },
+    {
+      "ocp": "Ai2020",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 22.2,
+      "full_mae": 11.1,
+      "soc_rmse": 6.1,
+      "soc_mae": 3.8,
+      "soc_low": 69.4,
+      "soc_high": 11.4
+    },
+    {
+      "ocp": "Measured",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 29.3,
+      "full_mae": 20.2,
+      "soc_rmse": 23.9,
+      "soc_mae": 21.2,
+      "soc_low": 10.2,
+      "soc_high": 69.8
+    },
+    {
+      "ocp": "Measured",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 36.5,
+      "full_mae": 28.1,
+      "soc_rmse": 31.5,
+      "soc_mae": 28.9,
+      "soc_low": 69.9,
+      "soc_high": 10.2
+    },
+    {
+      "ocp": "Measured",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 41.7,
+      "full_mae": 22.6,
+      "soc_rmse": 16.2,
+      "soc_mae": 14.2,
+      "soc_low": 10.2,
+      "soc_high": 69.9
+    },
+    {
+      "ocp": "Measured",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 37.4,
+      "full_mae": 29.0,
+      "soc_rmse": 32.4,
+      "soc_mae": 28.7,
+      "soc_low": 69.9,
+      "soc_high": 10.2
+    },
+    {
+      "ocp": "Measured",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 50.9,
+      "full_mae": 26.4,
+      "soc_rmse": 14.1,
+      "soc_mae": 11.3,
+      "soc_low": 10.9,
+      "soc_high": 62.5
+    },
+    {
+      "ocp": "Measured",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 16.8,
+      "full_mae": 11.6,
+      "soc_rmse": 11.4,
+      "soc_mae": 10.9,
+      "soc_low": 69.9,
+      "soc_high": 10.3
+    }
+  ],
+  "scenario": [
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "direction": "Charge",
+      "full_rmse": 42.8,
+      "full_mae": 26.1,
+      "soc_rmse": 22.4,
+      "soc_mae": 18.9
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "direction": "Discharge",
+      "full_rmse": 30.4,
+      "full_mae": 20.8,
+      "soc_rmse": 20.3,
+      "soc_mae": 14.5
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "direction": "Charge",
+      "full_rmse": 41.7,
+      "full_mae": 28.7,
+      "soc_rmse": 29.7,
+      "soc_mae": 25.3
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "direction": "Discharge",
+      "full_rmse": 52.9,
+      "full_mae": 30.9,
+      "soc_rmse": 58.4,
+      "soc_mae": 36.0
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "direction": "Charge",
+      "full_rmse": 58.6,
+      "full_mae": 40.5,
+      "soc_rmse": 32.7,
+      "soc_mae": 26.8
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "direction": "Discharge",
+      "full_rmse": 73.9,
+      "full_mae": 53.2,
+      "soc_rmse": 79.0,
+      "soc_mae": 53.0
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "direction": "Charge",
+      "full_rmse": 39.6,
+      "full_mae": 29.4,
+      "soc_rmse": 32.5,
+      "soc_mae": 28.2
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "direction": "Discharge",
+      "full_rmse": 73.4,
+      "full_mae": 38.2,
+      "soc_rmse": 86.6,
+      "soc_mae": 51.3
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "direction": "Charge",
+      "full_rmse": 41.6,
+      "full_mae": 23.1,
+      "soc_rmse": 18.6,
+      "soc_mae": 15.6
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "direction": "Discharge",
+      "full_rmse": 31.7,
+      "full_mae": 22.9,
+      "soc_rmse": 26.9,
+      "soc_mae": 22.8
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "direction": "Charge",
+      "full_rmse": 37.6,
+      "full_mae": 26.6,
+      "soc_rmse": 29.4,
+      "soc_mae": 25.5
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "direction": "Discharge",
+      "full_rmse": 69.0,
+      "full_mae": 36.0,
+      "soc_rmse": 83.1,
+      "soc_mae": 48.1
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "direction": "Charge",
+      "full_rmse": 60.2,
+      "full_mae": 42.3,
+      "soc_rmse": 36.4,
+      "soc_mae": 29.6
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "direction": "Discharge",
+      "full_rmse": 64.4,
+      "full_mae": 44.3,
+      "soc_rmse": 69.4,
+      "soc_mae": 44.3
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "direction": "Charge",
+      "full_rmse": 35.1,
+      "full_mae": 24.3,
+      "soc_rmse": 27.0,
+      "soc_mae": 23.1
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "direction": "Discharge",
+      "full_rmse": 75.7,
+      "full_mae": 39.8,
+      "soc_rmse": 90.5,
+      "soc_mae": 55.0
+    }
+  ],
+  "fit": [
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "kn": "1.25e-06",
+      "bn": 3.272,
+      "train_rmse": 41.2,
+      "objective": 39.1,
+      "boundary": false
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "kn": "3e-06",
+      "bn": 3.049,
+      "train_rmse": 38.9,
+      "objective": 37.4,
+      "boundary": true
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "kn": "1.93e-06",
+      "bn": 3.5,
+      "train_rmse": 37.3,
+      "objective": 35.8,
+      "boundary": true
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "kn": "3e-06",
+      "bn": 3.131,
+      "train_rmse": 34.7,
+      "objective": 33.3,
+      "boundary": true
+    }
+  ],
+  "potential": [
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "min_mv": 23.8,
+      "time_below_zero": 0.0
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "min_mv": -21.7,
+      "time_below_zero": 5.7
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "min_mv": -77.8,
+      "time_below_zero": 12.6
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "min_mv": 24.9,
+      "time_below_zero": 0.0
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "min_mv": -28.9,
+      "time_below_zero": 5.7
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "min_mv": -99.0,
+      "time_below_zero": 9.4
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "min_mv": 7.6,
+      "time_below_zero": 0.0
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "min_mv": -45.2,
+      "time_below_zero": 12.6
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "min_mv": -93.7,
+      "time_below_zero": 11.3
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "min_mv": 29.2,
+      "time_below_zero": 0.0
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "min_mv": -20.4,
+      "time_below_zero": 4.1
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "min_mv": -76.1,
+      "time_below_zero": 5.1
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "min_mv": 17.7,
+      "time_below_zero": 0.0
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "min_mv": -21.8,
+      "time_below_zero": 12.4
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "min_mv": -78.5,
+      "time_below_zero": 14.4
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "min_mv": 20.6,
+      "time_below_zero": 0.0
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "min_mv": -37.5,
+      "time_below_zero": 8.4
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "min_mv": -111.8,
+      "time_below_zero": 8.8
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "min_mv": 7.8,
+      "time_below_zero": 0.0
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "min_mv": -47.0,
+      "time_below_zero": 19.6
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "min_mv": -92.1,
+      "time_below_zero": 12.8
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "min_mv": 21.8,
+      "time_below_zero": 0.0
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "min_mv": -25.8,
+      "time_below_zero": 6.2
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "min_mv": -80.3,
+      "time_below_zero": 6.3
+    }
+  ],
+  "window": [
+    {
+      "ocp": "Ai2020",
+      "x0": 0.003803,
+      "x100": 0.954167,
+      "y0": 0.970716,
+      "y100": 0.431646,
+      "csn": 25184,
+      "csp": 49143
+    },
+    {
+      "ocp": "Measured",
+      "x0": 0.00215,
+      "x100": 0.739784,
+      "y0": 0.976291,
+      "y100": 0.448293,
+      "csn": 32447,
+      "csp": 50174
+    }
+  ],
+  "sensitivity": [
+    {
+      "ocp": "Ai2020",
+      "parameter": "brugg_n",
+      "mV_5pct": 9.69
+    },
+    {
+      "ocp": "Ai2020",
+      "parameter": "kn",
+      "mV_5pct": 2.06
+    },
+    {
+      "ocp": "Ai2020",
+      "parameter": "kp",
+      "mV_5pct": 2.03
+    },
+    {
+      "ocp": "Ai2020",
+      "parameter": "brugg_p",
+      "mV_5pct": 1.82
+    },
+    {
+      "ocp": "Ai2020",
+      "parameter": "brugg_s",
+      "mV_5pct": 0.4
+    },
+    {
+      "ocp": "Ai2020",
+      "parameter": "Dsp",
+      "mV_5pct": 0.11
+    },
+    {
+      "ocp": "Ai2020",
+      "parameter": "Dsn",
+      "mV_5pct": 0.07
+    },
+    {
+      "ocp": "Measured",
+      "parameter": "brugg_n",
+      "mV_5pct": 9.11
+    },
+    {
+      "ocp": "Measured",
+      "parameter": "kn",
+      "mV_5pct": 2.05
+    },
+    {
+      "ocp": "Measured",
+      "parameter": "kp",
+      "mV_5pct": 2.03
+    },
+    {
+      "ocp": "Measured",
+      "parameter": "brugg_p",
+      "mV_5pct": 1.81
+    },
+    {
+      "ocp": "Measured",
+      "parameter": "brugg_s",
+      "mV_5pct": 0.4
+    },
+    {
+      "ocp": "Measured",
+      "parameter": "Dsp",
+      "mV_5pct": 0.11
+    },
+    {
+      "ocp": "Measured",
+      "parameter": "Dsn",
+      "mV_5pct": 0.07
+    }
+  ],
+  "branch": [
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 33.9,
+      "capacity_error": -2.8
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 32.1,
+      "capacity_error": 0.4
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 43.2,
+      "capacity_error": -2.9
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 35.4,
+      "capacity_error": 0.9
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 49.7,
+      "capacity_error": -3.9
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 22.2,
+      "capacity_error": 0.0
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 37.3,
+      "capacity_error": -2.6
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 33.8,
+      "capacity_error": 0.5
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 42.2,
+      "capacity_error": -3.9
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 22.0,
+      "capacity_error": 0.8
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 45.3,
+      "capacity_error": -12.3
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 82.3,
+      "capacity_error": -11.3
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 32.6,
+      "capacity_error": -5.5
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 26.0,
+      "capacity_error": 0.3
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 52.2,
+      "capacity_error": -9.0
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 39.4,
+      "capacity_error": 0.5
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 80.7,
+      "capacity_error": -24.5
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 119.0,
+      "capacity_error": -12.2
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 37.8,
+      "capacity_error": -2.7
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 31.1,
+      "capacity_error": 0.6
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 40.6,
+      "capacity_error": -4.5
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 17.2,
+      "capacity_error": 0.8
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 40.4,
+      "capacity_error": -15.7
+    },
+    {
+      "ocp": "Ai2020",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 122.1,
+      "capacity_error": -19.3
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 29.3,
+      "capacity_error": -0.4
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 36.5,
+      "capacity_error": 0.9
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 41.7,
+      "capacity_error": 0.4
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 37.4,
+      "capacity_error": 1.3
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 50.9,
+      "capacity_error": -0.4
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 16.8,
+      "capacity_error": 0.7
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 33.5,
+      "capacity_error": 0.2
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 39.4,
+      "capacity_error": 1.0
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 38.4,
+      "capacity_error": -1.8
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 12.5,
+      "capacity_error": 1.1
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 40.5,
+      "capacity_error": -14.7
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "Ai2020_corrected",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 112.2,
+      "capacity_error": -23.5
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 29.0,
+      "capacity_error": -2.3
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 25.2,
+      "capacity_error": 0.8
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 53.0,
+      "capacity_error": -6.0
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 28.8,
+      "capacity_error": 0.9
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 85.0,
+      "capacity_error": -20.7
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "experimental_initial",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 104.8,
+      "capacity_error": -10.7
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "direction": "Charge",
+      "full_rmse": 31.4,
+      "capacity_error": -0.3
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 0.5,
+      "direction": "Discharge",
+      "full_rmse": 36.3,
+      "capacity_error": 1.1
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "direction": "Charge",
+      "full_rmse": 35.3,
+      "capacity_error": -2.0
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 1.0,
+      "direction": "Discharge",
+      "full_rmse": 18.2,
+      "capacity_error": 1.1
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "direction": "Charge",
+      "full_rmse": 38.3,
+      "capacity_error": -14.2
+    },
+    {
+      "ocp": "Measured",
+      "electrolyte": "ORegan2022",
+      "phase": "charge_fit_discharge_validation",
+      "rate": 2.0,
+      "direction": "Discharge",
+      "full_rmse": 124.6,
+      "capacity_error": -22.9
+    }
+  ]
+}

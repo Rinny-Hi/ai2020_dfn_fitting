@@ -1,0 +1,4 @@
+﻿OCP_case,Phase,Full_RMSE_mV,Center_10_70_RMSE_mV,Capacity_error_RMSE_pct
+Ai2020_common_baseline,baseline,59.475835220811355,61.33510142758196,2.1541944568788356
+Ai2020_anode__measured_cathode,experimental_all,37.11418975448455,17.65915310279292,2.3380746687036713
+measured_anode__measured_cathode,experimental_all,36.95103055033895,17.369280778647834,0.7634950467344249

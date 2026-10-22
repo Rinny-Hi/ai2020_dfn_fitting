@@ -1,0 +1,3 @@
+﻿OCP_case,fit_type,fit_direction,kn,brugg_n,Objective_RMS_mV
+Ai2020_anode__measured_cathode,joint_0p5_1C_kn_bn,both,1.5990386371851059e-06,2.98294537722889,28.863143895047596
+Ai2020_anode__measured_cathode,joint_0p5_1C_kn_only_bn2p5,both,6.796059242491288e-07,2.5,32.5755275299492
