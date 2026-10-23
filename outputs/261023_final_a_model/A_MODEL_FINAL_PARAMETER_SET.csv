@@ -1,0 +1,36 @@
+Category,Parameter,Value,Unit,Basis,Classification,Ai2020_change
+Cell,Q_ref,2.356528,Ah,C/50 experiment,Measured fixed,Applied
+Cell,Temperature,298.15,K,Test condition,Fixed,Unchanged
+Cell,c_e_0,1000,mol m^-3,Ai2020,Literature fixed,Unchanged
+OCP,Negative OCP,Ai2020 graphite OCP,,Ai2020,Literature fixed,Unchanged
+OCP,Positive OCP,Measured cathode GITT mean,,GITT,Measured fixed,Replaced
+Window,x0,0.003803365,,C/50 qOCV,Fitted fixed,Refitted
+Window,x100,0.954167038,,C/50 qOCV,Fitted fixed,Refitted
+Window,y0,0.970716344,,C/50 qOCV,Fitted fixed,Refitted
+Window,y100,0.431646230,,C/50 qOCV,Fitted fixed,Refitted
+Inventory,c_s_max_n,25184.17,mol m^-3,Capacity-window consistency,Calculated fixed,Recalculated
+Inventory,c_s_max_p,49143.14,mol m^-3,Capacity-window consistency,Calculated fixed,Recalculated
+Geometry,L_n,76.5,um,Teardown geometry,Fixed,Fixed
+Geometry,L_p,68.0,um,Teardown geometry,Fixed,Fixed
+Geometry,epsilon_s_n,0.610,,Current geometry,Fixed,Fixed
+Geometry,epsilon_s_p,0.620,,Current geometry,Fixed,Fixed
+Geometry,R_n,3.692,um,SEM/ImageJ,Measured-derived fixed,Replaced
+Geometry,R_p,4.239,um,SEM/ImageJ,Measured-derived fixed,Replaced
+Geometry,Electrode width,45.4,mm,Cell geometry,Fixed,Applied
+Geometry,Electrode height,51.0,mm,Cell geometry,Fixed,Applied
+Geometry,Parallel electrode faces,34,,Cell geometry,Fixed,Applied
+Geometry,Overlap area,0.0787236,m^2,Calculated,Calculated fixed,Applied
+Diffusion,D_s_n,4.170774E-14,m^2 s^-1,GITT,Measured-derived fixed,Replaced
+Diffusion,D_s_p,6.888175E-14,m^2 s^-1,GITT,Measured-derived fixed,Replaced
+Evidence,R_ct_n,30.6971,ohm cm^2,July EIS-DRT,Source measurement not direct DFN input,Used to derive k_n
+Kinetics,k_n,5.54E-7,current-code convention,Rct_n conversion,Measured-derived fixed,Replaced
+Evidence,R_ct_p,25.387,ohm cm^2,Cathode EIS-DRT,Source measurement not direct DFN input,Used to derive k_p
+Kinetics,k_p,4.37E-7,current-code convention,Rct_p reported value,Measured-derived fixed,Replaced
+Electrolyte,D_e,Ai2020 function x 1E-4,m^2 s^-1,Unit-corrected Ai2020,Literature corrected,Corrected
+Electrolyte,kappa_e,Ai2020 function,S m^-1,Ai2020,Literature fixed,Unchanged
+Electrolyte,t_plus,Ai2020,,Ai2020,Literature fixed,Unchanged
+Electrolyte,Thermodynamic factor,Ai2020,,Ai2020,Literature fixed,Unchanged
+Bruggeman,b_n,2.914,,Ai2020,Literature fixed,Unchanged
+Bruggeman,b_s,1.500,,Ai2020,Literature fixed,Unchanged
+Bruggeman,b_p,1.830,,Ai2020,Literature fixed,Unchanged
+Hysteresis,OCP hysteresis correction,Not applied,,Final model decision,Excluded,Removed

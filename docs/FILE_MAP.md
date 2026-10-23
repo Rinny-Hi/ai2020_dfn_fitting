@@ -1,6 +1,16 @@
 # 파일 지도
 
-이 문서는 저장소 **현재 배치**를 기준으로 작성했습니다. 연구 순서는 파일명의 날짜와 항상 같지 않습니다. 최신 결정은 [`outputs/README_KO.md`](../outputs/README_KO.md)와 그곳에서 연결한 최종 보고서를 우선합니다. [`261020_결과_요약.md`](../261020_결과_요약.md) 및 2026-09-27 physical-time 피팅 분기는 당시 결과 기록으로 보존합니다.
+이 문서는 저장소 **현재 배치**를 기준으로 작성했습니다. 연구 순서는 파일명의 날짜와 항상 같지 않습니다. 최신 결정은 [`outputs/261023_final_a_model/README_KO.md`](../outputs/261023_final_a_model/README_KO.md)를 우선합니다. [`outputs/README_KO.md`](../outputs/README_KO.md), [`261020_결과_요약.md`](../261020_결과_요약.md) 및 2026-09-27 physical-time 피팅 분기는 당시 결과 기록으로 보존합니다.
+
+## 2026-10-23 최종 A모델
+
+| 작업 | 열람 파일 | 결과 |
+| --- | --- | --- |
+| 충전 프로토콜 최적화용 초기 DFN 모델 확정 | [`outputs/261023_final_a_model/README_KO.md`](../outputs/261023_final_a_model/README_KO.md) | 최종 조합, 선정 근거, 적용 한계 |
+| Chapter 1–2 전체 흐름 | [`Ai2020_DFN_Chapter1_2_Amodel_FINAL.ipynb`](../outputs/261023_final_a_model/Ai2020_DFN_Chapter1_2_Amodel_FINAL.ipynb) | 최종 파라미터와 전압 검증 노트북 |
+| 파라미터와 0.5C·1C·2C 검증 | [`A_MODEL_FINAL_PARAMETER_SET.csv`](../outputs/261023_final_a_model/A_MODEL_FINAL_PARAMETER_SET.csv), [`A_MODEL_VOLTAGE_METRICS.csv`](../outputs/261023_final_a_model/A_MODEL_VOLTAGE_METRICS.csv) | 실험 branch 시간 10–90% 전체 RMSE/MAE 18.39/14.26 mV |
+
+최종 A모델은 Ai2020 음극 OCP, 실측 양극 GITT OCP, 단위 보정 Ai2020 전해질, EIS–DRT 기반 `k_n=5.54×10^-7`, `k_p=4.37×10^-7`, Ai2020 `b_n=2.914`를 사용한다. ORegan2022 전해질과 경험적 hysteresis는 미적용이다.
 
 ## 2026-10-21 최신 산출물
 
